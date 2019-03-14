@@ -22,14 +22,39 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				</div><!-- .site-branding -->
+				<!-- Hamburger menu and navigation bar -->
+					<div class="collapse-menu">
+						<div id="menuToggle">
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
-			</header><!-- #masthead -->
+							<input type="checkbox" />
+
+							<span></span>
+							<span></span>
+							<span></span>
+
+							<ul id="menu">
+								<a href="#"><li>Home</li></a>
+								<a href="#"><li>About</li></a>
+								<a href="#"><li>Courses</li></a>
+								<a href="#"><li>Events</li></a>
+								<a href="#"><li>Parents' Area</li></a>
+								<a href="#"><li>Members' Area</li></a>
+								<a href="#"><li>Support Us</li></a>
+								<a href="#"><li>Contact Us</li></a>
+								<a href="#"><li>Log Out</li></a>
+							</ul>
+  						</div>
+					</div>
+
+				<!-- Bloomsbury Beginnings logo -->
+				<img class="bb-logo" src="<?php echo get_stylesheet_directory_uri() . "/bb-logo.png"; ?>">
+
+				<div class="login-member-area">
+					<p>Login</p>
+				</div>
+
+
+				</div><!-- .site-branding -->
+				</header>
 
 			<div id="content" class="site-content">

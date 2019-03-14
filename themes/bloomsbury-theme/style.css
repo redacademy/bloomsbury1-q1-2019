@@ -1,9 +1,9 @@
 /*!
-Theme Name: Bloomsbury Beginnings
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Oliver Heward
-Author URI: http://www.hewy.dev
-Description: A WordPress theme for Bloomsbury Beginnings
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Bloomsbury Beginnings Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -419,16 +419,14 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+a:hover, a:focus, a:active {
+  color: midnightblue; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
 
 /* Menus */
 .main-navigation {
@@ -670,3 +668,166 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-info {
+  background-color: #242424;
+  height: 250px; }
+
+.footer-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+  color: white;
+  font-size: 10px; }
+
+.social-info {
+  color: white; }
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 15px; }
+
+.social-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 15px; }
+
+.site-header {
+  background-color: #00ADB5;
+  border-bottom: 1px solid #e1e1e1;
+  -webkit-transition: top 500ms linear;
+  transition: top 500ms linear;
+  padding: .5rem 50px;
+  width: 100%;
+  z-index: 3;
+  height: 50px; }
+  .site-header .site-branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 20px; }
+    .site-header .site-branding .collapse-menu {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      /*
+ * Hamburger
+ */
+      /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+      /*
+ * But let's hide the middle one.
+ */
+      /*
+ * Ohyeah and the last one should go the other direction
+ */
+      /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+      /*
+ * Slide it in from the left
+ */ }
+      .site-header .site-branding .collapse-menu #menuToggle {
+        display: block;
+        position: relative;
+        z-index: 1;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+         -ms-user-select: none;
+             user-select: none; }
+      .site-header .site-branding .collapse-menu #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
+        -webkit-touch-callout: none; }
+      .site-header .site-branding .collapse-menu #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: white;
+        border-radius: 3px;
+        z-index: 1;
+        -webkit-transform-origin: 4px 0px;
+                transform-origin: 4px 0px;
+        -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+      .site-header .site-branding .collapse-menu #menuToggle span:first-child {
+        -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%; }
+      .site-header .site-branding .collapse-menu #menuToggle span:nth-last-child(2) {
+        -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%; }
+      .site-header .site-branding .collapse-menu #menuToggle input:checked ~ span {
+        opacity: 1;
+        -webkit-transform: rotate(45deg) translate(-2px, -1px);
+                transform: rotate(45deg) translate(-2px, -1px); }
+      .site-header .site-branding .collapse-menu #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+                transform: rotate(0deg) scale(0.2, 0.2); }
+      .site-header .site-branding .collapse-menu #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        list-style: none;
+        background: #324a5e;
+        text-decoration: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        -webkit-transform: translate(-100%, 0);
+                transform: translate(-100%, 0);
+        -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+      .site-header .site-branding .collapse-menu #menu li {
+        padding: 5px 0;
+        font-size: 10px;
+        text-decoration: none; }
+      .site-header .site-branding .collapse-menu #menu > a > li {
+        text-decoration: none;
+        color: #fff; }
+      .site-header .site-branding .collapse-menu #menuToggle input:checked ~ ul {
+        -webkit-transform: none;
+                transform: none; }
+    .site-header .site-branding .bb-logo {
+      background-size: cover;
+      max-width: 35px; }
+
+.login-member-area {
+  color: white; }
