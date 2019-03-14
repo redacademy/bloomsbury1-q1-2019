@@ -11,8 +11,27 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+					
+				<div class="footer-title">
+					<p>Bloomsbury Beginnings</p>
+					</div>
+
+				<div class="social-links">
+					<ul>
+						<li>Home</li>
+						<li>Privacy</li>
+						<li>Contact</li>
+						<li>Blog</li>
+					<ul>
+				</div>
+
+				<div class="social-logos">
+					
+				</div>
+					
 				</div><!-- .site-info -->
+
+
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
