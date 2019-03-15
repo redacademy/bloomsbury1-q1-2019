@@ -1,9 +1,9 @@
 /*!
-Theme Name: Bloomsbury Beginnings
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Oliver Heward
-Author URI: http://www.hewy.dev
-Description: A WordPress theme for Bloomsbury Beginnings
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Bloomsbury Beginnings Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -605,6 +605,43 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.social-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+
+#profile-page {
+  display: block;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.profile-page-content, .contact-info {
+  text-align: center; }
+
+#buttons {
+  text-align: center; }
+
+.profile-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 110px; }
+
+.view-lean-canvas-button, .message-button {
+  border-radius: 18px;
+  text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+  font-family: Arial;
+  color: #11aab8;
+  font-size: 16px;
+  padding: 12px;
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Media
