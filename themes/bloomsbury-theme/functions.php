@@ -8,6 +8,12 @@
  */
 
 if ( ! function_exists( 'bloomsbury_setup' ) ) :
+
+	 /**
+ * Custom WP API chat modifications.
+ */
+require get_template_directory() . '/chat-api.php';
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */

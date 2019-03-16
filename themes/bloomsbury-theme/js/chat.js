@@ -5,12 +5,12 @@
             let message = $('input[name=message-input]').val();
             $.ajax({
                 method: 'POST',
-                url: bb_vars.rest_url + 'my-chat/',
+                url: bb_vars.rest_url + 'bloomsbury/v1/send-message',
                 contentType: 'application/json',
-                data: {
+                data: JSON.stringify({
                     channelId: '1',
                     content: message,
-                },
+                }),
                 // beforeSend: function (xhr) {
                 //   xhr.setRequestHeader('X-WP-Nonce', bb_vars.wpapi_nonce); // insert security stuff before sending request
                 // }
