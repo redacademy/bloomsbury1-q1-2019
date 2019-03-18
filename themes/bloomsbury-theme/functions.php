@@ -86,7 +86,10 @@ function bloomsbury_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 	wp_enqueue_style('font-awesome-cdn', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), '5.7.2');
 
+	wp_enqueue_script('jquery');
+
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'request-info-script', get_template_directory_uri() . '/build/js/request.min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
