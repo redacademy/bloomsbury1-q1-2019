@@ -1,9 +1,9 @@
 <!-- Calling the FORM PROCESS php --> 
-<?php include('form_process.php'); ?>
 
 <!-- Request Info Pop Up Form -->
 <div class="request-container">
-	<form id="contact" action="<?php $_SERVER["PHP_SELF"]; ?>" method="post">
+	<!-- Form -->
+	<form id="contact" action="<?php echo get_template_directory_uri() . '/form/form_process.php'?>" method="post">
 		<div class="close">+</div>
 		<h3>Connect with us!</h3>
 		<fieldset>
