@@ -1,7 +1,7 @@
-(function($) {
-    $(document).ready(function() {
-        $("#submit-message").click(function() {
-          
+(function ($) {
+    $(document).ready(function () {
+        $("#submit-message").click(function () {
+
             let message = $('input[name=message-input]').val();
             $.ajax({
                 method: 'POST',
@@ -11,17 +11,46 @@
                     channelId: '1',
                     content: message,
                 }),
-                // beforeSend: function (xhr) {
-                //   xhr.setRequestHeader('X-WP-Nonce', bb_vars.wpapi_nonce); // insert security stuff before sending request
-                // }
-              })
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('X-WP-Nonce', bb_vars.wpapi_nonce); // insert security stuff before sending request
+                }
+            })
                 .done(function (data) {
                     console.log(data)
                 })
-                .fail(function (jqXHR, textStatus) {
-                    console.error(textStatus);
+                .fail(function (response) {
+                    console.error(response.responseText);
                 })
-          });
-      });
+        });
+    });
+
+})(jQuery);
+
+
+
+(function ($) {
+    $(document).ready(function () {
+
+        function get_messages() {
+            $.ajax({
+                method: 'GET',
+                url: bb_vars.rest_url + 'bloomsbury/v1/get-messages',
+                dataType: "json",
     
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('X-WP-Nonce', bb_vars.wpapi_nonce);
+                }
+            })          
+                .done(function (response) {
+                    console.log(response);
+                })
+                .fail(function (response) {
+                    console.error(response.responseText);
+                });
+        }
+
+        get_messages();
+        
+    });
+       
 })(jQuery);
