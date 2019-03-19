@@ -95,11 +95,13 @@
 .contact-info {
 	margin: 0 auto;
 	max-width: 200px;
-	border-bottom: 2px solid white;
+	display:flex;
+	justify-content: center;
 	h2, p {
-		color: white;
-		border-bottom: 2px solid white;
-		text-align: left;
+			color: white;
+			border-bottom: 2px solid white;
+				
+	
 			
 		
 	}	

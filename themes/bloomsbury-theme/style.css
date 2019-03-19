@@ -661,11 +661,15 @@ a {
 .contact-info {
   margin: 0 auto;
   max-width: 200px;
-  border-bottom: 2px solid white; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .contact-info h2, .contact-info p {
     color: white;
-    border-bottom: 2px solid white;
-    text-align: left; }
+    border-bottom: 2px solid white; }
 
 .social-logos i {
   font-size: 18px;
