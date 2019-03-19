@@ -3,3 +3,182 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.home {
+    .home-hero {
+    	background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(0, 0, 0, 0.4) 100%),
+            #969696 url(../../assets/images/hero.png);
+    	background-size: cover;
+    	background-position: center;
+        border: 1px solid blue;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @include auto-padding;
+        color: white;
+        line-height: 1;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .title {
+            font-size: 86px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 18px;
+            padding: 0 2rem;
+        }
+    }
+
+    .info {
+        border: 1px solid red;
+        height: auto;
+        @include auto-padding;
+
+        .info-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            .info-list-item {
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 50px;
+                    margin: 0 1rem;
+                    border-radius: 50px;
+                }
+
+                .info-container {
+
+                    h2 {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .our-section {
+        border: 1px solid green;
+        background: $color__deepblue;
+        color: white;
+
+        img {
+            width: 100vw;
+        }
+
+        .our-story {
+            @include auto-padding;
+        }
+    }
+
+    .our-programmes {
+        border: 1px solid purple;
+        @include auto-padding;
+
+        .programmes {
+            padding: 1rem 1rem;
+            margin: 2rem 0;
+            background: $color__lightgrey;
+        }
+    }
+
+    .our-reviews {
+        text-align: center;
+        color: white;
+        height: 400px;
+        position: relative;
+        border: 1px solid red;
+
+        .review-container {
+        	background: $color__lightblue;
+        	padding: 3rem 1rem;
+        	min-height: 300px;
+            .review-text {
+            	padding-right: 2rem;
+            	padding-left: 2rem;
+            }
+
+            hr {
+            	width: 10%;
+            	border: 1px solid $color__darkgrey;
+            	background: $color__darkgrey;
+            }
+
+            .review-author {
+
+                p {
+                    color: black;
+                }
+            }
+        }
+
+        img {
+          margin-top: -3.5rem;
+          width: 110px;
+          height: 110px;
+          border-radius: 110px;
+          border: 5px solid $color__lightblue;
+        }
+    }
+
+    .our-partners {
+        @include auto-padding;
+
+        .partners {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            img {
+                width: 20%;
+                height: 20%;
+            }
+        }
+    }
+
+    .our-community {
+        display: flex;
+        flex-flow: column no-wrap;
+        text-align: center;
+        color: white;
+        background: $color__deepblue;
+        @include auto-padding;
+
+        h2 {
+        	padding: 0 1rem;
+        }
+
+        .community-containers {
+            margin: 1rem;
+        }
+    }
+
+    .online-community {
+        @include auto-padding;
+        display: flex;
+        align-items: center;
+    }
+
+    .association {
+        background: $color__lightblue;
+        color: white;
+
+        .association-info {
+            @include auto-padding;
+        }
+    }
+}
