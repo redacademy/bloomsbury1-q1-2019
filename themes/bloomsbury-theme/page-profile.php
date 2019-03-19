@@ -9,49 +9,64 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-				<section id="profile-page">
+		
+			<section id="background">
+				
 					<section class="profile-page-content">
-					<div class="profile-image-field">
-					<img class="profile-image" src="<?php echo get_template_directory_uri(); ?>/images/face.png">
+						<div class="profile-image-field">
+							<img class="profile-image" src="<?php echo get_template_directory_uri(); ?>/images/face.png">
 
-					</div>
-					<div class="profile-info">
+						</div>
+						<div class="profile-info">
+					
 						<p>Naz Hussein</p>
 						<p>Founder, Meal Planners Inc.</p><br>
+						
 						<p> <i class="fas fa-map-marker-alt"> </i> London, UK</p>
 						<p><em>"I'm working on identifying my value proposition and particular user to be better position my organic meal prep business in the market."</em></p>
 
 
 					</div>
-				</section>
+					</section>
+			
 
-				<section id="buttons">
-					<button class="view-lean-canvas-button">View Lean Canvas</button>
+			
+				<div id="buttons">
+					<button class="view-lean-canvas-button"> <img class="shape-svg" src="<?php echo get_template_directory_uri(); ?>/images/shape.svg">View Lean Canvas</button>
 					<button class="message-button">Message</button>
-				</section>
+				</div>
+			
 
+				
 
 				<section class="contact-info">
-					<h2>Contact</h2>
-					<div class="email">
-						<p>nazhussein7@gmail.com</p>
-					</div><hr>
-					<div class="phone-number">
-						<p>+44750 798 9847</p>
-					</div><hr>
-					<div class="website">
-						<p>nazhussein.com</p>
+					<div class="info">
+						<h2>Contact</h2>
+						<div class="email">
+						<i class="fas fa-envelope"></i>
+							<p>nazhussein7@gmail.com</p>
+						</div>
+						<div class="phone-number">
+						<i class="fas fa-phone"></i>
+							<p>+44750 798 9847</p>
+						</div>
+						<div class="website">
+						<i class="fas fa-globe"></i>
+							<p>nazhussein.com</p>
+						</div>
+				
+					<div class="social-logos">
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-linkedin"></i>
+						<i class="fab fa-facebook-square"></i>
 					</div>
-				</section>
-				<section class="social-logos">
-					<div><i class="fab fa-twitter"></i></div>
-					<div><i class="fab fa-instagram"></i></div>
-					<div><i class="fab fa-linkedin"></i></div>
-					<div><i class="fab fa-facebook-square"></i></div>
-				</section>
+					</div>
+					</section>
+			</section>
+				
 
-				</section> <!--profile-page -->
+				
 
 
 
