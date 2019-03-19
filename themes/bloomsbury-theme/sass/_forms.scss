@@ -4,30 +4,132 @@
 
 /* Buttons */
 
+.btn,
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
-	line-height: 1;
-	padding: .6rem 1rem .4rem;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    background: $color__seablue;
+    border: none;
+    border-radius: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1;
+    padding: .5rem;
+	text-decoration: none;
+	text-align: center;
 
-	&:hover {
-		border-color: #ccc #bbb #aaa;
-		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+    &:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
 	}
+}
+.black-cap-btn{
+	@extend .btn;
+    background: #4A4A4A;
+	border-radius: 10px;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
+.white-cap-btn{
+	@extend .btn;
+    background: #fff;
+    border-radius: 10px;
+	color: black;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
+.white-square-btn {
+	@extend .btn;
+    background: #fff;
+    border-radius: 2px;
+	color: black; 
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
+.dark-blue-cap-btn{
+	@extend .btn;
+    border: 1px solid white;
+    background: #214253;
+    border-radius: 20px;
+	color: #fff;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
+.clear-cap-border-btn{
+	@extend .btn;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 10px;
+	color: #fff;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
+.blue-cap-btn{
+	@extend .btn;
+    background: #4AABB6;
+    border-radius: 10px;
+	color: white;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
 
-	&:active,
-	&:focus {
-		border-color: #aaa #bbb #bbb;
-		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+.blue-square-btn{
+	@extend .btn;
+    background: #4AABB6;
+	color: white;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+	}
+}
+
+.black-btn {
+	@extend .btn;
+	background: #000;
+	color: #fff;
+
+	&:hover,
+    &:active,
+    &:focus {
+        background: lighten(#000, 90%);
+        color: #000;
 	}
 }
 
