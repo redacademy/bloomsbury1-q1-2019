@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 
 /* Buttons */
-
 .btn,
 button,
 input[type="button"],
@@ -17,8 +16,8 @@ input[type="submit"] {
     font-size: 12px;
     line-height: 1;
     padding: .5rem;
-	text-decoration: none;
-	text-align: center;
+	  text-decoration: none;
+	  text-align: center;
 
     &:hover,
     &:active,
@@ -27,6 +26,7 @@ input[type="submit"] {
         color: white;
 	}
 }
+
 .black-cap-btn{
 	@extend .btn;
     background: #4A4A4A;
