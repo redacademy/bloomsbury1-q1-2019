@@ -1,0 +1,172 @@
+.page-id-8 {
+    background-color: #E9F0F1;
+    
+        //  start of Upper section
+    .dashboard-section {
+        height: 500px;
+        width: 100vw;
+        .dashboard-cover {
+            background-image: linear-gradient(#01ADB5, #4a90e2);
+            height: 200px;
+        div.edit-camera{
+          
+        }
+        }
+        .dashboard-div {
+             width: 250px;
+             height: 150px;
+             background: white;
+             border-radius: 10px;
+             box-shadow: 1px 1px 3px 0px grey;
+             margin-top: -5rem;
+             margin-left: auto;
+             margin-right: auto;
+            h6.edit-pen{
+            position: relative;
+            text-align: right;
+            left: -10px;
+            bottom: -5px;
+            }
+        }
+        .dashboard-circle{
+            width: 100px;
+            height: 100px;
+            background: lightgray;
+            border-radius: 50%;
+            box-shadow: 1px 1px 2px 0px grey;
+            margin-top: -12.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid white;
+        }
+        div.your-name {
+            margin-bottom: 4rem;
+        }
+        p.your-name {
+            text-align: center;
+            margin-top: 2px;
+            margin-bottom: 42px;
+        }
+        p.yourname{
+            text-align: center;
+            margin-top: -43px;
+            margin-bottom: 42px;
+            font-size: 10px; 
+        }
+        .titles-images{
+            height: 25px;
+            background: #fff;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            width: 225px;
+            margin: 4rem auto;
+            margin-top: -4rem; 
+        }
+        .dashboard-titles{
+            height: 25px;
+            background: #fff;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            width: 225px;
+            margin: 4rem auto;
+            margin-top: -3.4rem;
+            margin-bottom: -47px;
+        h5.social {
+            margin: 0;
+            font-size: 10px;
+            font-weight: 500;
+        }
+        h5.flex-social{
+            font-size: 10px;
+        }
+        }
+        .dashboard-canvas{
+            width: 350px;
+            height: 170px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px 0px grey;
+            margin-top: 4rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+        //End of Upper Section
+        //start of bottom section
+    img.social-icon {
+        padding-left: 1.0rem;
+        margin-bottom: -1rem;
+    }
+    img.resources-icon{
+        height: auto;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin: 1.8rem auto .7rem;
+        display: -webkit-box;
+        margin-bottom: -0.5rem;
+    }
+    .dashboard-bottom{
+        height: 210px;
+        width: 100vw; 
+        display: inline-flex;   
+        .dashboard-resources{
+            width: 110px;
+            height: 105px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 1px 1px 3px 0px grey;
+            margin-left: auto;
+            margin-right: 0.5rem;
+            text-align: center;
+            font-size: 12px;
+        }
+        .dashboard-lean-canvas{
+            width: 110px;
+            height: 105px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 1px 1px 3px 0px grey;
+            margin-left: 0.5rem;
+            margin-right: auto;
+            text-align: center;
+            font-size: 12px;
+        }
+            //  End of bottom section
+    }
+    .dashboard-bottom-2{
+        height: 235px;
+        width: 100vw; 
+        display: inline-flex; 
+        .dashboard-community{
+            width: 110px;
+            height: 105px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 1px 1px 3px 0px grey;
+            margin-top: 1rem;
+            margin-left: auto;
+            margin-right: 0.5rem;
+            margin-top: -10rem;
+            text-align: center;
+            font-size: 12px;
+        }
+        .dashboard-calendar{
+            width: 110px;
+            height: 105px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 1px 1px 3px 0px grey;
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+            margin-right: auto;
+            margin-top: -10rem;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+}

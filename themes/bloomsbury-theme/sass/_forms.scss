@@ -16,14 +16,121 @@ input[type="submit"] {
     font-size: 12px;
     line-height: 1;
     padding: .5rem;
-    text-decoration: none;
+	  text-decoration: none;
+	  text-align: center;
 
     &:hover,
     &:active,
     &:focus {
         background: darken($color__seablue, 10%);
         color: white;
-    }
+	}
+}
+
+.black-cap-btn{
+	@extend .btn;
+    background: #4A4A4A;
+	border-radius: 10px;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
+.white-cap-btn{
+	@extend .btn;
+    background: #fff;
+    border-radius: 10px;
+	color: black;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
+.white-square-btn {
+	@extend .btn;
+    background: #fff;
+    border-radius: 2px;
+	color: black; 
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
+.dark-blue-cap-btn{
+	@extend .btn;
+    border: 1px solid white;
+    background: #214253;
+    border-radius: 20px;
+	color: #fff;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
+.clear-cap-border-btn{
+	@extend .btn;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 10px;
+	color: #fff;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
+.blue-cap-btn{
+	@extend .btn;
+    background: #4AABB6;
+    border-radius: 10px;
+	color: white;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+}
+}
+
+.blue-square-btn{
+	@extend .btn;
+    background: #4AABB6;
+	color: white;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        background: darken($color__seablue, 10%);
+        color: white;
+	}
+}
+
+.black-btn {
+	@extend .btn;
+	background: #000;
+	color: #fff;
+
+	&:hover,
+    &:active,
+    &:focus {
+        background: lighten(#000, 90%);
+        color: #000;
+	}
 }
 
 /* Fields */
