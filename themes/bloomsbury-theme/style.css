@@ -732,6 +732,127 @@ object {
 .gallery-caption {
   display: block; }
 
+.page-id-5 .hero-grad {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 88, 145, 0.6)), to(rgba(25, 88, 145, 0.6))), #195891 url(../../images/login-image.jpg);
+  background: linear-gradient(to bottom, rgba(25, 88, 145, 0.6) 0%, rgba(25, 88, 145, 0.6) 100%), #195891 url(../../images/login-image.jpg);
+  background-size: cover; }
+  .page-id-5 .hero-grad .hero-text {
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+    padding: 0 3rem;
+    max-width: 600px; }
+  .page-id-5 .hero-grad .icon-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 2rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    color: white;
+    width: 100%; }
+    .page-id-5 .hero-grad .icon-area .icon-container {
+      text-align: center;
+      max-width: 150px; }
+      .page-id-5 .hero-grad .icon-area .icon-container img {
+        max-height: 40px; }
+
+.page-id-5 .login-controller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .page-id-5 .login-controller form {
+    margin: 1rem 0; }
+    .page-id-5 .login-controller form fieldset {
+      border: none !important;
+      padding: 0;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .page-id-5 .login-controller form fieldset input[type=text],
+      .page-id-5 .login-controller form fieldset input[type=password] {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px auto;
+        display: inline-block;
+        border-bottom: 1px solid #696969;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        border-top-style: none;
+        border-right-style: none;
+        border-left-style: none; }
+        .page-id-5 .login-controller form fieldset input[type=text]::before,
+        .page-id-5 .login-controller form fieldset input[type=password]::before {
+          font-family: 'FontAwesome';
+          position: relative;
+          left: 0;
+          content: '\f084';
+          border: 1px solid red; }
+  .page-id-5 .login-controller .btn {
+    margin: 0 auto;
+    background-color: #01adb5;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: .75rem 2.25rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    max-height: 3rem;
+    outline: none;
+    border-radius: 25px;
+    width: 300px; }
+  .page-id-5 .login-controller .register-forgot {
+    width: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 11px; }
+    .page-id-5 .login-controller .register-forgot p {
+      padding: 0 1rem; }
+    .page-id-5 .login-controller .register-forgot .reg {
+      border-right: 1px solid   black;
+      font-weight: bold; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
