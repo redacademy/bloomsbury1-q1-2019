@@ -36,6 +36,10 @@ plugins/*
 themes/*
 !themes/bloomsbury-theme/
 
+# Ignore the generated style.css #
+# ====================================================== #
+themes/bloomsbury-theme/style.css
+
 # Ignore npm packages #
 # =================== #
 themes/bloomsbury-theme/node_modules/*
