@@ -28,9 +28,10 @@
 
 
 
+
 (function ($) {
     $(document).ready(function () {
-
+        // setInterval(get_messages,1000);
         function get_messages() {
             $.ajax({
                 method: 'GET',
@@ -41,12 +42,24 @@
                     xhr.setRequestHeader('X-WP-Nonce', bb_vars.wpapi_nonce);
                 }
             })          
-                .done(function (response) {
-                    console.log(response);
+                .done(function (messages) {
+                    console.log(messages);
+
+                    debugger;
+
+                    var messageList = '';
+                    messages.forEach((message) => {
+                        messageList += '<li>' + message.content + '</li>';
+                        messageList += '<li>' + message.message_author_id + '</li>';
+                        messageList += '<li>' + message.created_timestamp + '</li>';
+                    });
+
+                    $("#listMessages").append(messageList);
                 })
                 .fail(function (response) {
                     console.error(response.responseText);
                 });
+                
         }
 
         get_messages();
@@ -54,3 +67,4 @@
     });
        
 })(jQuery);
+

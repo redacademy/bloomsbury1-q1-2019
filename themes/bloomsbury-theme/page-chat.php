@@ -12,17 +12,19 @@ get_header(); ?>
 
 <?php if ( is_user_logged_in() ) { ?>
 
-			<ul id="messages">
-            </ul>
+			<!-- <ul id="listMessages">
+            </ul> -->
+
+  <div id="listMessages">
+  Your Messages:
+  </div>
 
             <input type="text" name="message-input" />
             <button id="submit-message">
                 Send
             </button>
 			<br> 
-            <button id="get-messages">
-                Get Messages
-            </button>
+            
 
 <?php } else { ?>
 	<p>You need to be <a href="<?php echo site_url(); ?>/wp-login.php">logged in</a> to use Bloomsbury's messaging</p>

@@ -7,6 +7,7 @@ function post_message ( $data ) {
 
     $channelId = $data['channelId'];
     $content = $data['content'];
+    
 
     $get_current_user_id = wp_get_current_user();
     $message_author_id = $get_current_user_id->ID;
