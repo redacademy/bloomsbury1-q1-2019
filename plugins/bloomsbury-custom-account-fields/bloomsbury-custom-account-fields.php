@@ -74,6 +74,27 @@ function bloomsbury_get_account_fields() {
 			'hide_in_checkout'		=> true,
 			'hide_in_registration' 	=> false,
 		),
+
+        'user_company'          => array(
+            'type'                  => 'text',
+            'label'                 => __( 'Company', 'bloomsbury'),
+            'placeholder'           => __( 'Example - Bloomsbury', 'bloomsbury'),
+            'required'              => false,
+            'hide_in_account'       => false,
+            'hide_in_admin'         => true,
+            'hide_in_checkout'      => true,
+            'hide_in_registration'  => false,
+        ),
+        'description'          => array(
+            'type'                  => 'text',
+            'label'                 => __( 'Description', 'bloomsbury'),
+            'placeholder'           => __( 'Example - Bloomsbury', 'bloomsbury'),
+            'required'              => false,
+            'hide_in_account'       => false,
+            'hide_in_admin'         => true,
+            'hide_in_checkout'      => true,
+            'hide_in_registration'  => false,
+        ),
 	) );
 }
 
@@ -162,6 +183,16 @@ function bloomsbury_get_userdata( $user_id, $key ) {
  
     return $userdata->{$key};
 }
+
+/**
+ * Get currently editing user ID (frontend account/edit profile/edit other user).
+ *
+ * @return int
+ */
+function bloomsbury_get_edit_user_id() {
+    return isset( $_GET['user_id'] ) ? (int) $_GET['user_id'] : get_current_user_id();
+}
+
 
 /**
  * Save registration fields.
