@@ -6,7 +6,6 @@
  */
 
 ?>
-
 			</div><!-- #content -->
 
 
@@ -25,17 +24,15 @@
 						<p>Contact</p>
 						<p>Blog</p>
 				</div>
-
+				
 				<!-- social media logos -->
 				<div class="social-logos">
 				<i class="fab fa-twitter"></i>
 				<i class="fab fa-instagram"></i>
 				<i class="fab fa-linkedin"></i>
 				<i class="fab fa-facebook"></i>
-				</div>
 				</div>				
 				</div><!-- .site-info -->
-
 
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

@@ -303,12 +303,7 @@ button,
 input,
 select,
 textarea {
-<<<<<<< HEAD
-  font-family: sans-serif;
-=======
-  color: #404040;
   font-family: "Open Sans", sans-serif;
->>>>>>> 1efd041dbf25689fe07558b07545940e1969518e
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -735,9 +730,156 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-<<<<<<< HEAD
+.home .home-hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/images/hero.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), #969696 url(../../assets/images/hero.png);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid blue;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: white;
+  line-height: 1; }
+  .home .home-hero h2 {
+    font-size: 20px;
+    font-weight: 400; }
+  .home .home-hero .title {
+    font-size: 86px;
+    text-transform: uppercase; }
+  .home .home-hero p {
+    font-size: 18px;
+    padding: 0 2rem; }
+
+.home .info {
+  border: 1px solid red;
+  height: auto;
+  padding: 3rem 1rem; }
+  .home .info .info-list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .home .info .info-list .info-list-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .home .info .info-list .info-list-item img {
+        height: 50px;
+        margin: 0 1rem;
+        border-radius: 50px; }
+      .home .info .info-list .info-list-item .info-container h2 {
+        font-size: 26px; }
+
+.home .our-section {
+  border: 1px solid green;
+  background: #324a5e;
+  color: white; }
+  .home .our-section img {
+    width: 100vw; }
+  .home .our-section .our-story {
+    padding: 3rem 1rem; }
+
+.home .our-programmes {
+  border: 1px solid purple;
+  padding: 3rem 1rem; }
+  .home .our-programmes .programmes {
+    padding: 1rem 1rem;
+    margin: 2rem 0;
+    background: #f4f4f4; }
+
+.home .our-reviews {
+  text-align: center;
+  color: white;
+  height: 400px;
+  position: relative;
+  border: 1px solid red; }
+  .home .our-reviews .review-container {
+    background: #4a90e2;
+    padding: 3rem 1rem;
+    min-height: 300px; }
+    .home .our-reviews .review-container .review-text {
+      padding-right: 2rem;
+      padding-left: 2rem; }
+    .home .our-reviews .review-container hr {
+      width: 10%;
+      border: 1px solid #252525;
+      background: #252525; }
+    .home .our-reviews .review-container .review-author p {
+      color: black; }
+  .home .our-reviews img {
+    margin-top: -3.5rem;
+    width: 110px;
+    height: 110px;
+    border-radius: 110px;
+    border: 5px solid #4a90e2; }
+
+.home .our-partners {
+  padding: 3rem 1rem; }
+  .home .our-partners .partners {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .home .our-partners .partners img {
+      width: 20%;
+      height: 20%; }
+
+.home .our-community {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column no-wrap;
+          flex-flow: column no-wrap;
+  text-align: center;
+  color: white;
+  background: #324a5e;
+  padding: 3rem 1rem; }
+  .home .our-community h2 {
+    padding: 0 1rem; }
+  .home .our-community .community-containers {
+    margin: 1rem; }
+
+.home .online-community {
+  padding: 3rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.home .association {
+  background: #4a90e2;
+  color: white; }
+  .home .association .association-info {
+    padding: 3rem 1rem; }
+
 .site-info {
-  background-color: #242424;
+  background-color: #252525;
   height: 250px; }
 
 .footer-title {
@@ -886,131 +1028,11 @@ object {
 .personal-info {
   color: white;
   margin-left: 3.5rem;
-=======
-.home .home-hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/images/hero.png);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), #969696 url(../../assets/images/hero.png);
-  background-size: cover;
-  background-position: center;
-  border: 1px solid blue;
-  height: 100vh;
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: 3rem 1rem;
-  color: white;
-  line-height: 1; }
-  .home .home-hero h2 {
-    font-size: 20px;
-    font-weight: 400; }
-  .home .home-hero .title {
-    font-size: 86px;
-    text-transform: uppercase; }
-  .home .home-hero p {
-    font-size: 18px;
-    padding: 0 2rem; }
-
-.home .info {
-  border: 1px solid red;
-  height: auto;
-  padding: 3rem 1rem; }
-  .home .info .info-list {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .home .info .info-list .info-list-item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .home .info .info-list .info-list-item img {
-        height: 50px;
-        margin: 0 1rem;
-        border-radius: 50px; }
-      .home .info .info-list .info-list-item .info-container h2 {
-        font-size: 26px; }
-
-.home .our-section {
-  border: 1px solid green;
-  background: #324a5e;
-  color: white; }
-  .home .our-section img {
-    width: 100vw; }
-  .home .our-section .our-story {
-    padding: 3rem 1rem; }
-
-.home .our-programmes {
-  border: 1px solid purple;
-  padding: 3rem 1rem; }
-  .home .our-programmes .programmes {
-    padding: 1rem 1rem;
-    margin: 2rem 0;
-    background: #f4f4f4; }
-
-.home .our-reviews {
-  text-align: center;
-  color: white;
-  height: 400px;
-  position: relative;
-  border: 1px solid red; }
-  .home .our-reviews .review-container {
-    background: #4a90e2;
-    padding: 3rem 1rem;
-    min-height: 300px; }
-    .home .our-reviews .review-container .review-text {
-      padding-right: 2rem;
-      padding-left: 2rem; }
-    .home .our-reviews .review-container hr {
-      width: 10%;
-      border: 1px solid #252525;
-      background: #252525; }
-    .home .our-reviews .review-container .review-author p {
-      color: black; }
-  .home .our-reviews img {
-    margin-top: -3.5rem;
-    width: 110px;
-    height: 110px;
-    border-radius: 110px;
-    border: 5px solid #4a90e2; }
-
-.home .our-partners {
-  padding: 3rem 1rem; }
-  .home .our-partners .partners {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .home .our-partners .partners img {
-      width: 20%;
-      height: 20%; }
-
-.home .our-community {
->>>>>>> 1efd041dbf25689fe07558b07545940e1969518e
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 1rem;
@@ -1030,7 +1052,7 @@ object {
   margin: 0;
   padding: 100px;
   list-style: none;
-  background: #324a5e;
+  background: #1f4354;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   -webkit-transform-origin: 0 0;
@@ -1084,30 +1106,3 @@ object {
 
 hr {
   width: 15rem; }
-=======
-      -ms-flex-flow: column no-wrap;
-          flex-flow: column no-wrap;
-  text-align: center;
-  color: white;
-  background: #324a5e;
-  padding: 3rem 1rem; }
-  .home .our-community h2 {
-    padding: 0 1rem; }
-  .home .our-community .community-containers {
-    margin: 1rem; }
-
-.home .online-community {
-  padding: 3rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.home .association {
-  background: #4a90e2;
-  color: white; }
-  .home .association .association-info {
-    padding: 3rem 1rem; }
->>>>>>> 1efd041dbf25689fe07558b07545940e1969518e

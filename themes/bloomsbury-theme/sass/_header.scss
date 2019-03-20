@@ -26,38 +26,29 @@
 
 // The "button" to make the menu to collapse to go back to the homepage
 .collapse-menu {
-  // border: 1px solid red;
   width: fit-content;
 
   // the hamburger on the navigation bar
   #menuToggle {
     display: block;
     position: relative;
-
-
     z-index: 1;
-
     -webkit-user-select: none;
     user-select: none;
 
     input {
-
       display: block;
       width: 40px;
       height: 32px;
       position: absolute;
       top: -7px;
       left: -5px;
-
       cursor: pointer;
-
       opacity: 0;
       /* hide this */
       z-index: 2;
       /* and place it over the hamburger */
-
       -webkit-touch-callout: none;
-
     }
 
     span {
@@ -66,22 +57,15 @@
       height: 4px;
       margin-bottom: 5px;
       position: relative;
-
       background: white;
       border-radius: 3px;
-
       z-index: 1;
-
       transform-origin: 4px 0px;
-
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
     }
-
-
   }
-
 }
 
 
@@ -110,9 +94,7 @@
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-
 //  Profile container in the slide in navbar
-
 .profile-container {
   border-radius: 5px;
   height: 150px;
@@ -121,7 +103,6 @@
   display: flex;
   margin-top: 1rem;
   margin-left: 2.2rem;
-
 }
 
 // The placeholder for the profile pic in the slide in menu
@@ -147,7 +128,6 @@
   p {
     margin: 0
   }
-
 }
 
 // menu options in the slide in navbar 
@@ -162,7 +142,7 @@
   margin: 0;
   padding: 100px;
   list-style: none;
-  background: #324a5e;
+  background: #1f4354;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0 0;
@@ -174,11 +154,8 @@
     padding: 5px 0;
     font-size: 12px;
     text-decoration: none;
-
-
   }
 }
-
 
 .slidebar-menu {
   margin-left: -5rem;
@@ -187,13 +164,11 @@
   a>li {
     text-decoration: none;
     color: white;
-
   }
 
   a {
     text-decoration: none !important;
   }
-
 }
 
 .member-area-subsection {
@@ -204,7 +179,6 @@
   a>li {
     color: white;
   }
-
 }
 
 /*

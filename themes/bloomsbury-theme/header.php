@@ -47,7 +47,7 @@
 								<p>Job Title</p>
 							</div>
 
-							<!-- Meny for the slidebar and sub-section for the Member's area -->
+							<!-- Menu for the slidebar and sub-section for the Member's area -->
 							<div class="slidebar-menu">
 								<a href="#">
 									<li><i class="fas fa-home"></i>&nbsp; Home</li>
