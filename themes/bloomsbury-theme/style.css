@@ -483,19 +483,16 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-/* Links */
-a:focus {
-  outline: thin dotted; }
-
-a:hover, a:active {
-  outline: 0; }
-
 /* Menus */
 .main-navigation {
   clear: both;
   display: block;
   float: left;
   width: 100%; }
+  .main-navigation a:focus {
+    outline: thin dotted; }
+  .main-navigation a:hover, .main-navigation a:active {
+    outline: 0; }
   .main-navigation ul {
     display: none;
     list-style: none;
