@@ -16,18 +16,19 @@ get_header(); ?>
 				<section class="dashboard-section">
 					<!-- Start of Dashboard Cover Image -->
 						<div class="edit-camera">
-							<h2>HELLO</h2>
+							<i class="fas fa-camera"> Edit</i>
 						</div>
 				</section>
 
 					<!-- Start of Dashboard Container -->
 				<div class="dashboard-container">
 					<div class="dashboard-info">
-						<h6 class="edit-pen">
-							<i class="fas fa-pen"></i> Edit </h6>
+						<div class="edit-pen">
+							<i class="fas fa-pen"> Edit</i>
+						</div>
 						<h3 class="entry-title"><?php echo $current_user->display_name ?></h3>
 						<p class="entry-meta"><?php echo $current_user->user_company ?></p>
-						<p class="entry-desc"><?php echo $current_user->description ?></p>
+						<p class="entry-desc"><?php echo $current_user->user_description ?></p>
 					</div>
 					<div class="icon-container">
 						<div class="titles-images">
@@ -51,10 +52,15 @@ get_header(); ?>
 				</div>
 				<!-- End of Avatar -->
 
-				<?php the_content() ?>
-
 				<!-- Start of Lean Canvas --> 
 				<div class="dashboard-lean-canvas">
+					<!-- Start of Lean Circle -->
+					<div class="lean-circle">
+
+					</div>
+					<!-- Start of Lean Graph -->
+					<div class="lean-graph">
+					</div>
 				</div>
 				<!-- End of Lean Canvas -->
 
@@ -85,6 +91,3 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
