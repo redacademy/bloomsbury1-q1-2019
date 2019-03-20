@@ -908,6 +908,8 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 15px; }
+  .social-logos a {
+    color: white; }
 
 .site-header {
   background-color: #00ADB5;

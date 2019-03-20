@@ -25,10 +25,10 @@
 
 				<!-- social media logos -->
 		<div class="social-logos">
-			<i class="fab fa-twitter"></i>
-			<i class="fab fa-instagram"></i>
-			<i class="fab fa-linkedin"></i>
-			<i class="fab fa-facebook"></i>
+			<a href="https://twitter.com/bloomsbabies?lang=en" target="_blank"> <i class="fab fa-twitter"></i>
+			<a href="https://www.instagram.com/bloomsburybeginnings/" target="_blank"> <i class="fab fa-instagram"></i>
+			<a href="https://www.linkedin.com/company/bloomsbury-beginnings-cic" target="_blank"> <i class="fab fa-linkedin"></i>
+			<a href="https://www.facebook.com/bloomsburybeginnings/" target="_blank"> <i class="fab fa-facebook"></i>
 		</div>				
 	</div><!-- .site-info -->
 
