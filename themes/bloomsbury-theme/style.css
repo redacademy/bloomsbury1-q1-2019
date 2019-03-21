@@ -888,7 +888,7 @@ object {
           left: 0;
           content: '\f084';
           border: 1px solid red; }
-  .page-id-5 .login-controller .btn {
+  .page-id-5 .login-controller .btn, .page-id-5 .login-controller .black-cap-btn, .page-id-5 .login-controller .white-cap-btn, .page-id-5 .login-controller .white-square-btn, .page-id-5 .login-controller .dark-blue-cap-btn, .page-id-5 .login-controller .clear-cap-border-btn, .page-id-5 .login-controller .blue-cap-btn, .page-id-5 .login-controller .blue-square-btn, .page-id-5 .login-controller .black-btn {
     margin: 0 auto;
     background-color: #01adb5;
     color: #fff;
@@ -921,6 +921,154 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home .home-hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/images/hero.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), #969696 url(../../assets/images/hero.png);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid blue;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: white;
+  line-height: 1; }
+  .home .home-hero h2 {
+    font-size: 20px;
+    font-weight: 400; }
+  .home .home-hero .title {
+    font-size: 86px;
+    text-transform: uppercase; }
+  .home .home-hero p {
+    font-size: 18px;
+    padding: 0 2rem; }
+
+.home .info {
+  border: 1px solid red;
+  height: auto;
+  padding: 3rem 1rem; }
+  .home .info .info-list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .home .info .info-list .info-list-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .home .info .info-list .info-list-item img {
+        height: 50px;
+        margin: 0 1rem;
+        border-radius: 50px; }
+      .home .info .info-list .info-list-item .info-container h2 {
+        font-size: 26px; }
+
+.home .our-section {
+  border: 1px solid green;
+  background: #324a5e;
+  color: white; }
+  .home .our-section img {
+    width: 100vw; }
+  .home .our-section .our-story {
+    padding: 3rem 1rem; }
+
+.home .our-programmes {
+  border: 1px solid purple;
+  padding: 3rem 1rem; }
+  .home .our-programmes .programmes {
+    padding: 1rem 1rem;
+    margin: 2rem 0;
+    background: #f4f4f4; }
+
+.home .our-reviews {
+  text-align: center;
+  color: white;
+  height: 400px;
+  position: relative;
+  border: 1px solid red; }
+  .home .our-reviews .review-container {
+    background: #4a90e2;
+    padding: 3rem 1rem;
+    min-height: 300px; }
+    .home .our-reviews .review-container .review-text {
+      padding-right: 2rem;
+      padding-left: 2rem; }
+    .home .our-reviews .review-container hr {
+      width: 10%;
+      border: 1px solid #252525;
+      background: #252525; }
+    .home .our-reviews .review-container .review-author p {
+      color: black; }
+  .home .our-reviews img {
+    margin-top: -3.5rem;
+    width: 110px;
+    height: 110px;
+    border-radius: 110px;
+    border: 5px solid #4a90e2; }
+
+.home .our-partners {
+  padding: 3rem 1rem; }
+  .home .our-partners .partners {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .home .our-partners .partners img {
+      width: 20%;
+      height: 20%; }
+
+.home .our-community {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column no-wrap;
+          flex-flow: column no-wrap;
+  text-align: center;
+  color: white;
+  background: #324a5e;
+  padding: 3rem 1rem; }
+  .home .our-community h2 {
+    padding: 0 1rem; }
+  .home .our-community .community-containers {
+    margin: 1rem; }
+
+.home .online-community {
+  padding: 3rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.home .association {
+  background: #4a90e2;
+  color: white; }
+  .home .association .association-info {
+    padding: 3rem 1rem; }
+
 .page-id-8 {
   background-color: #E9F0F1; }
   .page-id-8 .dashboard-section {
@@ -1082,150 +1230,38 @@ object {
       text-align: center;
       font-size: 12px; }
 
-.home .home-hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/images/hero.png);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), #969696 url(../../assets/images/hero.png);
-  background-size: cover;
-  background-position: center;
-  border: 1px solid blue;
-  height: 100vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: 3rem 1rem;
-  color: white;
-  line-height: 1; }
-  .home .home-hero h2 {
-    font-size: 20px;
-    font-weight: 400; }
-  .home .home-hero .title {
-    font-size: 86px;
-    text-transform: uppercase; }
-  .home .home-hero p {
+.page-id-15 {
+  background: #E9F0F1; }
+  .page-id-15 .page-cover {
+    height: 200px;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#01ADB5), to(#4a90e2));
+    background-image: linear-gradient(#01ADB5, #4a90e2);
+    border-bottom: 1px solid lightgrey; }
+    .page-id-15 .page-cover .header-text {
+      position: relative;
+      margin: 1rem 1rem 1rem 4rem;
+      text-align: left;
+      font-size: 40px;
+      color: #fff; }
+    .page-id-15 .page-cover .under-text {
+      position: relative;
+      margin: -1.2rem 1rem 1rem 5rem;
+      text-align: left;
+      font-size: 18px;
+      color: #fff; }
+  .page-id-15 .google-map {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 411px; }
+  .page-id-15 p.address-info {
     font-size: 18px;
-    padding: 0 2rem; }
-
-.home .info {
-  border: 1px solid red;
-  height: auto;
-  padding: 3rem 1rem; }
-  .home .info .info-list {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .home .info .info-list .info-list-item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .home .info .info-list .info-list-item img {
-        height: 50px;
-        margin: 0 1rem;
-        border-radius: 50px; }
-      .home .info .info-list .info-list-item .info-container h2 {
-        font-size: 26px; }
-
-.home .our-section {
-  border: 1px solid green;
-  background: #324a5e;
-  color: white; }
-  .home .our-section img {
-    width: 100vw; }
-  .home .our-section .our-story {
-    padding: 3rem 1rem; }
-
-.home .our-programmes {
-  border: 1px solid purple;
-  padding: 3rem 1rem; }
-  .home .our-programmes .programmes {
-    padding: 1rem 1rem;
-    margin: 2rem 0;
-    background: #f4f4f4; }
-
-.home .our-reviews {
-  text-align: center;
-  color: white;
-  height: 400px;
-  position: relative;
-  border: 1px solid red; }
-  .home .our-reviews .review-container {
-    background: #4a90e2;
-    padding: 3rem 1rem;
-    min-height: 300px; }
-    .home .our-reviews .review-container .review-text {
-      padding-right: 2rem;
-      padding-left: 2rem; }
-    .home .our-reviews .review-container hr {
-      width: 10%;
-      border: 1px solid #252525;
-      background: #252525; }
-    .home .our-reviews .review-container .review-author p {
-      color: black; }
-  .home .our-reviews img {
-    margin-top: -3.5rem;
-    width: 110px;
-    height: 110px;
-    border-radius: 110px;
-    border: 5px solid #4a90e2; }
-
-.home .our-partners {
-  padding: 3rem 1rem; }
-  .home .our-partners .partners {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .home .our-partners .partners img {
-      width: 20%;
-      height: 20%; }
-
-.home .our-community {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column no-wrap;
-          flex-flow: column no-wrap;
-  text-align: center;
-  color: white;
-  background: #324a5e;
-  padding: 3rem 1rem; }
-  .home .our-community h2 {
-    padding: 0 1rem; }
-  .home .our-community .community-containers {
-    margin: 1rem; }
-
-.home .online-community {
-  padding: 3rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.home .association {
-  background: #4a90e2;
-  color: white; }
-  .home .association .association-info {
-    padding: 3rem 1rem; }
+    font-weight: 600;
+    text-align: left;
+    padding: 0.5rem;
+    line-height: 2.4;
+    margin: 2rem 1rem 1rem 3rem;
+    font-weight: 500; }
+  .page-id-15 .mapouter {
+    margin: 1rem 1rem 1rem 3.5rem; }

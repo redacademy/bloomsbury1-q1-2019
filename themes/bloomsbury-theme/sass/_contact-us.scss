@@ -1,0 +1,41 @@
+.page-id-15{
+    background: #E9F0F1;
+.page-cover {
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(#01ADB5, #4a90e2);
+    border-bottom: 1px solid lightgrey;
+    .header-text{
+        position: relative;
+        margin: 1rem 1rem 1rem 4rem;
+        text-align: left;
+        font-size: 40px;
+        color: #fff;
+    }
+    .under-text{
+        position: relative;
+        margin: -1.2rem 1rem 1rem 5rem;
+        text-align: left;
+        font-size: 18px;
+        color: #fff;
+    }
+}
+.google-map {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 411px;
+}
+p.address-info{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.5rem;
+    line-height: 2.4;
+    margin: 2rem 1rem 1rem 3rem;
+    font-weight: 500;
+}
+.mapouter{
+    margin: 1rem 1rem 1rem 3.5rem;
+}
+}
