@@ -28,10 +28,10 @@
 
 
 				<!-- Hamburger menu and navigation bar -->
-				<div class="collapse-menu">
-					<div id="menuToggle">
+			<div class="collapse-menu">
+				<div id="menuToggle">
 
-						<input type="checkbox" />
+					<input type="checkbox" />
 
 						<span></span>
 						<span></span>
@@ -45,79 +45,51 @@
 							<div class="personal-info">
 								<p>Fullname</p>
 								<p>Job Title</p>
-							</div>
+				</div>
 
 							<!-- Menu for the slidebar and sub-section for the Member's area -->
-							<div class="slidebar-menu">
-								<a href="#">
-									<li><i class="fas fa-home"></i>&nbsp; Home</li>
-								</a>
-								<hr>
-								<a href="#">
-									<li><i class="fas fa-book-open"></i>&nbsp; About</li>
-								</a>
-								<hr>
-								<a href="#">
-									<li><i class="fas fa-graduation-cap"></i>&nbsp; Courses</li>
-								</a>
-								<hr>
-								<a href="#">
-									<li><i class="far fa-calendar-check"></i>&nbsp; Events</li>
-								</a>
-								<hr>
-								<a href="#">
-									<li><i class="fas fa-key"></i>&nbsp; Members' Area</li>
-								</a>
-								<hr>
+				<div class="slidebar-menu">
+					<a href="#"><li><i class="fas fa-home"></i>&nbsp; Home</li></a>
+				<hr>
+					<a href="#"><li><i class="fas fa-book-open"></i>&nbsp; About</li></a>
+				<hr>
+					<a href="#"><li><i class="fas fa-graduation-cap"></i>&nbsp; Courses</li></a>
+				<hr>
+					<a href="#"><li><i class="far fa-calendar-check"></i>&nbsp; Events</li></a>
+				<hr>
+					<a href="#"><li><i class="fas fa-blog"></i>&nbsp; Blog</li></a>
+				<hr>
+					<a href="#"><li><i class="fas fa-key"></i>&nbsp; Members' Area</li></a>
+				<hr>
 
-								<div class="member-area-subsection">
-									<a href="#">
-										<li>Dashboard</li>
-									</a>
-									<a href="#">
-										<li>Profile</li>
-									</a>
-									<a href="#">
-										<li>Lean Canvas</li>
-									</a>
-									<a href="#">
-										<li>Community</li>
-									</a>
-									<a href="#">
-										<li>Calendar</li>
-									</a>
-									<a href="#">
-										<li>Resources</li>
-									</a>
-								</div>
-								<a href="#">
-									<li><i class="far fa-handshake"></i></i>&nbsp; Support Us</li>
-								</a>
-								<hr>
-								<a href="#">
-									<li><i class="fas fa-phone-volume"></i>&nbsp; Contact Us</li>
-								</a>
-								<hr>
-								<a href="#">
-									<li><i class="fas fa-sign-out-alt"></i>&nbsp; Log Out</li>
-								</a>
-								<hr>
-							</div>
-
-
-						</ul>
+					<div class="member-area-subsection">
+						<a href="#"><li>Dashboard</li></a>
+						<a href="#"><li>Profile</li></a>
+						<a href="#"><li>Lean Canvas</li></a>
+						<a href="#"><li>Community</li></a>
+						<a href="#"><li>Calendar</li></a>
+						<a href="#"><li>Resources</li></a>
 					</div>
+						
+						<a href="#"><li><i class="far fa-handshake"></i></i>&nbsp; Support Us</li></a>
+					<hr>
+						<a href="#"><li><i class="fas fa-phone-volume"></i>&nbsp; Contact Us</li></a>
+					<hr>
+						<a href="#"><li><i class="fas fa-sign-out-alt"></i>&nbsp; Log Out</li></a>
+					<hr>
 				</div>
-				<!-- Bloomsbury Beginnings logo -->
-				<img class="bb-logo" src="<?php echo get_stylesheet_directory_uri() . "/bb-logo.png"; ?>">
+		</div>
+	</div>
+<!-- Bloomsbury Beginnings logo -->
+	<img class="bb-logo" src="<?php echo get_stylesheet_directory_uri() . "/bb-logo.png"; ?>">
 
-				<!-- Login button in the navbar -->
+<!-- Login button in the navbar -->
 
-				<div class="login-member-area">
-					<button class="login-button">Login</button>
-				</div>
+	<div class="login-member-area">
+		<button class="login-button">Login</button>
+	</div>
 
-			</div><!-- .site-branding -->
-		</header>
+	</div><!-- .site-branding -->
+	</header>
 
-		<div id="content" class="site-content">
+	<div id="content" class="site-content">
