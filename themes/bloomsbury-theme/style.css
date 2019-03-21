@@ -1265,3 +1265,28 @@ object {
     font-weight: 500; }
   .page-id-15 .mapouter {
     margin: 1rem 1rem 1rem 3.5rem; }
+
+.page-id-27 {
+  background: #E9F0F1; }
+  .page-id-27 .page-cover {
+    height: 200px;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#01ADB5), to(#4a90e2));
+    background-image: linear-gradient(#01ADB5, #4a90e2);
+    border-bottom: 1px solid lightgrey; }
+    .page-id-27 .page-cover .header-text {
+      position: relative;
+      margin: 1rem 1rem 1rem 4rem;
+      text-align: left;
+      font-size: 30px;
+      color: #fff; }
+    .page-id-27 .page-cover .under-text {
+      position: relative;
+      margin: -1.2rem 1rem 1rem 5rem;
+      text-align: left;
+      font-size: 18px;
+      color: #fff; }
+  .page-id-27 h1.entry-title {
+    margin: 1rem -5rem 1rem -3.4rem; }
+  .page-id-27 .hentry {
+    margin: 1rem 4rem; }
