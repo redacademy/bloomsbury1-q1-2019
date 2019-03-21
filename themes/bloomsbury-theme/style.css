@@ -638,9 +638,10 @@ a {
   border: 4px solid white;
   border-radius: 100px; }
 
-.view-lean-canvas-button, .message-button {
+.view-lean-canvas-button
+.message-buttons {
   border-radius: 18px;
-  color: #079167;
+  color: #fff;
   background-color: #324a5e;
   font-size: 16px;
   padding: 12px; }
@@ -664,12 +665,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .contact-info h2, .contact-info p {
-    color: white;
-    border-bottom: 2px solid white; }
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left; }
+  .contact-info h2 {
+    color: white; }
 
 .social-logos i {
   font-size: 18px;
@@ -678,21 +678,48 @@ a {
   border: none;
   margin: 0 auto; }
 
-.email, .phone-number, .website {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0 auto; }
-  .email i, .phone-number i, .website i {
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: initial;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-bottom: 1px solid white; }
+  .contact i {
     font-size: 16px;
     color: white;
-    padding-top: 17px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -ms-flex-wrap: inherit;
+        flex-wrap: inherit; }
 
 .shape-svg {
   width: 18px;
   height: 18px;
   margin: 0 auto; }
+
+.info {
+  padding-top: 2px; }
+
+.menu-toggle {
+  display: none; }
+
+.envelope {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 /*--------------------------------------------------------------
 # Media

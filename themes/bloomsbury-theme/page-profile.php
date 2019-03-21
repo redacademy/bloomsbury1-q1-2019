@@ -32,8 +32,8 @@ get_header(); ?>
 
 			
 				<div id="buttons">
-					<button class="view-lean-canvas-button"> <img class="shape-svg" src="<?php echo get_template_directory_uri(); ?>/images/shape.svg">View Lean Canvas</button>
-					<button class="message-button">Message</button>
+					<button class="view-lean-canvas-button"><i class="fas fa-puzzle-piece"></i>View Lean Canvas</button>
+					<button class="message-button"><i class="far fa-envelope"></i>Message</button>
 				</div>
 			
 
@@ -42,18 +42,21 @@ get_header(); ?>
 				<section class="contact-info">
 					<div class="info">
 						<h2>Contact</h2>
-						<div class="email">
-						<i class="fas fa-envelope"></i>
+						<div class="contact">
+
+						<i id="fas fa-envelope" class="envelope"></i>
 							<p>nazhussein7@gmail.com</p>
-						</div>
-						<div class="phone-number">
-						<i class="fas fa-phone"></i>
+						
+						
+						<i id="fas fa-phone"></i>
 							<p>+44750 798 9847</p>
-						</div>
-						<div class="website">
-						<i class="fas fa-globe"></i>
+						
+						
+						<i id="fas fa-globe"></i>
 							<p>nazhussein.com</p>
-						</div>
+</div>
+				
+						
 				
 					<div class="social-logos">
 						<i class="fab fa-twitter"></i>
@@ -64,17 +67,6 @@ get_header(); ?>
 					</div>
 					</section>
 			</section>
-				
-
-				
-
-
-
-
-
-
-
-			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
