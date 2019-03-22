@@ -37,7 +37,7 @@ function bloomsbury_get_account_fields() {
 
 		'display_name'			=> array(
 			'type'						=> 'text',
-			'label'						=> __( 'User Name', 'bloomsbury' ),
+			'label'						=> __( 'Username', 'bloomsbury' ),
 			'placeholder'				=> __( 'First & Last Name' ),
 			'hide_in_account'      		=> true,
 			'hide_in_admin'        		=> true,
@@ -67,12 +67,12 @@ function bloomsbury_get_account_fields() {
 		'user_url' 				=> array(
 			'type'					=> 'text',
 			'label'					=> __( 'Website', 'bloomsbury'),
-			'placeholder' 			=> __( 'Example https://bloomsburybeginnings.com', 'bloomsbury'),
+			'placeholder' 			=> __( 'Example - bloomsburybeginnings.com', 'bloomsbury'),
 			'required' 				=> false,
 			'hide_in_account'		=> false,
 			'hide_in_admin'			=> true,
 			'hide_in_checkout'		=> true,
-			'hide_in_registration' 	=> false,
+			'hide_in_registration' 	=> true,
 		),
 
         'user_company'          => array(
@@ -83,7 +83,7 @@ function bloomsbury_get_account_fields() {
             'hide_in_account'       => false,
             'hide_in_admin'         => true,
             'hide_in_checkout'      => true,
-            'hide_in_registration'  => false,
+            'hide_in_registration'  => true,
         ),
         'description'          => array(
             'type'                  => 'text',
@@ -93,7 +93,7 @@ function bloomsbury_get_account_fields() {
             'hide_in_account'       => false,
             'hide_in_admin'         => true,
             'hide_in_checkout'      => true,
-            'hide_in_registration'  => false,
+            'hide_in_registration'  => true,
         ),
 	) );
 }

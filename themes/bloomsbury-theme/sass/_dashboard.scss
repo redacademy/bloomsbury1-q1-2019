@@ -22,6 +22,7 @@
         }
     }
 
+
     .dashboard-container {
         width: 60%;
         height: 150px;
@@ -34,8 +35,12 @@
 
         .dashboard-info {
 
-            .edit-pen {
+            .edit-account-info {
                 text-align: right;
+                float: right;
+                height: 50px;
+                width: auto;
+                cursor: pointer;
 
                 .fa-pen {
                     font-size: .7rem;
@@ -100,6 +105,16 @@
         }
     }
 
+    .edit-info-form {
+        position: absolute;
+        display: none;
+
+        .woocommerce-EditAccountForm {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
     .dashboard-lean-canvas {
         width: 80%;
         height: 170px;
@@ -146,6 +161,131 @@
             .grid-text {
                 margin: .5rem 0 0;
                 font-size: .7rem;
+            }
+        }
+    }
+}
+
+// If user is not logged in CSS Area // 
+.page-id-230 {
+
+    .dashboard-revert {
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(to bottom,
+            rgba(25, 88, 145, 0.6) 0%,
+            rgba(25, 88, 145, 0.6) 100%),
+            #195891 url(../../images/login-image.jpg);
+        background-size: cover;
+
+        .revert-container {
+            width: 80%;
+            text-align: center;
+            color: #fff;
+
+            h1 {
+                margin-bottom: 3rem;
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+
+            a {
+                border-radius: 20px;
+                padding: .5rem 2rem;
+            }
+        }
+    }
+}
+
+// Edit Account SCSS 
+
+.page-id-261 {
+    .entry-content {
+        .entry-header {
+            width: 100vw;
+            height: 50vh;
+            background-position: center !important;
+            color: white;
+            text-transform: uppercase;
+
+            .entry-title:first-letter {
+                border-bottom: 1px solid white;
+                border-top: 1px solid white;
+            }
+        }
+    }
+
+    .edit-form-container {
+        padding: 1rem;
+        margin-top: 2rem;
+        margin: 0 auto;
+
+        .edit-header {
+            text-align: center;
+            color: $color__deepblue - 10%;
+        }
+
+        .edit-info-form {
+
+            .woocommerce-EditAccountForm {
+
+                .woocommerce-form-row {
+                    display: flex;
+                    flex-flow: column no-wrap;
+
+                    .required {
+                        color: $color__deepblue !important;
+                    }
+
+                    input[type=text],
+                    input[type=email] {
+                        width: 95%;
+                    }
+
+                    em {
+                        color: $color__deepblue;
+                        font-weight: lighter;
+                    }
+                }
+
+                fieldset {
+                    border: 1px solid $color__deepblue;
+
+                    input[type=password] {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .form-row {
+
+                .required {
+                    border: none !important;
+                    color: $color__deepblue;
+                }
+
+                input[type=password],
+                input[type=text],input[type="email"] {
+                    border: 1px solid #fff !important;
+                    border-bottom: 1px solid $color__lightgrey !important;
+                    width: 95%;
+                    padding-left: 1rem;
+                }
+            }
+
+            button {
+                background: $color__deepblue;
+                width: 100%;
+                border-radius: 20px;
+                height: 40px;
+                font-size: 1rem;
             }
         }
     }

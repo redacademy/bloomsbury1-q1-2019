@@ -13,19 +13,23 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+			<?php
+                if ( is_user_logged_in()) { ?>
+
 				<section class="dashboard-section">
 					<!-- Start of Dashboard Cover Image -->
 						<div class="edit-camera">
 							<i class="fas fa-camera"> Edit</i>
 						</div>
 				</section>
-
+				
 					<!-- Start of Dashboard Container -->
 				<div class="dashboard-container">
 					<div class="dashboard-info">
-						<div class="edit-pen">
+						<a class="edit-account-info" href="<?php echo get_permalink('261');?>">		
 							<i class="fas fa-pen"> Edit</i>
-						</div>
+						</a>
 						<h3 class="entry-title"><?php echo $current_user->display_name ?></h3>
 						<p class="entry-meta"><?php echo $current_user->user_company ?></p>
 						<p class="entry-desc"><?php echo $current_user->user_description ?></p>
@@ -51,6 +55,8 @@ get_header(); ?>
 					<?php echo get_avatar( get_the_author_meta('user_email'), $size = 'full'); ?>
 				</div>
 				<!-- End of Avatar -->
+
+				<?php the_content() ?>
 
 				<!-- Start of Lean Canvas --> 
 				<div class="dashboard-lean-canvas">
@@ -84,10 +90,26 @@ get_header(); ?>
 					</div>						
 				</div>
 				<!-- End of Grid -->
+			<?php } else { ?>
+
+				<section class="dashboard-revert">
+					<div class="revert-container">
+						<h1>Sorry, You must be signed in to view this page</h1>
+						<p>Too register an account please visit</p>
+						<a class="btn" href="<?php echo get_permalink('243');?>">Register Account</a>
+						<p>If you already have an account with us, please visit the </p>
+						<a class="btn" href="<?php echo get_permalink('239');?>">Login Page</a>
+
+						<p>If you we're redirected too this page from Forgot Password, please follow the email link too reset</p>
+					</div>
+				</section>
+
+			<?php } ?>
 			</article><!-- #post-## -->
 
 
 			<?php endwhile; // End of the loop. ?>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

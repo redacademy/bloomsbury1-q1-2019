@@ -49,6 +49,7 @@ function bloomsbury_content_width() {
 }
 add_action( 'after_setup_theme', 'bloomsbury_content_width', 0 );
 
+
 /**
  * Register widget area.
  *
@@ -84,14 +85,12 @@ add_filter( 'stylesheet_uri', 'bloomsbury_minified_css', 10, 2 );
  */
 function bloomsbury_scripts(){
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-  wp_enqueue_style('font-awesome-cdn', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), '5.7.2');
-	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
-
+  	wp_enqueue_style('font-awesome-cdn', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), '5.7.2');
+	wp_enqueue_script('edit-account-script', get_template_directory_uri() . '/build/js/edit-account-script.min.js', array(), '1.0.1', true);
+	wp_enqueue_script( 'login-register', get_template_directory_uri() . '/build/js/login-script.min.js', array(), '1.0.1', true );
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 	// font awsome
-	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/5.4.0/css/font-awesome.min.css'); 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

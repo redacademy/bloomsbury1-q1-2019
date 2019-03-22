@@ -78,6 +78,21 @@ function wc_edit_address_i18n( $id, $flip = false ) {
 	return $slugs[ $id ];
 }
 
+function wc_custom_lost_password_form( $atts ) {
+
+    return wc_get_template( '../templates/myaccount/form-lost-password.php', array( 'form' => 'lost_password' ) );
+
+}
+add_shortcode( 'lost_password_form', 'wc_custom_lost_password_form' );
+
+function wc_custom_reset_password_form( $atts ) {
+
+    return wc_get_template( '../templates/myaccount/form-reset-password.php', array( 'form' => 'reset_password' ) );
+
+}
+add_shortcode( 'reset_password_form', 'wc_custom_reset_password_form' );
+
+
 /**
  * Get My Account menu items.
  *
