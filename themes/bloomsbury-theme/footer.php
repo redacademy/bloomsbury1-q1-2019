@@ -10,7 +10,7 @@
 			<!-- footer -->
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
-					
+		
 	<div class="footer-title">
 		<p>Bloomsbury Beginnings</p>
 	</div>

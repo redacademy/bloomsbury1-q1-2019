@@ -1105,3 +1105,13 @@ object {
 
 hr {
   width: 15rem; }
+
+.single-courses article {
+  padding: 0rem 2rem; }
+
+.single-courses li {
+  list-style-position: inside;
+  padding-left: 0.10rem; }
+
+.single-courses h1, .single-courses h2 {
+  color: #1f4354; }

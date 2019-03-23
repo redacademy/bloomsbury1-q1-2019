@@ -103,3 +103,11 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+// Adding custom fields in wordpress
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');
+
+// Adding image sizes
+function bloomsbury_features() {
+	add_image_size('pageBanner', 1500, 350, true);
+}

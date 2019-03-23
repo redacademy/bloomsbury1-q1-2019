@@ -40,11 +40,20 @@
 						<ul id="menu">
 							<div class="profile-container">
 								<div class="profile-pic"></div>
-							</div>
-
+								
+<!-- <?php 
+//	global $current_user;
+//	if ( is_user_logged_in() );
+	//	get_currentuserinfo();
+	//	echo get_avatar( $current_user);
+//endif;
+?> -->
+</div>
 							<div class="personal-info">
 								<p>Fullname</p>
 								<p>Job Title</p>
+
+
 				</div>
 
 							<!-- Menu for the slidebar and sub-section for the Member's area -->
