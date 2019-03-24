@@ -14,7 +14,7 @@ ehthumbs.db
 # Ignore logs and databases #
 # ========================= #
 *.log
-*.sql
+#*.sql
 error_log
 access_log
 

@@ -19,12 +19,14 @@ get_header(); ?>
   Your Messages:
   </div>
 
+
             <input type="text" name="message-input" />
             <button id="submit-message">
                 Send
             </button>
 			<br> 
             
+// if get_avatar
 
 <?php } else { ?>
 	<p>You need to be <a href="<?php echo site_url(); ?>/wp-login.php">logged in</a> to use Bloomsbury's messaging</p>
