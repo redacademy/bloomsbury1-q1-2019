@@ -10,9 +10,8 @@
             rgba(0, 0, 0, 0.4) 0%,
             rgba(0, 0, 0, 0.4) 100%),
             #969696 url(../../assets/images/hero.png);
-        background-size: cover;
-        background-position: center;
-        border: 1px solid blue;
+    	background-size: cover;
+    	background-position: center;
         height: 100vh;
         width: 100vw;
         display: flex;
@@ -22,26 +21,46 @@
         text-align: center;
         @include auto-padding;
         color: white;
-        line-height: 1;
+        line-height: 1.2;
+        z-index: 3;
 
         h2 {
-            font-size: 20px;
+            font-size: 1.5rem;
             font-weight: 400;
         }
 
         .title {
             font-size: 86px;
             text-transform: uppercase;
+            margin: .5rem;
         }
 
         p {
-            font-size: 18px;
+            font-size: 1rem;
             padding: 0 2rem;
+            line-height: 1.5;
+            font-weight: 200;
+        }
+    }
+
+    .request-info-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $color__seablue;
+        color: white;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+
+        h2 {
+            font-weight: 400;
         }
     }
 
     .info {
-        border: 1px solid red;
         height: auto;
         @include auto-padding;
 
@@ -56,14 +75,22 @@
 
                 img {
                     height: 50px;
-                    margin: 0 1rem;
+                    margin: 0 2rem 0 0;
                     border-radius: 50px;
                 }
 
                 .info-container {
-
+                    width: 80%;
                     h2 {
-                        font-size: 26px;
+                        font-size: 1.5rem;
+                        color: $color__deepblue;
+
+                    }
+
+                    p {
+                        color: $color__darkgrey;
+                        font-weight: 200;
+                        margin-top: 0;
                     }
                 }
             }
@@ -72,7 +99,6 @@
     }
 
     .our-section {
-        border: 1px solid green;
         background: $color__deepblue;
         color: white;
 
@@ -82,17 +108,30 @@
 
         .our-story {
             @include auto-padding;
+            font-weight: lighter;
         }
     }
 
     .our-programmes {
-        border: 1px solid purple;
         @include auto-padding;
 
+        h2 {
+            color: $color__deepblue;
+        }
+
         .programmes {
-            padding: 1rem 1rem;
+            padding: 1rem 2rem 2.5rem 1rem;
             margin: 2rem 0;
             background: $color__lightgrey;
+
+            h3 {
+                color: $color__darkgrey;
+            }
+
+            p {
+                font-weight: 200;
+                font-size: .8rem;
+            }
         }
     }
 
@@ -100,8 +139,6 @@
         text-align: center;
         color: white;
         height: 400px;
-        position: relative;
-        border: 1px solid red;
 
         .review-container {
             background: $color__lightblue;
@@ -109,20 +146,27 @@
             min-height: 300px;
 
             .review-text {
-                padding-right: 2rem;
-                padding-left: 2rem;
+            	padding-right: 2rem;
+            	padding-left: 2rem;
+                font-weight: 200;
+                margin: 0 auto;
             }
 
             hr {
-                width: 10%;
-                border: 1px solid $color__darkgrey;
-                background: $color__darkgrey;
+            	width: 20%;
+            	background: $color__darkgrey;
             }
 
             .review-author {
+                margin-bottom: 10%;
+                h4 {
+                    margin: 0;
+                }
 
                 p {
-                    color: black;
+                    color: $color__darkgrey;
+                    line-height: 0;
+                    font-weight: lighter;
                 }
             }
         }
@@ -138,6 +182,11 @@
 
     .our-partners {
         @include auto-padding;
+
+        h2 {
+            margin-top: 0;
+            padding-bottom: 1rem;
+        }
 
         .partners {
             display: flex;
@@ -160,11 +209,24 @@
         @include auto-padding;
 
         h2 {
-            padding: 0 1rem;
+        	padding: 0 2rem;
         }
 
         .community-containers {
-            margin: 1rem;
+            margin: 2rem;
+
+            i {
+                font-size: 2rem;
+            }
+
+            h2 {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+                font-weight: 200;
+                font-size: .8rem;
+            }
         }
     }
 
@@ -172,6 +234,11 @@
         @include auto-padding;
         display: flex;
         align-items: center;
+
+        a {
+            color: $color__darkgrey;
+        }
+
     }
 
     .association {
@@ -179,7 +246,9 @@
         color: white;
 
         .association-info {
-            @include auto-padding;
+            padding: 1rem 2rem 2.5rem 1rem;
+            font-weight: 200;
+            font-size: .8rem;
         }
     }
 }
