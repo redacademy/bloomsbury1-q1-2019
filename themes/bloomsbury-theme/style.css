@@ -1006,8 +1006,6 @@ object {
 
 .profile-container {
   border-radius: 5px;
-  height: 150px;
-  width: 300px;
   font-family: Roboto, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1026,7 +1024,7 @@ object {
 
 .personal-info {
   color: white;
-  margin-left: 3.5rem;
+  margin-left: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1034,9 +1032,9 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   font-size: 14px;
-  margin-top: -2.5rem; }
+  margin-top: 0.5rem; }
   .personal-info p {
     margin: 0; }
 
@@ -1070,7 +1068,7 @@ object {
 
 .slidebar-menu {
   margin-left: -5rem;
-  margin-top: -1rem; }
+  margin-top: 2rem; }
   .slidebar-menu a > li {
     text-decoration: none;
     color: white; }
@@ -1105,6 +1103,10 @@ object {
 
 hr {
   width: 15rem; }
+
+#search-text-input {
+  margin: 0.1rem -3rem 0 -2.5rem;
+  width: 5rem; }
 
 .single-courses article {
   padding: 0rem 2rem; }

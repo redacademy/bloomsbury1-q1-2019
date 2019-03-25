@@ -97,8 +97,6 @@
 //  Profile container in the slide in navbar
 .profile-container {
   border-radius: 5px;
-  height: 150px;
-  width: 300px;
   font-family: Roboto, sans-serif;
   display: flex;
   margin-top: 1rem;
@@ -118,12 +116,12 @@
 // Name and job title underneath the placeholder
 .personal-info {
   color: white;
-  margin-left: 3.5rem;
+  margin-left: 1.5rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   font-size: 14px;
-  margin-top: -2.5rem;
+  margin-top: 0.5rem;
 
   p {
     margin: 0
@@ -159,7 +157,7 @@
 
 .slidebar-menu {
   margin-left: -5rem;
-  margin-top: -1rem;
+  margin-top: 2rem;
 
   a>li {
     text-decoration: none;
@@ -209,3 +207,9 @@
 hr {
   width: 15rem;
 }
+
+// Search icon
+#search-text-input {
+  margin: 0.1rem -3rem 0 -2.5rem;
+  width: 5rem;
+} 
