@@ -1,4 +1,5 @@
-.page-id-230 {
+.page-id-230,
+.page-id-239 {
     background-color: #E9F0F1;
 
     .dashboard-section {
@@ -25,7 +26,7 @@
 
     .dashboard-container {
         width: 60%;
-        height: 150px;
+        height: 175px;
         background: white;
         border-radius: 10px;
         box-shadow: 1px 1px 3px 0px grey;
@@ -72,6 +73,7 @@
         .icon-container {
             display: flex;
             flex-direction: row;
+            margin-top: 1rem;
 
             .titles-images {
                 display: flex;
@@ -95,8 +97,8 @@
         border-radius: 50%;
         box-shadow: 1px 1px 2px 0px grey;
         margin-left: auto;
-        margin-top: -13rem;
-        margin-bottom: 13rem;
+        margin-top: -15rem;
+        margin-bottom: 15rem;
         margin-right: auto;
         border: 5px solid white;
 
@@ -189,22 +191,39 @@
             color: #fff;
 
             h1 {
-                margin-bottom: 3rem;
+                margin: 3rem 0;
+
             }
 
-            p {
-                margin-bottom: 1rem;
+            .redirect-containers {
+                margin: 3rem 0;
+
+                p {
+                    margin: 1rem 0;
+                }
+
+                a {
+                    border-radius: 20px;
+                    padding: .5rem 2rem;
+                }
             }
 
-            a {
-                border-radius: 20px;
-                padding: .5rem 2rem;
+            .revert-e-desc {
+                margin: 0 auto;
+
+                @include tablet {
+                    max-width: 50%;
+                }
+
+                @include desktop {
+                    max-width: 450px;
+                }
             }
         }
     }
 }
 
-// Edit Account SCSS 
+// Edit Account Page
 
 .page-id-261 {
     .entry-content {
@@ -233,6 +252,16 @@
         }
 
         .edit-info-form {
+            width: 80%;
+            margin: 0 auto;
+
+            @include tablet {
+                max-width: 600px;
+            }
+
+            @include desktop {
+                max-width: 600px;
+            }
 
             .woocommerce-EditAccountForm {
 
@@ -272,7 +301,8 @@
                 }
 
                 input[type=password],
-                input[type=text],input[type="email"] {
+                input[type=text],
+                input[type="email"] {
                     border: 1px solid #fff !important;
                     border-bottom: 1px solid $color__lightgrey !important;
                     width: 95%;

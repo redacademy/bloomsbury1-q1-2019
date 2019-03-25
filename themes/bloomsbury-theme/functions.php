@@ -44,6 +44,7 @@ add_action( 'after_setup_theme', 'bloomsbury_setup' );
  *
  * @global int $content_width
  */
+
 function bloomsbury_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'bloomsbury_content_width', 640 );
 }
@@ -67,6 +68,22 @@ function bloomsbury_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'bloomsbury_widgets_init' );
+
+add_action('woocommerce_before_customer_login_form', 'load_register_form', 2);
+
+
+// Loading the Register Form as Function to by-pass WooCommerce override
+function load_register_form(){
+if(isset($_GET['action'])=='register'){
+woocommerce_get_template( 'myaccount/form-register.php' );
+}}
+
+// Testing Redirect 
+add_filter('woocommerce_login_redirect', 'wc_login_redirect');
+function wc_login_redirect( $redirect_to ) {
+     $redirect_to = 'https://www.google.co.in/';
+     return $redirect_to;
+}
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.

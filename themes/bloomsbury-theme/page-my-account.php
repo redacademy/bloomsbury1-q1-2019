@@ -56,8 +56,6 @@ get_header(); ?>
 				</div>
 				<!-- End of Avatar -->
 
-				<?php the_content() ?>
-
 				<!-- Start of Lean Canvas --> 
 				<div class="dashboard-lean-canvas">
 					<!-- Start of Lean Circle -->
@@ -95,12 +93,15 @@ get_header(); ?>
 				<section class="dashboard-revert">
 					<div class="revert-container">
 						<h1>Sorry, You must be signed in to view this page</h1>
-						<p>Too register an account please visit</p>
-						<a class="btn" href="<?php echo get_permalink('243');?>">Register Account</a>
-						<p>If you already have an account with us, please visit the </p>
-						<a class="btn" href="<?php echo get_permalink('239');?>">Login Page</a>
-
-						<p>If you we're redirected too this page from Forgot Password, please follow the email link too reset</p>
+						<div class="redirect-containers">
+							<p>Too register an account please visit</p>
+							<a class="white-cap-btn" href="<?php echo get_permalink('243');?>">Register Account</a>
+						</div>
+						<div class="redirect-containers">
+							<p>If you already have an account with us, please visit the </p>
+							<a class="white-cap-btn" href="<?php echo get_permalink('239');?>">Login Page</a>
+						</div>
+						<p class="revert-e-desc">If you we're redirected too this page from Forgot Password, please follow the email link too reset</p>
 					</div>
 				</section>
 
