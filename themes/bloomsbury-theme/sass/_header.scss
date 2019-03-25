@@ -1,71 +1,71 @@
 // The fixed navigation bar on the very top
 .site-header {
-  background-color: #00ADB5;
-  border-bottom: 1px solid #e1e1e1;
-  transition: top 500ms linear;
-  padding: .5rem 50px;
-  position: sticky;
-  width: 100%;
-  z-index: 3;
-  height: 50px;
-  top: 0;
+    background-color: #00ADB5;
+    border-bottom: 1px solid #e1e1e1;
+    transition: top 500ms linear;
+    padding: .5rem 50px;
+    position: sticky;
+    width: 100%;
+    z-index: 3;
+    height: 50px;
+    top: 0;
 
-  // test it once it is live whether the header is OK when not logged in.
-  body.logged-in {
-    margin-top: 0;
-  }
+    // test it once it is live whether the header is OK when not logged in.
+    body.logged-in {
+        margin-top: 0;
+    }
 }
 
 // The hamburger logo, BB logo and the Login button on the navbar
 .site-branding {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
 }
 
 // The "button" to make the menu to collapse to go back to the homepage
 .collapse-menu {
-  width: fit-content;
+    width: fit-content;
 
-  // the hamburger on the navigation bar
-  #menuToggle {
-    display: block;
-    position: relative;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
+    // the hamburger on the navigation bar
+    #menuToggle {
+        display: block;
+        position: relative;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
 
-    input {
-      display: block;
-      width: 40px;
-      height: 32px;
-      position: absolute;
-      top: -7px;
-      left: -5px;
-      cursor: pointer;
-      opacity: 0;
-      /* hide this */
-      z-index: 2;
-      /* and place it over the hamburger */
-      -webkit-touch-callout: none;
+        input {
+            display: block;
+            width: 40px;
+            height: 32px;
+            position: absolute;
+            top: -7px;
+            left: -5px;
+            cursor: pointer;
+            opacity: 0;
+            /* hide this */
+            z-index: 2;
+            /* and place it over the hamburger */
+            -webkit-touch-callout: none;
+        }
+
+        span {
+            display: block;
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            background: white;
+            border-radius: 3px;
+            z-index: 1;
+            transform-origin: 4px 0px;
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                opacity 0.55s ease;
+        }
     }
-
-    span {
-      display: block;
-      width: 33px;
-      height: 4px;
-      margin-bottom: 5px;
-      position: relative;
-      background: white;
-      border-radius: 3px;
-      z-index: 1;
-      transform-origin: 4px 0px;
-      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-      opacity 0.55s ease;
-    }
-  }
 }
 
 

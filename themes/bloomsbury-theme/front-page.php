@@ -20,7 +20,7 @@ get_header(); ?>
 			<!-- Start of Home Hero -->
 			<section class="home-hero">
 				<h2 class="">Bloomsbury Beginnings</h2>
-				<h1 class="title">Grow Your Ideas</h1>
+				<h1 class="hero-title">Grow Your Ideas</h1>
 				<p class="sub-title-p">We help people with great ideas start successful social and environmental impact ventures</p>
 			</section>
 			<!-- End of Home Hero -->
@@ -32,6 +32,8 @@ get_header(); ?>
 
 			<!-- Start of Info below Hero -->
 			<section class="info">
+				<h2 class="info-title">What We Offer</h2>
+				<!-- <h2>What We Offer</h2> -->
 				<ul class="info-list">
 					<li class="info-list-item">
 						<img src="https://via.placeholder.com/50">
@@ -124,26 +126,28 @@ get_header(); ?>
 
 			<!-- Start of Community -->
 			<section class="our-community">
-				<h2>Learn and Grow with our Community</h2>
-				<div class="community-containers">
-					<i class="fas fa-cogs"></i>
-					<h2>6</h2>
-					<p>Years in Business</p>
-				</div>
-				<div class="community-containers">
-					<i class="far fa-building"></i>
-					<h2>194</h2>
-					<p>Businesses Launched</p>
-				</div>
-				<div class="community-containers">
-					<i class="fas fa-star"></i>
-					<h2>500</h2>
-					<p>Start-ups Worked With</p>
-				</div>
-				<div class="community-containers">
-					<i class="fas fa-graduation-cap"></i>
-					<h2>859</h2>
-					<p>Goals for 2019</p>
+				<h2 class="community-title">Learn and Grow with our Community</h2>
+				<div class="community-grid">
+					<div class="community-containers">
+						<i class="fas fa-cogs"></i>
+						<h2>6</h2>
+						<p>Years in Business</p>
+					</div>
+					<div class="community-containers">
+						<i class="far fa-building"></i>
+						<h2>194</h2>
+						<p>Businesses Launched</p>
+					</div>
+					<div class="community-containers">
+						<i class="fas fa-star"></i>
+						<h2>500</h2>
+						<p>Start-ups Worked With</p>
+					</div>
+					<div class="community-containers">
+						<i class="fas fa-graduation-cap"></i>
+						<h2>859</h2>
+						<p>Goals for 2019</p>
+					</div>
 				</div>
 			</section>
 			<!-- End of Community -->
