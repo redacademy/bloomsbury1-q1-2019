@@ -51,7 +51,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 			<!-- Start of Login BUtton -->
 			<p class="form-row">
 				<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
-				<button type="submit" class="woocommerce-Button button" href="<?php echo get_permalink('7'); ?>" name="login" value="<?php esc_attr_e( 'Log In', 'woocommerce' ); ?>"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
+				<button type="submit" class="woocommerce-Button button" name="login" value="<?php esc_attr_e( 'Log In', 'woocommerce' ); ?>"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
 			</p>
 			<!-- End of Login --> 
 			<!-- id-243 --> 

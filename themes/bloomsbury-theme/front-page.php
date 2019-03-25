@@ -80,15 +80,17 @@ get_header(); ?>
 			<!-- Start of Our Programmes -->
 			<section class="our-programmes">
 				<h2>Our Programmes</h2>
-				<div class="programmes">
-					<h3>Taster Sessions</h3>
-					<p>Try out three-session programme: learn to create a business plan and start to build your network.</p>
-					<a class="btn">Read More →</a>
-				</div>
-				<div class="programmes">
-					<h3>Grow Your Idea</h3>
-					<p>Ready to start developing your idea? Create and test your business plan, grow your network and receive one-on-one tailored advice.</p>
-					<a class="btn">Read More →</a>
+				<div class="programmes-grid">
+					<div class="programmes">
+						<h3>Taster Sessions</h3>
+						<p>Try out three-session programme: learn to create a business plan and start to build your network.</p>
+						<a class="btn">Read More →</a>
+					</div>
+					<div class="programmes">
+						<h3>Grow Your Idea</h3>
+						<p>Ready to start developing your idea? Create and test your business plan, grow your network and receive one-on-one tailored advice.</p>
+						<a class="btn">Read More →</a>
+					</div>
 				</div>
 			</section>
 			<!-- End of Our Programmes --> 
@@ -153,9 +155,7 @@ get_header(); ?>
 					<p>Join the Bloomsbury Beginnings community! Our online member's area is free to all students and is your one-stop-shop for all support.</p> 
 					<a href="#">Read More</a>
 				</div>
-				<div class="phone-image">
 					<img src="<?php echo get_template_directory_uri() . '/assets/images/phone.png'?>">
-				</div>
 			</section>
 			<!-- End of Online Community -->
 

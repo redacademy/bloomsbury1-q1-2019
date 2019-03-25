@@ -40,6 +40,14 @@
             padding: 0 2rem;
             line-height: 1.5;
             font-weight: 200;
+
+            @include tablet {
+                max-width: 75%;
+            }
+
+            @include desktop {
+                max-width: 600px;
+            }
         }
     }
 
@@ -64,10 +72,19 @@
         height: auto;
         @include auto-padding;
 
+        @include tablet {
+            padding: 3rem;
+        }
+
         .info-list {
             list-style: none;
             margin: 0;
             padding: 0;
+
+            @include desktop {
+                max-width: 50%;
+                margin: 0 auto;
+            }
 
             .info-list-item {
                 display: flex;
@@ -81,6 +98,7 @@
 
                 .info-container {
                     width: 80%;
+
                     h2 {
                         font-size: 1.5rem;
                         color: $color__deepblue;
@@ -109,28 +127,58 @@
         .our-story {
             @include auto-padding;
             font-weight: lighter;
+
+            @include tablet {
+                max-width: 85%;
+                margin: 0 auto;
+            }
+
+            @include desktop {
+                max-width: 650px;
+                margin: 0 auto;
+            }
         }
     }
 
     .our-programmes {
         @include auto-padding;
 
-        h2 {
-            color: $color__deepblue;
+        @include desktop {
+            padding-right: 5rem;
+            padding-left: 5rem;
         }
 
-        .programmes {
-            padding: 1rem 2rem 2.5rem 1rem;
-            margin: 2rem 0;
-            background: $color__lightgrey;
+        h2 {
+            color: $color__deepblue;
 
-            h3 {
-                color: $color__darkgrey;
+            @include desktop {
+                text-align: center;
+            }
+        }
+
+        .programmes-grid {
+
+            @include desktop {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 2fr;
+                grid-gap: 20px 20px;
             }
 
-            p {
-                font-weight: 200;
-                font-size: .8rem;
+            .programmes {
+                padding: 1rem 2rem 2.5rem 1rem;
+                margin: 2rem 0;
+                background: $color__lightgrey;
+
+
+                h3 {
+                    color: $color__darkgrey;
+                }
+
+                p {
+                    font-weight: 200;
+                    font-size: .8rem;
+                }
             }
         }
     }
@@ -147,19 +195,28 @@
             min-height: 300px;
 
             .review-text {
-            	padding-right: 2rem;
-            	padding-left: 2rem;
+                padding-right: 2rem;
+                padding-left: 2rem;
                 font-weight: 200;
                 margin: 0 auto;
+
+                @include tablet {
+                    max-width: 70%;
+                }
+
+                @include desktop {
+                    max-width: 650px;
+                }
             }
 
             hr {
-            	width: 20%;
-            	background: $color__darkgrey;
+                width: 20%;
+                background: $color__darkgrey;
             }
 
             .review-author {
                 margin-bottom: 10%;
+
                 h4 {
                     margin: 0;
                 }
@@ -187,6 +244,11 @@
         h2 {
             margin-top: 0;
             padding-bottom: 1rem;
+
+            @include desktop {
+                text-align: center;
+                margin-top: 3rem;
+            }
         }
 
         .partners {
@@ -194,9 +256,22 @@
             justify-content: space-evenly;
             align-items: center;
 
+            @include desktop {
+                max-width: 850px;
+                margin: 0 auto;
+            }
+
             img {
-                width: 20%;
-                height: 20%;
+                max-width: 20%;
+                max-height: 20%;
+
+                @include tablet {
+                    max-width: 100px;
+                }
+
+                @include desktop {
+                    max-width: 150px;
+                }
             }
         }
     }
@@ -210,7 +285,7 @@
         @include auto-padding;
 
         h2 {
-        	padding: 0 2rem;
+            padding: 0 2rem;
         }
 
         .community-containers {
@@ -223,6 +298,7 @@
             h2 {
                 margin: 0;
             }
+
             p {
                 margin: 0;
                 font-weight: 200;
@@ -235,12 +311,37 @@
         @include auto-padding;
         display: flex;
         align-items: center;
+        justify-content: space-evenly;
 
-        a {
-            color: $color__darkgrey;
+        .online-info {
+
+            @include tablet {
+                max-width: 50%;
+            }
+
+            @include desktop {
+                max-width: 650px;
+            }
+
+            a {
+                color: $color__darkgrey;
+            }
         }
 
+
+        img {
+            max-width: 40%;
+
+            @include tablet {
+                max-width: 30%;
+            }
+
+            @include desktop {
+                max-width: 300px;
+            }
+        }
     }
+
 
     .association {
         background: $color__lightblue;
@@ -250,6 +351,16 @@
             padding: 1rem 2rem 2.5rem 1rem;
             font-weight: 200;
             font-size: .8rem;
+
+            @include tablet {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+
+            @include desktop {
+                max-width: 650px;
+                margin: 0 auto;
+            }
         }
     }
 }
