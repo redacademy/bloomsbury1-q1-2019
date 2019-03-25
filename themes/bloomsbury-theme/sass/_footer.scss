@@ -1,0 +1,43 @@
+
+// the start of the footer
+.site-info {
+    background-color: #252525;
+    height: 250px;
+}
+
+// Bloomsbury Beginnings p tag
+.footer-title {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: white;
+    font-size: 10px;
+}
+
+
+// footer information about the social information
+.social-info {
+    color: white;
+}
+
+// Social titles
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+// the logos for the social media
+.social-logos {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+
+    a 
+    {
+        color: white;
+    }
+   
+}
+
+
+

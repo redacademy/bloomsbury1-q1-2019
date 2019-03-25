@@ -6,6 +6,7 @@ html {
 
 body {
 	margin: 0;
+	position: relative;
 }
 
 article,
@@ -164,6 +165,13 @@ input[type="checkbox"],
 input[type="radio"] {
 	box-sizing: border-box;
 	padding: 0;
+	height: 20px;
+	width: 20px;
+
+	&:checked+input:after {
+		background: $color__seablue;
+		color: $color__seablue;
+	}
 }
 
 input[type="number"]::-webkit-inner-spin-button,

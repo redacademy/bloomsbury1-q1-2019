@@ -9,6 +9,16 @@
 	float: left;
 	width: 100%;
 
+	a {
+		&:focus {
+			outline: thin dotted;
+		}
+		&:hover,
+		&:active {
+			outline: 0;
+		}
+	}
+
 	ul {
 		display: none;
 		list-style: none;
