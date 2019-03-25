@@ -1105,3 +1105,7 @@ object {
 
 hr {
   width: 15rem; }
+
+#search-text-input {
+  margin: 0.1rem -3rem 0 -2.5rem;
+  width: 5rem; }
