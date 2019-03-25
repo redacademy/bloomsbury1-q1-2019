@@ -44,10 +44,12 @@ add_action( 'after_setup_theme', 'bloomsbury_setup' );
  *
  * @global int $content_width
  */
+
 function bloomsbury_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'bloomsbury_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'bloomsbury_content_width', 0 );
+
 
 /**
  * Register widget area.
@@ -67,6 +69,22 @@ function bloomsbury_widgets_init() {
 }
 add_action( 'widgets_init', 'bloomsbury_widgets_init' );
 
+add_action('woocommerce_before_customer_login_form', 'load_register_form', 2);
+
+
+// Loading the Register Form as Function to by-pass WooCommerce override
+function load_register_form(){
+if(isset($_GET['action'])=='register'){
+woocommerce_get_template( 'myaccount/form-register.php' );
+}}
+
+// Testing Redirect 
+add_filter('woocommerce_login_redirect', 'wc_login_redirect');
+function wc_login_redirect( $redirect_to ) {
+     $redirect_to = 'https://www.google.co.in/';
+     return $redirect_to;
+}
+
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
@@ -84,12 +102,15 @@ add_filter( 'stylesheet_uri', 'bloomsbury_minified_css', 10, 2 );
  */
 function bloomsbury_scripts(){
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-	wp_enqueue_style('font-awesome-cdn', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), '5.7.2');
+
+  	wp_enqueue_style('font-awesome-cdn', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), '5.7.2');
+	wp_enqueue_script('edit-account-script', get_template_directory_uri() . '/build/js/edit-account-script.min.js', array(), '1.0.1', true);
+	wp_enqueue_script( 'login-register', get_template_directory_uri() . '/build/js/login-script.min.js', array(), '1.0.1', true );
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'request-info-script', get_template_directory_uri() . '/build/js/request.min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
-	// font awsome
-	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/5.4.0/css/font-awesome.min.css');
+	
+  
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

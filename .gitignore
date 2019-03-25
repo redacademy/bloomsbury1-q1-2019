@@ -30,6 +30,9 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/bloomsbury-functionality-master/
+!plugins/bloomsbury-custom-account-fields/
+!plugins/woocommerce/
+
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #

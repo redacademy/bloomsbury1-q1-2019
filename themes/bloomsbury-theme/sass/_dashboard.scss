@@ -1,172 +1,322 @@
-.page-id-8 {
+.page-id-230,
+.page-id-239 {
     background-color: #E9F0F1;
-    
-        //  start of Upper section
+
     .dashboard-section {
-        height: 500px;
+        background-image: linear-gradient(#01ADB5, #4a90e2);
+        height: 200px;
         width: 100vw;
-        .dashboard-cover {
-            background-image: linear-gradient(#01ADB5, #4a90e2);
-            height: 200px;
-        div.edit-camera{
-          
-        }
-        }
-        .dashboard-div {
-             width: 250px;
-             height: 150px;
-             background: white;
-             border-radius: 10px;
-             box-shadow: 1px 1px 3px 0px grey;
-             margin-top: -5rem;
-             margin-left: auto;
-             margin-right: auto;
-            h6.edit-pen{
-            position: relative;
-            text-align: right;
-            left: -10px;
-            bottom: -5px;
+        display: flex;
+        justify-content: flex-end;
+
+        .edit-camera {
+            width: auto;
+            margin-top: 10rem;
+            margin-right: 1rem;
+
+            i {
+                background: #fff;
+                padding: .5rem;
+                border-radius: .5rem;
+                font-size: .7rem;
             }
         }
-        .dashboard-circle{
-            width: 100px;
-            height: 100px;
-            background: lightgray;
-            border-radius: 50%;
-            box-shadow: 1px 1px 2px 0px grey;
-            margin-top: -12.5rem;
-            margin-left: auto;
-            margin-right: auto;
-            border: 5px solid white;
-        }
-        div.your-name {
-            margin-bottom: 4rem;
-        }
-        p.your-name {
-            text-align: center;
-            margin-top: 2px;
-            margin-bottom: 42px;
-        }
-        p.yourname{
-            text-align: center;
-            margin-top: -43px;
-            margin-bottom: 42px;
-            font-size: 10px; 
-        }
-        .titles-images{
-            height: 25px;
-            background: #fff;
-            border-radius: 10px;
-            text-align: center;
-            display: flex;
-            justify-content: space-around;
-            width: 225px;
-            margin: 4rem auto;
-            margin-top: -4rem; 
-        }
-        .dashboard-titles{
-            height: 25px;
-            background: #fff;
-            border-radius: 10px;
-            text-align: center;
-            display: flex;
-            justify-content: space-around;
-            width: 225px;
-            margin: 4rem auto;
-            margin-top: -3.4rem;
-            margin-bottom: -47px;
-        h5.social {
-            margin: 0;
-            font-size: 10px;
-            font-weight: 500;
-        }
-        h5.flex-social{
-            font-size: 10px;
-        }
-        }
-        .dashboard-canvas{
-            width: 350px;
-            height: 170px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 1px 1px 3px 0px grey;
-            margin-top: 4rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
     }
-        //End of Upper Section
-        //start of bottom section
-    img.social-icon {
-        padding-left: 1.0rem;
-        margin-bottom: -1rem;
-    }
-    img.resources-icon{
-        height: auto;
-        max-width: 100%;
-        margin-right: auto;
+
+
+    .dashboard-container {
+        width: 60%;
+        height: 175px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px 0px grey;
+        margin-top: -5rem;
         margin-left: auto;
-        margin: 1.8rem auto .7rem;
-        display: -webkit-box;
-        margin-bottom: -0.5rem;
-    }
-    .dashboard-bottom{
-        height: 210px;
-        width: 100vw; 
-        display: inline-flex;   
-        .dashboard-resources{
-            width: 110px;
-            height: 105px;
-            background: #fff;
-            border-radius: 20px;
-            box-shadow: 1px 1px 3px 0px grey;
-            margin-left: auto;
-            margin-right: 0.5rem;
-            text-align: center;
-            font-size: 12px;
+        margin-right: auto;
+
+        .dashboard-info {
+
+            .edit-account-info {
+                text-align: right;
+                float: right;
+                height: 50px;
+                width: auto;
+                cursor: pointer;
+
+                .fa-pen {
+                    font-size: .7rem;
+                    margin-right: 1rem;
+                }
+            }
+
+            .entry-title,
+            .entry-meta,
+            .entry-desc {
+                text-align: center;
+                margin: 0;
+            }
+
+            .entry-title {
+                margin-top: 1rem;
+            }
+
+            .entry-meta {
+                font-size: .5rem;
+            }
+
+            .entry-desc {
+                font-size: .5rem;
+                margin-bottom: .5rem;
+            }
         }
-        .dashboard-lean-canvas{
-            width: 110px;
-            height: 105px;
-            background: #fff;
-            border-radius: 20px;
-            box-shadow: 1px 1px 3px 0px grey;
-            margin-left: 0.5rem;
-            margin-right: auto;
-            text-align: center;
-            font-size: 12px;
-        }
-            //  End of bottom section
-    }
-    .dashboard-bottom-2{
-        height: 235px;
-        width: 100vw; 
-        display: inline-flex; 
-        .dashboard-community{
-            width: 110px;
-            height: 105px;
-            background: #fff;
-            border-radius: 20px;
-            box-shadow: 1px 1px 3px 0px grey;
+
+        .icon-container {
+            display: flex;
+            flex-direction: row;
             margin-top: 1rem;
-            margin-left: auto;
-            margin-right: 0.5rem;
-            margin-top: -10rem;
-            text-align: center;
-            font-size: 12px;
+
+            .titles-images {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                margin: 0 auto;
+                width: 225px;
+
+                .dash-text {
+                    font-size: .5rem;
+                }
+            }
         }
-        .dashboard-calendar{
-            width: 110px;
-            height: 105px;
+    }
+
+    .dashboard-avatar {
+        width: 100px;
+        height: 100px;
+        background: lightgray;
+        border-radius: 50%;
+        box-shadow: 1px 1px 2px 0px grey;
+        margin-left: auto;
+        margin-top: -15rem;
+        margin-bottom: 15rem;
+        margin-right: auto;
+        border: 5px solid white;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .edit-info-form {
+        position: absolute;
+        display: none;
+
+        .woocommerce-EditAccountForm {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    .dashboard-lean-canvas {
+        width: 80%;
+        height: 170px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px 0px grey;
+        margin-top: -5rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        .lean-circle {
+            border-right: 1px dashed grey;
+            width: 40%;
+            height: inherit;
+            z-index: 5;
+        }
+    }
+
+
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 2fr;
+        grid-gap: 10px 10px;
+        width: 60%;
+        height: 250px;
+        margin: 2rem auto;
+
+        .grid-item {
             background: #fff;
             border-radius: 20px;
             box-shadow: 1px 1px 3px 0px grey;
-            margin-top: 1rem;
-            margin-left: 0.5rem;
-            margin-right: auto;
-            margin-top: -10rem;
             text-align: center;
             font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .grid-icon {
+                max-width: 50px;
+            }
+
+            .grid-text {
+                margin: .5rem 0 0;
+                font-size: .7rem;
+            }
+        }
+    }
+}
+
+// If user is not logged in CSS Area // 
+.page-id-230 {
+
+    .dashboard-revert {
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(to bottom,
+            rgba(25, 88, 145, 0.6) 0%,
+            rgba(25, 88, 145, 0.6) 100%),
+            #195891 url(../../images/login-image.jpg);
+        background-size: cover;
+
+        .revert-container {
+            width: 80%;
+            text-align: center;
+            color: #fff;
+
+            h1 {
+                margin: 3rem 0;
+
+            }
+
+            .redirect-containers {
+                margin: 3rem 0;
+
+                p {
+                    margin: 1rem 0;
+                }
+
+                a {
+                    border-radius: 20px;
+                    padding: .5rem 2rem;
+                }
+            }
+
+            .revert-e-desc {
+                margin: 0 auto;
+
+                @include tablet {
+                    max-width: 50%;
+                }
+
+                @include desktop {
+                    max-width: 450px;
+                }
+            }
+        }
+    }
+}
+
+// Edit Account Page
+
+.page-id-261 {
+    .entry-content {
+        .entry-header {
+            width: 100vw;
+            height: 50vh;
+            background-position: center !important;
+            color: white;
+            text-transform: uppercase;
+
+            .entry-title:first-letter {
+                border-bottom: 1px solid white;
+                border-top: 1px solid white;
+            }
+        }
+    }
+
+    .edit-form-container {
+        padding: 1rem;
+        margin-top: 2rem;
+        margin: 0 auto;
+
+        .edit-header {
+            text-align: center;
+            color: $color__deepblue - 10%;
+        }
+
+        .edit-info-form {
+            width: 80%;
+            margin: 0 auto;
+
+            @include tablet {
+                max-width: 600px;
+            }
+
+            @include desktop {
+                max-width: 600px;
+            }
+
+            .woocommerce-EditAccountForm {
+
+                .woocommerce-form-row {
+                    display: flex;
+                    flex-flow: column no-wrap;
+
+                    .required {
+                        color: $color__deepblue !important;
+                    }
+
+                    input[type=text],
+                    input[type=email] {
+                        width: 95%;
+                    }
+
+                    em {
+                        color: $color__deepblue;
+                        font-weight: lighter;
+                    }
+                }
+
+                fieldset {
+                    border: 1px solid $color__deepblue;
+
+                    input[type=password] {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .form-row {
+
+                .required {
+                    border: none !important;
+                    color: $color__deepblue;
+                }
+
+                input[type=password],
+                input[type=text],
+                input[type="email"] {
+                    border: 1px solid #fff !important;
+                    border-bottom: 1px solid $color__lightgrey !important;
+                    width: 95%;
+                    padding-left: 1rem;
+                }
+            }
+
+            button {
+                background: $color__deepblue;
+                width: 100%;
+                border-radius: 20px;
+                height: 40px;
+                font-size: 1rem;
+            }
         }
     }
 }

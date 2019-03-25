@@ -1,0 +1,1978 @@
+Searching 21723 files for "functions.php"
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/ultimate-member/ultimate-member.php:
+   22  define( 'ultimatemember_plugin_name', $plugin_data['Name'] );
+   23  
+   24: require_once 'includes/class-functions.php';
+   25  require_once 'includes/class-init.php';
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/ultimate-member/uninstall.php:
+   22  remove_all_filters( 'um_core_pages' );
+   23  
+   24: require_once plugin_dir_path( __FILE__ ) . 'includes/class-functions.php';
+   25  require_once plugin_dir_path( __FILE__ ) . 'includes/class-init.php';
+   26  
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/ultimate-member/includes/class-init.php:
+  211  
+  212  				//include short non class functions
+  213: 				require_once 'um-short-functions.php';
+  214: 				require_once 'um-deprecated-functions.php';
+  215  			}
+  216  		}
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/ultimate-member/includes/admin/core/class-admin-upgrade.php:
+  222  		function init_packages_ajax_handlers() {
+  223  			foreach ( $this->necessary_packages as $package ) {
+  224: 				$handlers_file = $this->packages_dir . DIRECTORY_SEPARATOR . $package . DIRECTORY_SEPARATOR . 'functions.php';
+  225  				if ( file_exists( $handlers_file ) ) {
+  226  					include_once $handlers_file;
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/ultimate-member/languages/ultimate-member-en.po:
+ 2658  msgstr ""
+ 2659  
+ 2660: #: includes/admin/core/packages/2.0-beta1/functions.php:6
+ 2661: #: includes/admin/core/packages/2.0.10/functions.php:6
+ 2662  msgid "Styles was upgraded successfully"
+ 2663  msgstr ""
+ 2664  
+ 2665: #: includes/admin/core/packages/2.0-beta1/functions.php:17
+ 2666  msgid "User Roles was upgraded successfully"
+ 2667  msgstr ""
+ 2668  
+ 2669: #: includes/admin/core/packages/2.0-beta1/functions.php:80
+ 2670  #, php-format
+ 2671  msgid "Users from %s to %s was upgraded successfully..."
+ 2672  msgstr ""
+ 2673  
+ 2674: #: includes/admin/core/packages/2.0-beta1/functions.php:100
+ 2675  msgid "Settings was upgraded successfully"
+ 2676  msgstr ""
+ 2677  
+ 2678: #: includes/admin/core/packages/2.0-beta1/functions.php:108
+ 2679  msgid "Menus settings was upgraded successfully"
+ 2680  msgstr ""
+ 2681  
+ 2682: #: includes/admin/core/packages/2.0-beta1/functions.php:116
+ 2683  msgid "Mailchimp Lists was upgraded successfully"
+ 2684  msgstr ""
+ 2685  
+ 2686: #: includes/admin/core/packages/2.0-beta1/functions.php:124
+ 2687  msgid "Social login forms was upgraded successfully"
+ 2688  msgstr ""
+ 2689  
+ 2690: #: includes/admin/core/packages/2.0-beta1/functions.php:132
+ 2691  msgid "UM Custom Posts was upgraded successfully"
+ 2692  msgstr ""
+ 2693  
+ 2694: #: includes/admin/core/packages/2.0-beta1/functions.php:147
+ 2695  msgid "Forums are ready for upgrade"
+ 2696  msgstr ""
+ 2697  
+ 2698: #: includes/admin/core/packages/2.0-beta1/functions.php:200
+ 2699  #, php-format
+ 2700  msgid "Forums from %s to %s was upgraded successfully..."
+ 2701  msgstr ""
+ 2702  
+ 2703: #: includes/admin/core/packages/2.0-beta1/functions.php:216
+ 2704  msgid "Woocommerce Products are ready for upgrade"
+ 2705  msgstr ""
+ 2706  
+ 2707: #: includes/admin/core/packages/2.0-beta1/functions.php:290
+ 2708  #, php-format
+ 2709  msgid "Woocommerce Products from %s to %s was upgraded successfully..."
+ 2710  msgstr ""
+ 2711  
+ 2712: #: includes/admin/core/packages/2.0-beta1/functions.php:306
+ 2713  msgid "Email Templates was upgraded successfully"
+ 2714  msgstr ""
+ ....
+ 2813  msgstr ""
+ 2814  
+ 2815: #: includes/admin/core/packages/2.0.10/functions.php:17
+ 2816  msgid "Users cache was cleared successfully"
+ 2817  msgstr ""
+ ....
+ 2821  msgstr ""
+ 2822  
+ 2823: #: includes/admin/core/packages/2.0.24/functions.php:9
+ 2824  msgid "Temporary dir was purged successfully"
+ 2825  msgstr ""
+ ....
+ 6977  msgstr ""
+ 6978  
+ 6979: #: includes/um-short-functions.php:566
+ 6980  msgid "date submitted"
+ 6981  msgstr ""
+ 6982  
+ 6983: #: includes/um-short-functions.php:572
+ 6984  msgid "(empty)"
+ 6985  msgstr ""
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/ultimate-member/languages/ultimate-member-en_US.po:
+   22  "X-Poedit-SearchPathExcluded-0: *.js\n"
+   23  
+   24: #: includes/admin/class-admin-functions.php:35 includes/class-functions.php:30
+   25  msgid "Wrong Nonce"
+   26  msgstr ""
+   ..
+ 2717  msgstr ""
+ 2718  
+ 2719: #: includes/admin/core/packages/2.0-beta1/functions.php:8
+ 2720: #: includes/admin/core/packages/2.0.10/functions.php:8
+ 2721  msgid "Styles was upgraded successfully"
+ 2722  msgstr ""
+ 2723  
+ 2724: #: includes/admin/core/packages/2.0-beta1/functions.php:21
+ 2725  msgid "User Roles was upgraded successfully"
+ 2726  msgstr ""
+ 2727  
+ 2728: #: includes/admin/core/packages/2.0-beta1/functions.php:89
+ 2729  #, php-format
+ 2730  msgid "Users from %s to %s was upgraded successfully..."
+ 2731  msgstr ""
+ 2732  
+ 2733: #: includes/admin/core/packages/2.0-beta1/functions.php:113
+ 2734  msgid "Settings was upgraded successfully"
+ 2735  msgstr ""
+ 2736  
+ 2737: #: includes/admin/core/packages/2.0-beta1/functions.php:123
+ 2738  msgid "Menus settings was upgraded successfully"
+ 2739  msgstr ""
+ 2740  
+ 2741: #: includes/admin/core/packages/2.0-beta1/functions.php:133
+ 2742  msgid "Mailchimp Lists was upgraded successfully"
+ 2743  msgstr ""
+ 2744  
+ 2745: #: includes/admin/core/packages/2.0-beta1/functions.php:143
+ 2746  msgid "Social login forms was upgraded successfully"
+ 2747  msgstr ""
+ 2748  
+ 2749: #: includes/admin/core/packages/2.0-beta1/functions.php:153
+ 2750  msgid "UM Custom Posts was upgraded successfully"
+ 2751  msgstr ""
+ 2752  
+ 2753: #: includes/admin/core/packages/2.0-beta1/functions.php:170
+ 2754  msgid "Forums are ready for upgrade"
+ 2755  msgstr ""
+ 2756  
+ 2757: #: includes/admin/core/packages/2.0-beta1/functions.php:225
+ 2758  #, php-format
+ 2759  msgid "Forums from %s to %s was upgraded successfully..."
+ 2760  msgstr ""
+ 2761  
+ 2762: #: includes/admin/core/packages/2.0-beta1/functions.php:243
+ 2763  msgid "Woocommerce Products are ready for upgrade"
+ 2764  msgstr ""
+ 2765  
+ 2766: #: includes/admin/core/packages/2.0-beta1/functions.php:319
+ 2767  #, php-format
+ 2768  msgid "Woocommerce Products from %s to %s was upgraded successfully..."
+ 2769  msgstr ""
+ 2770  
+ 2771: #: includes/admin/core/packages/2.0-beta1/functions.php:337
+ 2772  msgid "Email Templates was upgraded successfully"
+ 2773  msgstr ""
+ ....
+ 2872  msgstr ""
+ 2873  
+ 2874: #: includes/admin/core/packages/2.0.10/functions.php:21
+ 2875  msgid "Users cache was cleared successfully"
+ 2876  msgstr ""
+ ....
+ 2880  msgstr ""
+ 2881  
+ 2882: #: includes/admin/core/packages/2.0.24/functions.php:11
+ 2883  msgid "Temporary dir was purged successfully"
+ 2884  msgstr ""
+ ....
+ 6955  msgstr ""
+ 6956  
+ 6957: #: includes/um-short-functions.php:724
+ 6958  msgid "date submitted"
+ 6959  msgstr ""
+ 6960  
+ 6961: #: includes/um-short-functions.php:730
+ 6962  msgid "(empty)"
+ 6963  msgstr ""
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/ultimate-member/languages/ultimatemember-en_US.po:
+ 2709  msgstr ""
+ 2710  
+ 2711: #: includes/admin/core/packages/2.0-beta1/functions.php:6
+ 2712: #: includes/admin/core/packages/2.0.10/functions.php:6
+ 2713  msgid "Styles was upgraded successfully"
+ 2714  msgstr ""
+ 2715  
+ 2716: #: includes/admin/core/packages/2.0-beta1/functions.php:17
+ 2717  msgid "User Roles was upgraded successfully"
+ 2718  msgstr ""
+ 2719  
+ 2720: #: includes/admin/core/packages/2.0-beta1/functions.php:80
+ 2721  #, php-format
+ 2722  msgid "Users from %s to %s was upgraded successfully..."
+ 2723  msgstr ""
+ 2724  
+ 2725: #: includes/admin/core/packages/2.0-beta1/functions.php:100
+ 2726  msgid "Settings was upgraded successfully"
+ 2727  msgstr ""
+ 2728  
+ 2729: #: includes/admin/core/packages/2.0-beta1/functions.php:108
+ 2730  msgid "Menus settings was upgraded successfully"
+ 2731  msgstr ""
+ 2732  
+ 2733: #: includes/admin/core/packages/2.0-beta1/functions.php:116
+ 2734  msgid "Mailchimp Lists was upgraded successfully"
+ 2735  msgstr ""
+ 2736  
+ 2737: #: includes/admin/core/packages/2.0-beta1/functions.php:124
+ 2738  msgid "Social login forms was upgraded successfully"
+ 2739  msgstr ""
+ 2740  
+ 2741: #: includes/admin/core/packages/2.0-beta1/functions.php:132
+ 2742  msgid "UM Custom Posts was upgraded successfully"
+ 2743  msgstr ""
+ 2744  
+ 2745: #: includes/admin/core/packages/2.0-beta1/functions.php:147
+ 2746  msgid "Forums are ready for upgrade"
+ 2747  msgstr ""
+ 2748  
+ 2749: #: includes/admin/core/packages/2.0-beta1/functions.php:200
+ 2750  #, php-format
+ 2751  msgid "Forums from %s to %s was upgraded successfully..."
+ 2752  msgstr ""
+ 2753  
+ 2754: #: includes/admin/core/packages/2.0-beta1/functions.php:216
+ 2755  msgid "Woocommerce Products are ready for upgrade"
+ 2756  msgstr ""
+ 2757  
+ 2758: #: includes/admin/core/packages/2.0-beta1/functions.php:290
+ 2759  #, php-format
+ 2760  msgid "Woocommerce Products from %s to %s was upgraded successfully..."
+ 2761  msgstr ""
+ 2762  
+ 2763: #: includes/admin/core/packages/2.0-beta1/functions.php:306
+ 2764  msgid "Email Templates was upgraded successfully"
+ 2765  msgstr ""
+ ....
+ 2864  msgstr ""
+ 2865  
+ 2866: #: includes/admin/core/packages/2.0.10/functions.php:17
+ 2867  msgid "Users cache was cleared successfully"
+ 2868  msgstr ""
+ ....
+ 2872  msgstr ""
+ 2873  
+ 2874: #: includes/admin/core/packages/2.0.24/functions.php:9
+ 2875  msgid "Temporary dir was purged successfully"
+ 2876  msgstr ""
+ ....
+ 7019  msgstr ""
+ 7020  
+ 7021: #: includes/um-short-functions.php:566
+ 7022  msgid "date submitted"
+ 7023  msgstr ""
+ 7024  
+ 7025: #: includes/um-short-functions.php:572
+ 7026  msgid "(empty)"
+ 7027  msgstr ""
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/i18n/languages/woocommerce.pot:
+ 5960  #: includes/admin/list-tables/class-wc-admin-list-table-products.php:267
+ 5961  #: includes/admin/reports/class-wc-report-stock.php:118
+ 5962: #: includes/wc-product-functions.php:857
+ 5963  msgid "Out of stock"
+ 5964  msgstr ""
+ ....
+ 6514  #: includes/gateways/paypal/includes/settings-paypal.php:25
+ 6515  #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:204
+ 6516: #: includes/wc-template-functions.php:1660
+ 6517  #: templates/single-product/tabs/description.php:25
+ 6518  msgid "Description"
+ ....
+ 6774  #: includes/admin/settings/views/html-webhooks-edit.php:67
+ 6775  #: includes/class-wc-frontend-scripts.php:569
+ 6776: #: includes/wc-template-functions.php:2575
+ 6777  #: templates/cart/shipping-calculator.php:56
+ 6778  msgid "Select an option&hellip;"
+ ....
+ 7088  #: includes/admin/settings/views/html-admin-page-shipping-zones.php:78
+ 7089  #: includes/libraries/action-scheduler/classes/ActionScheduler_ListTable.php:92
+ 7090: #: includes/wc-account-functions.php:351
+ 7091  msgid "Delete"
+ 7092  msgstr ""
+ ....
+ 7221  #: includes/admin/reports/class-wc-report-downloads.php:217
+ 7222  #: includes/gateways/paypal/includes/class-wc-gateway-paypal-request.php:295
+ 7223: #: includes/wc-account-functions.php:190 templates/myaccount/my-orders.php:13
+ 7224  msgid "Order"
+ 7225  msgstr ""
+ ....
+ 7232  #: includes/admin/settings/views/html-webhooks-edit.php:36
+ 7233  #: includes/libraries/action-scheduler/classes/ActionScheduler_ListTable.php:97
+ 7234: #: includes/wc-account-functions.php:192 templates/myaccount/my-orders.php:15
+ 7235  msgid "Status"
+ 7236  msgstr ""
+ ....
+ 7242  #: includes/admin/meta-boxes/views/html-order-items.php:192
+ 7243  #: includes/admin/reports/class-wc-report-taxes-by-code.php:184
+ 7244: #: includes/wc-account-functions.php:193 templates/cart/cart-totals.php:92
+ 7245  #: templates/cart/cart-totals.php:93 templates/cart/cart.php:33
+ 7246  #: templates/cart/cart.php:118 templates/checkout/review-order.php:27
+ ....
+ 7808  #: includes/admin/views/html-notice-updated.php:12
+ 7809  #: includes/admin/views/html-notice-wootenberg.php:12
+ 7810: #: includes/wc-template-functions.php:966
+ 7811  msgid "Dismiss"
+ 7812  msgstr ""
+ ....
+ 8067  #: includes/admin/plugin-updates/views/html-notice-untested-extensions-modal.php:48
+ 8068  #: includes/libraries/action-scheduler/classes/ActionScheduler_ListTable.php:133
+ 8069: #: includes/wc-account-functions.php:281
+ 8070  msgid "Cancel"
+ 8071  msgstr ""
+ ....
+ 8198  #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:76
+ 8199  #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:127
+ 8200: #: includes/wc-template-functions.php:2548
+ 8201  #: templates/cart/shipping-calculator.php:31
+ 8202  msgid "Select a country&hellip;"
+ ....
+ 8256  #: includes/class-wc-post-types.php:371
+ 8257  #: includes/class-wc-privacy-exporters.php:75 includes/class-wc-query.php:109
+ 8258: #: includes/wc-account-functions.php:99
+ 8259  msgid "Orders"
+ 8260  msgstr ""
+ ....
+ 8361  
+ 8362  #: includes/admin/class-wc-admin-settings.php:630
+ 8363: #: includes/wc-formatting-functions.php:1394
+ 8364  msgid "Day(s)"
+ 8365  msgstr ""
+ 8366  
+ 8367  #: includes/admin/class-wc-admin-settings.php:631
+ 8368: #: includes/wc-formatting-functions.php:1395
+ 8369  msgid "Week(s)"
+ 8370  msgstr ""
+ 8371  
+ 8372  #: includes/admin/class-wc-admin-settings.php:632
+ 8373: #: includes/wc-formatting-functions.php:1396
+ 8374  msgid "Month(s)"
+ 8375  msgstr ""
+ 8376  
+ 8377  #: includes/admin/class-wc-admin-settings.php:633
+ 8378: #: includes/wc-formatting-functions.php:1397
+ 8379  msgid "Year(s)"
+ 8380  msgstr ""
+ ....
+ 9220  
+ 9221  #: includes/admin/class-wc-admin-taxonomies.php:384
+ 9222: #: includes/wc-account-functions.php:360
+ 9223  msgid "Make default"
+ 9224  msgstr ""
+ ....
+ 9420  #: includes/admin/helper/views/html-main.php:112
+ 9421  #: includes/admin/helper/views/html-main.php:115
+ 9422: #: includes/wc-webhook-functions.php:119
+ 9423  msgid "Active"
+ 9424  msgstr ""
+ ....
+ 9450  #: includes/class-wc-emails.php:410
+ 9451  #: includes/legacy/abstract-wc-legacy-order.php:507
+ 9452: #: includes/wc-account-functions.php:214
+ 9453: #: includes/wc-template-functions.php:3092
+ 9454  msgid "Download"
+ 9455  msgstr ""
+ ....
+ 10050  #: includes/admin/settings/class-wc-settings-advanced.php:238
+ 10051  #: includes/admin/views/html-admin-page-product-export.php:40
+ 10052: #: includes/class-wc-query.php:118 includes/wc-account-functions.php:100
+ 10053  #: templates/emails/email-downloads.php:22
+ 10054  #: templates/emails/plain/email-downloads.php:20
+ .....
+ 10251  #: includes/class-wc-privacy-exporters.php:338
+ 10252  #: includes/data-stores/class-wc-product-data-store-cpt.php:107
+ 10253: #: includes/wc-account-functions.php:211 templates/cart/cart.php:30
+ 10254  #: templates/cart/cart.php:74 templates/checkout/form-pay.php:27
+ 10255  #: templates/checkout/review-order.php:26
+ .....
+ 10420  #: includes/admin/reports/class-wc-report-sales-by-date.php:604
+ 10421  #: includes/admin/reports/class-wc-report-sales-by-product.php:410
+ 10422: #: includes/wc-account-functions.php:191
+ 10423  #: includes/widgets/class-wc-widget-products.php:53
+ 10424  #: templates/myaccount/my-orders.php:14
+ .....
+ 10438  #: includes/admin/reports/class-wc-report-customer-list.php:218
+ 10439  #: includes/admin/reports/class-wc-report-stock.php:177
+ 10440: #: includes/wc-account-functions.php:194
+ 10441  msgid "Actions"
+ 10442  msgstr ""
+ .....
+ 10591  #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:99
+ 10592  #: includes/shipping/legacy-free-shipping/class-wc-shipping-legacy-free-shipping.php:136
+ 10593: #: includes/wc-account-functions.php:346
+ 10594: #: includes/wc-formatting-functions.php:1221
+ 10595: #: includes/wc-formatting-functions.php:1240
+ 10596  #: templates/emails/email-addresses.php:32
+ 10597  #: templates/order/order-details-customer.php:35
+ .....
+ 10665  #: includes/admin/list-tables/class-wc-admin-list-table-products.php:263
+ 10666  #: includes/admin/reports/class-wc-report-stock.php:114
+ 10667: #: includes/wc-product-functions.php:858
+ 10668  msgid "On backorder"
+ 10669  msgstr ""
+ .....
+ 10671  #: includes/admin/list-tables/class-wc-admin-list-table-products.php:265
+ 10672  #: includes/admin/reports/class-wc-report-stock.php:116
+ 10673: #: includes/wc-formatting-functions.php:1147
+ 10674: #: includes/wc-product-functions.php:856
+ 10675  msgid "In stock"
+ 10676  msgstr ""
+ .....
+ 11183  #: includes/admin/meta-boxes/views/html-order-download-permission.php:27
+ 11184  #: includes/class-wc-privacy-exporters.php:346
+ 11185: #: includes/wc-account-functions.php:212
+ 11186  msgid "Downloads remaining"
+ 11187  msgstr ""
+ .....
+ 12498  #: includes/admin/reports/class-wc-report-stock.php:142
+ 12499  #: includes/admin/views/html-admin-page-status-logs.php:35
+ 12500: #: includes/wc-account-functions.php:277
+ 12501  msgid "View"
+ 12502  msgstr ""
+ .....
+ 12685  
+ 12686  #: includes/admin/settings/class-wc-settings-accounts.php:145
+ 12687: #: includes/wc-template-functions.php:757
+ 12688  #. translators: %s privacy policy page name and link
+ 12689  msgid ""
+ .....
+ 12706  #: includes/admin/settings/class-wc-settings-accounts.php:155
+ 12707  #: includes/customizer/class-wc-shop-customizer.php:736
+ 12708: #: includes/wc-template-functions.php:753
+ 12709  #. translators: %s privacy policy page name and link
+ 12710  msgid ""
+ .....
+ 12853  
+ 12854  #: includes/admin/settings/class-wc-settings-advanced.php:163
+ 12855: #: includes/wc-account-functions.php:273 templates/checkout/thankyou.php:33
+ 12856  msgid "Pay"
+ 12857  msgstr ""
+ .....
+ 12934  
+ 12935  #: includes/admin/settings/class-wc-settings-advanced.php:256
+ 12936: #: includes/class-wc-query.php:124 includes/wc-account-functions.php:101
+ 12937  msgid "Addresses"
+ 12938  msgstr ""
+ .....
+ 12945  #: includes/admin/settings/class-wc-settings-payment-gateways.php:37
+ 12946  #: includes/admin/settings/class-wc-settings-payment-gateways.php:56
+ 12947: #: includes/class-wc-query.php:127 includes/wc-account-functions.php:102
+ 12948  msgid "Payment methods"
+ 12949  msgstr ""
+ .....
+ 12958  
+ 12959  #: includes/admin/settings/class-wc-settings-advanced.php:283
+ 12960: #: includes/wc-account-functions.php:104
+ 12961  #: templates/auth/form-grant-access.php:39
+ 12962  msgid "Logout"
+ .....
+ 13124  
+ 13125  #: includes/admin/settings/class-wc-settings-emails.php:304
+ 13126: #: includes/wc-webhook-functions.php:121
+ 13127  msgid "Disabled"
+ 13128  msgstr ""
+ .....
+ 13376  
+ 13377  #: includes/admin/settings/class-wc-settings-payment-gateways.php:116
+ 13378: #: includes/wc-account-functions.php:235
+ 13379  msgid "Method"
+ 13380  msgstr ""
+ .....
+ 14075  #: includes/admin/views/html-quick-edit-product.php:72
+ 14076  #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:217
+ 14077: #: includes/wc-product-functions.php:838
+ 14078  msgid "Standard"
+ 14079  msgstr ""
+ .....
+ 15342  #: includes/admin/views/html-quick-edit-product.php:147
+ 15343  #: includes/customizer/class-wc-shop-customizer.php:700
+ 15344: #: includes/wc-product-functions.php:783
+ 15345  msgid "Hidden"
+ 15346  msgstr ""
+ .....
+ 16014  #: includes/api/v2/class-wc-rest-order-refunds-v2-controller.php:191
+ 16015  #: includes/api/v2/class-wc-rest-order-refunds-v2-controller.php:273
+ 16016: #: includes/wc-core-functions.php:146 includes/wc-order-functions.php:498
+ 16017: #: includes/wc-order-functions.php:1046
+ 16018  msgid "Invalid order ID."
+ 16019  msgstr ""
+ .....
+ 17306  
+ 17307  #: includes/api/class-wc-rest-report-reviews-totals-controller.php:57
+ 17308: #: includes/class-wc-embed.php:130 includes/wc-template-functions.php:3198
+ 17309  #: includes/widgets/class-wc-widget-layered-nav-filters.php:102
+ 17310  #. translators: %s: average rating
+ .....
+ 17521  #: includes/api/v2/class-wc-rest-products-v2-controller.php:420
+ 17522  #: includes/api/v2/class-wc-rest-products-v2-controller.php:421
+ 17523: #: includes/wc-product-functions.php:317
+ 17524  msgid "Placeholder"
+ 17525  msgstr ""
+ .....
+ 17944  #: includes/api/legacy/v2/class-wc-api-orders.php:1628
+ 17945  #: includes/api/legacy/v3/class-wc-api-orders.php:1673
+ 17946: #: includes/wc-order-functions.php:654
+ 17947  msgid ""
+ 17948  "An error occurred while attempting to create the refund using the payment "
+ .....
+ 18019  #: includes/api/legacy/v3/class-wc-api-products.php:2491
+ 18020  #: includes/api/v1/class-wc-rest-product-attributes-controller.php:567
+ 18021: #: includes/wc-attribute-functions.php:449
+ 18022  #. translators: %s: attribute slug
+ 18023  msgid "Slug \"%s\" is too long (28 characters max). Shorten it, please."
+ .....
+ 18027  #: includes/api/legacy/v3/class-wc-api-products.php:2493
+ 18028  #: includes/api/v1/class-wc-rest-product-attributes-controller.php:569
+ 18029: #: includes/wc-attribute-functions.php:452
+ 18030  #. translators: %s: attribute slug
+ 18031  msgid "Slug \"%s\" is not allowed because it is a reserved term. Change it, please."
+ .....
+ 18035  #: includes/api/legacy/v3/class-wc-api-products.php:2495
+ 18036  #: includes/api/v1/class-wc-rest-product-attributes-controller.php:571
+ 18037: #: includes/wc-attribute-functions.php:455
+ 18038  #. translators: %s: attribute slug
+ 18039  msgid "Slug \"%s\" is already in use. Change it, please."
+ .....
+ 20507  #: includes/class-wc-cart.php:1037 includes/class-wc-cart.php:1065
+ 20508  #: includes/class-wc-frontend-scripts.php:549
+ 20509: #: includes/wc-cart-functions.php:123 includes/wc-template-functions.php:1980
+ 20510  #. translators: %s: product name
+ 20511  msgid "View cart"
+ .....
+ 20919  #: includes/shortcodes/class-wc-shortcode-checkout.php:210
+ 20920  #: includes/shortcodes/class-wc-shortcode-my-account.php:134
+ 20921: #: includes/wc-order-functions.php:635
+ 20922  msgid "Invalid order."
+ 20923  msgstr ""
+ .....
+ 20956  msgstr ""
+ 20957  
+ 20958: #: includes/class-wc-emails.php:409 includes/wc-account-functions.php:213
+ 20959: #: includes/wc-account-functions.php:236
+ 20960  msgid "Expires"
+ 20961  msgstr ""
+ .....
+ 21010  msgstr ""
+ 21011  
+ 21012: #: includes/class-wc-form-handler.php:250 includes/wc-user-functions.php:44
+ 21013  msgid "Please provide a valid email address."
+ 21014  msgstr ""
+ .....
+ 21144  
+ 21145  #: includes/class-wc-frontend-scripts.php:524
+ 21146: #: includes/wc-template-functions.php:2486
+ 21147  msgid "required"
+ 21148  msgstr ""
+ 21149  
+ 21150  #: includes/class-wc-frontend-scripts.php:525
+ 21151: #: includes/wc-template-functions.php:2488
+ 21152  msgid "optional"
+ 21153  msgstr ""
+ .....
+ 21259  msgstr ""
+ 21260  
+ 21261: #: includes/class-wc-order.php:173 includes/wc-cart-functions.php:320
+ 21262  #. translators: %s: taxes
+ 21263  #. translators: %s: tax information
+ .....
+ 22157  msgstr ""
+ 22158  
+ 22159: #: includes/class-wc-query.php:121 includes/wc-account-functions.php:103
+ 22160  msgid "Account details"
+ 22161  msgstr ""
+ .....
+ 22315  
+ 22316  #: includes/customizer/class-wc-shop-customizer.php:311
+ 22317: #: includes/wc-template-functions.php:963
+ 22318  msgid ""
+ 22319  "This is a demo store for testing purposes &mdash; no orders shall be "
+ .....
+ 22473  
+ 22474  #: includes/customizer/class-wc-shop-customizer.php:668
+ 22475: #: includes/wc-template-functions.php:1990
+ 22476  msgid "Checkout"
+ 22477  msgstr ""
+ .....
+ 22491  
+ 22492  #: includes/customizer/class-wc-shop-customizer.php:724
+ 22493: #: includes/wc-template-functions.php:737
+ 22494  #. translators: %s terms and conditions page name and link
+ 22495  msgid "I have read and agree to the website %s"
+ .....
+ 23699  
+ 23700  #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:200
+ 23701: #: includes/wc-account-functions.php:251 includes/wc-account-functions.php:386
+ 23702  msgid "Credit card"
+ 23703  msgstr ""
+ .....
+ 23861  
+ 23862  #: includes/legacy/abstract-wc-legacy-order.php:507
+ 23863: #: includes/wc-template-functions.php:3092
+ 23864  #. translators: 1: current item count
+ 23865  #. translators: %d: downloads count
+ .....
+ 24673  msgstr ""
+ 24674  
+ 24675: #: includes/wc-account-functions.php:98
+ 24676  msgid "Dashboard"
+ 24677  msgstr ""
+ 24678  
+ 24679: #: includes/wc-account-functions.php:252 includes/wc-account-functions.php:408
+ 24680  msgid "eCheck"
+ 24681  msgstr ""
+ 24682  
+ 24683: #: includes/wc-attribute-functions.php:205
+ 24684: #: includes/wc-attribute-functions.php:232
+ 24685  msgid "Select"
+ 24686  msgstr ""
+ 24687  
+ 24688: #: includes/wc-attribute-functions.php:436
+ 24689  msgid "Please, provide an attribute name."
+ 24690  msgstr ""
+ 24691  
+ 24692: #: includes/wc-attribute-functions.php:507
+ 24693  msgid "Could not update the attribute."
+ 24694  msgstr ""
+ 24695  
+ 24696: #: includes/wc-cart-functions.php:23
+ 24697  msgid "This product is protected and cannot be purchased."
+ 24698  msgstr ""
+ 24699  
+ 24700: #: includes/wc-cart-functions.php:116
+ 24701  #. translators: %s: product name
+ 24702  msgid "%s has been added to your cart."
+ .....
+ 24705  msgstr[1] ""
+ 24706  
+ 24707: #: includes/wc-cart-functions.php:121
+ 24708  msgid "Continue shopping"
+ 24709  msgstr ""
+ 24710  
+ 24711: #: includes/wc-cart-functions.php:153
+ 24712  msgid "and"
+ 24713  msgstr ""
+ 24714  
+ 24715: #: includes/wc-cart-functions.php:262
+ 24716  #. translators: %s: coupon code
+ 24717  msgid "Coupon: %s"
+ 24718  msgstr ""
+ 24719  
+ 24720: #: includes/wc-cart-functions.php:287
+ 24721  msgid "Free shipping coupon"
+ 24722  msgstr ""
+ 24723  
+ 24724: #: includes/wc-cart-functions.php:291
+ 24725  msgid "[Remove]"
+ 24726  msgstr ""
+ 24727  
+ 24728: #: includes/wc-cart-functions.php:318
+ 24729  #. translators: %s: country name
+ 24730  msgid "estimated for %s"
+ 24731  msgstr ""
+ 24732  
+ 24733: #: includes/wc-core-functions.php:202
+ 24734  #. translators: %s template
+ 24735  msgid "%s does not exist."
+ 24736  msgstr ""
+ 24737  
+ 24738: #: includes/wc-core-functions.php:296
+ 24739  msgid "United Arab Emirates dirham"
+ 24740  msgstr ""
+ 24741  
+ 24742: #: includes/wc-core-functions.php:297
+ 24743  msgid "Afghan afghani"
+ 24744  msgstr ""
+ 24745  
+ 24746: #: includes/wc-core-functions.php:298
+ 24747  msgid "Albanian lek"
+ 24748  msgstr ""
+ 24749  
+ 24750: #: includes/wc-core-functions.php:299
+ 24751  msgid "Armenian dram"
+ 24752  msgstr ""
+ 24753  
+ 24754: #: includes/wc-core-functions.php:300
+ 24755  msgid "Netherlands Antillean guilder"
+ 24756  msgstr ""
+ 24757  
+ 24758: #: includes/wc-core-functions.php:301
+ 24759  msgid "Angolan kwanza"
+ 24760  msgstr ""
+ 24761  
+ 24762: #: includes/wc-core-functions.php:302
+ 24763  msgid "Argentine peso"
+ 24764  msgstr ""
+ 24765  
+ 24766: #: includes/wc-core-functions.php:303
+ 24767  msgid "Australian dollar"
+ 24768  msgstr ""
+ 24769  
+ 24770: #: includes/wc-core-functions.php:304
+ 24771  msgid "Aruban florin"
+ 24772  msgstr ""
+ 24773  
+ 24774: #: includes/wc-core-functions.php:305
+ 24775  msgid "Azerbaijani manat"
+ 24776  msgstr ""
+ 24777  
+ 24778: #: includes/wc-core-functions.php:306
+ 24779  msgid "Bosnia and Herzegovina convertible mark"
+ 24780  msgstr ""
+ 24781  
+ 24782: #: includes/wc-core-functions.php:307
+ 24783  msgid "Barbadian dollar"
+ 24784  msgstr ""
+ 24785  
+ 24786: #: includes/wc-core-functions.php:308
+ 24787  msgid "Bangladeshi taka"
+ 24788  msgstr ""
+ 24789  
+ 24790: #: includes/wc-core-functions.php:309
+ 24791  msgid "Bulgarian lev"
+ 24792  msgstr ""
+ 24793  
+ 24794: #: includes/wc-core-functions.php:310
+ 24795  msgid "Bahraini dinar"
+ 24796  msgstr ""
+ 24797  
+ 24798: #: includes/wc-core-functions.php:311
+ 24799  msgid "Burundian franc"
+ 24800  msgstr ""
+ 24801  
+ 24802: #: includes/wc-core-functions.php:312
+ 24803  msgid "Bermudian dollar"
+ 24804  msgstr ""
+ 24805  
+ 24806: #: includes/wc-core-functions.php:313
+ 24807  msgid "Brunei dollar"
+ 24808  msgstr ""
+ 24809  
+ 24810: #: includes/wc-core-functions.php:314
+ 24811  msgid "Bolivian boliviano"
+ 24812  msgstr ""
+ 24813  
+ 24814: #: includes/wc-core-functions.php:315
+ 24815  msgid "Brazilian real"
+ 24816  msgstr ""
+ 24817  
+ 24818: #: includes/wc-core-functions.php:316
+ 24819  msgid "Bahamian dollar"
+ 24820  msgstr ""
+ 24821  
+ 24822: #: includes/wc-core-functions.php:317
+ 24823  msgid "Bitcoin"
+ 24824  msgstr ""
+ 24825  
+ 24826: #: includes/wc-core-functions.php:318
+ 24827  msgid "Bhutanese ngultrum"
+ 24828  msgstr ""
+ 24829  
+ 24830: #: includes/wc-core-functions.php:319
+ 24831  msgid "Botswana pula"
+ 24832  msgstr ""
+ 24833  
+ 24834: #: includes/wc-core-functions.php:320
+ 24835  msgid "Belarusian ruble (old)"
+ 24836  msgstr ""
+ 24837  
+ 24838: #: includes/wc-core-functions.php:321
+ 24839  msgid "Belarusian ruble"
+ 24840  msgstr ""
+ 24841  
+ 24842: #: includes/wc-core-functions.php:322
+ 24843  msgid "Belize dollar"
+ 24844  msgstr ""
+ 24845  
+ 24846: #: includes/wc-core-functions.php:323
+ 24847  msgid "Canadian dollar"
+ 24848  msgstr ""
+ 24849  
+ 24850: #: includes/wc-core-functions.php:324
+ 24851  msgid "Congolese franc"
+ 24852  msgstr ""
+ 24853  
+ 24854: #: includes/wc-core-functions.php:325
+ 24855  msgid "Swiss franc"
+ 24856  msgstr ""
+ 24857  
+ 24858: #: includes/wc-core-functions.php:326
+ 24859  msgid "Chilean peso"
+ 24860  msgstr ""
+ 24861  
+ 24862: #: includes/wc-core-functions.php:327
+ 24863  msgid "Chinese yuan"
+ 24864  msgstr ""
+ 24865  
+ 24866: #: includes/wc-core-functions.php:328
+ 24867  msgid "Colombian peso"
+ 24868  msgstr ""
+ 24869  
+ 24870: #: includes/wc-core-functions.php:329
+ 24871  msgid "Costa Rican col&oacute;n"
+ 24872  msgstr ""
+ 24873  
+ 24874: #: includes/wc-core-functions.php:330
+ 24875  msgid "Cuban convertible peso"
+ 24876  msgstr ""
+ 24877  
+ 24878: #: includes/wc-core-functions.php:331
+ 24879  msgid "Cuban peso"
+ 24880  msgstr ""
+ 24881  
+ 24882: #: includes/wc-core-functions.php:332
+ 24883  msgid "Cape Verdean escudo"
+ 24884  msgstr ""
+ 24885  
+ 24886: #: includes/wc-core-functions.php:333
+ 24887  msgid "Czech koruna"
+ 24888  msgstr ""
+ 24889  
+ 24890: #: includes/wc-core-functions.php:334
+ 24891  msgid "Djiboutian franc"
+ 24892  msgstr ""
+ 24893  
+ 24894: #: includes/wc-core-functions.php:335
+ 24895  msgid "Danish krone"
+ 24896  msgstr ""
+ 24897  
+ 24898: #: includes/wc-core-functions.php:336
+ 24899  msgid "Dominican peso"
+ 24900  msgstr ""
+ 24901  
+ 24902: #: includes/wc-core-functions.php:337
+ 24903  msgid "Algerian dinar"
+ 24904  msgstr ""
+ 24905  
+ 24906: #: includes/wc-core-functions.php:338
+ 24907  msgid "Egyptian pound"
+ 24908  msgstr ""
+ 24909  
+ 24910: #: includes/wc-core-functions.php:339
+ 24911  msgid "Eritrean nakfa"
+ 24912  msgstr ""
+ 24913  
+ 24914: #: includes/wc-core-functions.php:340
+ 24915  msgid "Ethiopian birr"
+ 24916  msgstr ""
+ 24917  
+ 24918: #: includes/wc-core-functions.php:341
+ 24919  msgid "Euro"
+ 24920  msgstr ""
+ 24921  
+ 24922: #: includes/wc-core-functions.php:342
+ 24923  msgid "Fijian dollar"
+ 24924  msgstr ""
+ 24925  
+ 24926: #: includes/wc-core-functions.php:343
+ 24927  msgid "Falkland Islands pound"
+ 24928  msgstr ""
+ 24929  
+ 24930: #: includes/wc-core-functions.php:344
+ 24931  msgid "Pound sterling"
+ 24932  msgstr ""
+ 24933  
+ 24934: #: includes/wc-core-functions.php:345
+ 24935  msgid "Georgian lari"
+ 24936  msgstr ""
+ 24937  
+ 24938: #: includes/wc-core-functions.php:346
+ 24939  msgid "Guernsey pound"
+ 24940  msgstr ""
+ 24941  
+ 24942: #: includes/wc-core-functions.php:347
+ 24943  msgid "Ghana cedi"
+ 24944  msgstr ""
+ 24945  
+ 24946: #: includes/wc-core-functions.php:348
+ 24947  msgid "Gibraltar pound"
+ 24948  msgstr ""
+ 24949  
+ 24950: #: includes/wc-core-functions.php:349
+ 24951  msgid "Gambian dalasi"
+ 24952  msgstr ""
+ 24953  
+ 24954: #: includes/wc-core-functions.php:350
+ 24955  msgid "Guinean franc"
+ 24956  msgstr ""
+ 24957  
+ 24958: #: includes/wc-core-functions.php:351
+ 24959  msgid "Guatemalan quetzal"
+ 24960  msgstr ""
+ 24961  
+ 24962: #: includes/wc-core-functions.php:352
+ 24963  msgid "Guyanese dollar"
+ 24964  msgstr ""
+ 24965  
+ 24966: #: includes/wc-core-functions.php:353
+ 24967  msgid "Hong Kong dollar"
+ 24968  msgstr ""
+ 24969  
+ 24970: #: includes/wc-core-functions.php:354
+ 24971  msgid "Honduran lempira"
+ 24972  msgstr ""
+ 24973  
+ 24974: #: includes/wc-core-functions.php:355
+ 24975  msgid "Croatian kuna"
+ 24976  msgstr ""
+ 24977  
+ 24978: #: includes/wc-core-functions.php:356
+ 24979  msgid "Haitian gourde"
+ 24980  msgstr ""
+ 24981  
+ 24982: #: includes/wc-core-functions.php:357
+ 24983  msgid "Hungarian forint"
+ 24984  msgstr ""
+ 24985  
+ 24986: #: includes/wc-core-functions.php:358
+ 24987  msgid "Indonesian rupiah"
+ 24988  msgstr ""
+ 24989  
+ 24990: #: includes/wc-core-functions.php:359
+ 24991  msgid "Israeli new shekel"
+ 24992  msgstr ""
+ 24993  
+ 24994: #: includes/wc-core-functions.php:360
+ 24995  msgid "Manx pound"
+ 24996  msgstr ""
+ 24997  
+ 24998: #: includes/wc-core-functions.php:361
+ 24999  msgid "Indian rupee"
+ 25000  msgstr ""
+ 25001  
+ 25002: #: includes/wc-core-functions.php:362
+ 25003  msgid "Iraqi dinar"
+ 25004  msgstr ""
+ 25005  
+ 25006: #: includes/wc-core-functions.php:363
+ 25007  msgid "Iranian rial"
+ 25008  msgstr ""
+ 25009  
+ 25010: #: includes/wc-core-functions.php:364
+ 25011  msgid "Iranian toman"
+ 25012  msgstr ""
+ 25013  
+ 25014: #: includes/wc-core-functions.php:365
+ 25015  msgid "Icelandic kr&oacute;na"
+ 25016  msgstr ""
+ 25017  
+ 25018: #: includes/wc-core-functions.php:366
+ 25019  msgid "Jersey pound"
+ 25020  msgstr ""
+ 25021  
+ 25022: #: includes/wc-core-functions.php:367
+ 25023  msgid "Jamaican dollar"
+ 25024  msgstr ""
+ 25025  
+ 25026: #: includes/wc-core-functions.php:368
+ 25027  msgid "Jordanian dinar"
+ 25028  msgstr ""
+ 25029  
+ 25030: #: includes/wc-core-functions.php:369
+ 25031  msgid "Japanese yen"
+ 25032  msgstr ""
+ 25033  
+ 25034: #: includes/wc-core-functions.php:370
+ 25035  msgid "Kenyan shilling"
+ 25036  msgstr ""
+ 25037  
+ 25038: #: includes/wc-core-functions.php:371
+ 25039  msgid "Kyrgyzstani som"
+ 25040  msgstr ""
+ 25041  
+ 25042: #: includes/wc-core-functions.php:372
+ 25043  msgid "Cambodian riel"
+ 25044  msgstr ""
+ 25045  
+ 25046: #: includes/wc-core-functions.php:373
+ 25047  msgid "Comorian franc"
+ 25048  msgstr ""
+ 25049  
+ 25050: #: includes/wc-core-functions.php:374
+ 25051  msgid "North Korean won"
+ 25052  msgstr ""
+ 25053  
+ 25054: #: includes/wc-core-functions.php:375
+ 25055  msgid "South Korean won"
+ 25056  msgstr ""
+ 25057  
+ 25058: #: includes/wc-core-functions.php:376
+ 25059  msgid "Kuwaiti dinar"
+ 25060  msgstr ""
+ 25061  
+ 25062: #: includes/wc-core-functions.php:377
+ 25063  msgid "Cayman Islands dollar"
+ 25064  msgstr ""
+ 25065  
+ 25066: #: includes/wc-core-functions.php:378
+ 25067  msgid "Kazakhstani tenge"
+ 25068  msgstr ""
+ 25069  
+ 25070: #: includes/wc-core-functions.php:379
+ 25071  msgid "Lao kip"
+ 25072  msgstr ""
+ 25073  
+ 25074: #: includes/wc-core-functions.php:380
+ 25075  msgid "Lebanese pound"
+ 25076  msgstr ""
+ 25077  
+ 25078: #: includes/wc-core-functions.php:381
+ 25079  msgid "Sri Lankan rupee"
+ 25080  msgstr ""
+ 25081  
+ 25082: #: includes/wc-core-functions.php:382
+ 25083  msgid "Liberian dollar"
+ 25084  msgstr ""
+ 25085  
+ 25086: #: includes/wc-core-functions.php:383
+ 25087  msgid "Lesotho loti"
+ 25088  msgstr ""
+ 25089  
+ 25090: #: includes/wc-core-functions.php:384
+ 25091  msgid "Libyan dinar"
+ 25092  msgstr ""
+ 25093  
+ 25094: #: includes/wc-core-functions.php:385
+ 25095  msgid "Moroccan dirham"
+ 25096  msgstr ""
+ 25097  
+ 25098: #: includes/wc-core-functions.php:386
+ 25099  msgid "Moldovan leu"
+ 25100  msgstr ""
+ 25101  
+ 25102: #: includes/wc-core-functions.php:387
+ 25103  msgid "Malagasy ariary"
+ 25104  msgstr ""
+ 25105  
+ 25106: #: includes/wc-core-functions.php:388
+ 25107  msgid "Macedonian denar"
+ 25108  msgstr ""
+ 25109  
+ 25110: #: includes/wc-core-functions.php:389
+ 25111  msgid "Burmese kyat"
+ 25112  msgstr ""
+ 25113  
+ 25114: #: includes/wc-core-functions.php:390
+ 25115  msgid "Mongolian t&ouml;gr&ouml;g"
+ 25116  msgstr ""
+ 25117  
+ 25118: #: includes/wc-core-functions.php:391
+ 25119  msgid "Macanese pataca"
+ 25120  msgstr ""
+ 25121  
+ 25122: #: includes/wc-core-functions.php:392
+ 25123  msgid "Mauritanian ouguiya"
+ 25124  msgstr ""
+ 25125  
+ 25126: #: includes/wc-core-functions.php:393
+ 25127  msgid "Mauritian rupee"
+ 25128  msgstr ""
+ 25129  
+ 25130: #: includes/wc-core-functions.php:394
+ 25131  msgid "Maldivian rufiyaa"
+ 25132  msgstr ""
+ 25133  
+ 25134: #: includes/wc-core-functions.php:395
+ 25135  msgid "Malawian kwacha"
+ 25136  msgstr ""
+ 25137  
+ 25138: #: includes/wc-core-functions.php:396
+ 25139  msgid "Mexican peso"
+ 25140  msgstr ""
+ 25141  
+ 25142: #: includes/wc-core-functions.php:397
+ 25143  msgid "Malaysian ringgit"
+ 25144  msgstr ""
+ 25145  
+ 25146: #: includes/wc-core-functions.php:398
+ 25147  msgid "Mozambican metical"
+ 25148  msgstr ""
+ 25149  
+ 25150: #: includes/wc-core-functions.php:399
+ 25151  msgid "Namibian dollar"
+ 25152  msgstr ""
+ 25153  
+ 25154: #: includes/wc-core-functions.php:400
+ 25155  msgid "Nigerian naira"
+ 25156  msgstr ""
+ 25157  
+ 25158: #: includes/wc-core-functions.php:401
+ 25159  msgid "Nicaraguan c&oacute;rdoba"
+ 25160  msgstr ""
+ 25161  
+ 25162: #: includes/wc-core-functions.php:402
+ 25163  msgid "Norwegian krone"
+ 25164  msgstr ""
+ 25165  
+ 25166: #: includes/wc-core-functions.php:403
+ 25167  msgid "Nepalese rupee"
+ 25168  msgstr ""
+ 25169  
+ 25170: #: includes/wc-core-functions.php:404
+ 25171  msgid "New Zealand dollar"
+ 25172  msgstr ""
+ 25173  
+ 25174: #: includes/wc-core-functions.php:405
+ 25175  msgid "Omani rial"
+ 25176  msgstr ""
+ 25177  
+ 25178: #: includes/wc-core-functions.php:406
+ 25179  msgid "Panamanian balboa"
+ 25180  msgstr ""
+ 25181  
+ 25182: #: includes/wc-core-functions.php:407
+ 25183  msgid "Peruvian nuevo sol"
+ 25184  msgstr ""
+ 25185  
+ 25186: #: includes/wc-core-functions.php:408
+ 25187  msgid "Papua New Guinean kina"
+ 25188  msgstr ""
+ 25189  
+ 25190: #: includes/wc-core-functions.php:409
+ 25191  msgid "Philippine peso"
+ 25192  msgstr ""
+ 25193  
+ 25194: #: includes/wc-core-functions.php:410
+ 25195  msgid "Pakistani rupee"
+ 25196  msgstr ""
+ 25197  
+ 25198: #: includes/wc-core-functions.php:411
+ 25199  msgid "Polish z&#x142;oty"
+ 25200  msgstr ""
+ 25201  
+ 25202: #: includes/wc-core-functions.php:412
+ 25203  msgid "Transnistrian ruble"
+ 25204  msgstr ""
+ 25205  
+ 25206: #: includes/wc-core-functions.php:413
+ 25207  msgid "Paraguayan guaran&iacute;"
+ 25208  msgstr ""
+ 25209  
+ 25210: #: includes/wc-core-functions.php:414
+ 25211  msgid "Qatari riyal"
+ 25212  msgstr ""
+ 25213  
+ 25214: #: includes/wc-core-functions.php:415
+ 25215  msgid "Romanian leu"
+ 25216  msgstr ""
+ 25217  
+ 25218: #: includes/wc-core-functions.php:416
+ 25219  msgid "Serbian dinar"
+ 25220  msgstr ""
+ 25221  
+ 25222: #: includes/wc-core-functions.php:417
+ 25223  msgid "Russian ruble"
+ 25224  msgstr ""
+ 25225  
+ 25226: #: includes/wc-core-functions.php:418
+ 25227  msgid "Rwandan franc"
+ 25228  msgstr ""
+ 25229  
+ 25230: #: includes/wc-core-functions.php:419
+ 25231  msgid "Saudi riyal"
+ 25232  msgstr ""
+ 25233  
+ 25234: #: includes/wc-core-functions.php:420
+ 25235  msgid "Solomon Islands dollar"
+ 25236  msgstr ""
+ 25237  
+ 25238: #: includes/wc-core-functions.php:421
+ 25239  msgid "Seychellois rupee"
+ 25240  msgstr ""
+ 25241  
+ 25242: #: includes/wc-core-functions.php:422
+ 25243  msgid "Sudanese pound"
+ 25244  msgstr ""
+ 25245  
+ 25246: #: includes/wc-core-functions.php:423
+ 25247  msgid "Swedish krona"
+ 25248  msgstr ""
+ 25249  
+ 25250: #: includes/wc-core-functions.php:424
+ 25251  msgid "Singapore dollar"
+ 25252  msgstr ""
+ 25253  
+ 25254: #: includes/wc-core-functions.php:425
+ 25255  msgid "Saint Helena pound"
+ 25256  msgstr ""
+ 25257  
+ 25258: #: includes/wc-core-functions.php:426
+ 25259  msgid "Sierra Leonean leone"
+ 25260  msgstr ""
+ 25261  
+ 25262: #: includes/wc-core-functions.php:427
+ 25263  msgid "Somali shilling"
+ 25264  msgstr ""
+ 25265  
+ 25266: #: includes/wc-core-functions.php:428
+ 25267  msgid "Surinamese dollar"
+ 25268  msgstr ""
+ 25269  
+ 25270: #: includes/wc-core-functions.php:429
+ 25271  msgid "South Sudanese pound"
+ 25272  msgstr ""
+ 25273  
+ 25274: #: includes/wc-core-functions.php:430
+ 25275  msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe dobra"
+ 25276  msgstr ""
+ 25277  
+ 25278: #: includes/wc-core-functions.php:431
+ 25279  msgid "Syrian pound"
+ 25280  msgstr ""
+ 25281  
+ 25282: #: includes/wc-core-functions.php:432
+ 25283  msgid "Swazi lilangeni"
+ 25284  msgstr ""
+ 25285  
+ 25286: #: includes/wc-core-functions.php:433
+ 25287  msgid "Thai baht"
+ 25288  msgstr ""
+ 25289  
+ 25290: #: includes/wc-core-functions.php:434
+ 25291  msgid "Tajikistani somoni"
+ 25292  msgstr ""
+ 25293  
+ 25294: #: includes/wc-core-functions.php:435
+ 25295  msgid "Turkmenistan manat"
+ 25296  msgstr ""
+ 25297  
+ 25298: #: includes/wc-core-functions.php:436
+ 25299  msgid "Tunisian dinar"
+ 25300  msgstr ""
+ 25301  
+ 25302: #: includes/wc-core-functions.php:437
+ 25303  msgid "Tongan pa&#x2bb;anga"
+ 25304  msgstr ""
+ 25305  
+ 25306: #: includes/wc-core-functions.php:438
+ 25307  msgid "Turkish lira"
+ 25308  msgstr ""
+ 25309  
+ 25310: #: includes/wc-core-functions.php:439
+ 25311  msgid "Trinidad and Tobago dollar"
+ 25312  msgstr ""
+ 25313  
+ 25314: #: includes/wc-core-functions.php:440
+ 25315  msgid "New Taiwan dollar"
+ 25316  msgstr ""
+ 25317  
+ 25318: #: includes/wc-core-functions.php:441
+ 25319  msgid "Tanzanian shilling"
+ 25320  msgstr ""
+ 25321  
+ 25322: #: includes/wc-core-functions.php:442
+ 25323  msgid "Ukrainian hryvnia"
+ 25324  msgstr ""
+ 25325  
+ 25326: #: includes/wc-core-functions.php:443
+ 25327  msgid "Ugandan shilling"
+ 25328  msgstr ""
+ 25329  
+ 25330: #: includes/wc-core-functions.php:444
+ 25331  msgid "United States (US) dollar"
+ 25332  msgstr ""
+ 25333  
+ 25334: #: includes/wc-core-functions.php:445
+ 25335  msgid "Uruguayan peso"
+ 25336  msgstr ""
+ 25337  
+ 25338: #: includes/wc-core-functions.php:446
+ 25339  msgid "Uzbekistani som"
+ 25340  msgstr ""
+ 25341  
+ 25342: #: includes/wc-core-functions.php:447
+ 25343  msgid "Venezuelan bol&iacute;var"
+ 25344  msgstr ""
+ 25345  
+ 25346: #: includes/wc-core-functions.php:448
+ 25347  msgid "Vietnamese &#x111;&#x1ed3;ng"
+ 25348  msgstr ""
+ 25349  
+ 25350: #: includes/wc-core-functions.php:449
+ 25351  msgid "Vanuatu vatu"
+ 25352  msgstr ""
+ 25353  
+ 25354: #: includes/wc-core-functions.php:450
+ 25355  msgid "Samoan t&#x101;l&#x101;"
+ 25356  msgstr ""
+ 25357  
+ 25358: #: includes/wc-core-functions.php:451
+ 25359  msgid "Central African CFA franc"
+ 25360  msgstr ""
+ 25361  
+ 25362: #: includes/wc-core-functions.php:452
+ 25363  msgid "East Caribbean dollar"
+ 25364  msgstr ""
+ 25365  
+ 25366: #: includes/wc-core-functions.php:453
+ 25367  msgid "West African CFA franc"
+ 25368  msgstr ""
+ 25369  
+ 25370: #: includes/wc-core-functions.php:454
+ 25371  msgid "CFP franc"
+ 25372  msgstr ""
+ 25373  
+ 25374: #: includes/wc-core-functions.php:455
+ 25375  msgid "Yemeni rial"
+ 25376  msgstr ""
+ 25377  
+ 25378: #: includes/wc-core-functions.php:456
+ 25379  msgid "South African rand"
+ 25380  msgstr ""
+ 25381  
+ 25382: #: includes/wc-core-functions.php:457
+ 25383  msgid "Zambian kwacha"
+ 25384  msgstr ""
+ 25385  
+ 25386: #: includes/wc-core-functions.php:1322
+ 25387  msgid "MasterCard"
+ 25388  msgstr ""
+ 25389  
+ 25390: #: includes/wc-core-functions.php:1323
+ 25391  msgid "Visa"
+ 25392  msgstr ""
+ 25393  
+ 25394: #: includes/wc-core-functions.php:1324
+ 25395  msgid "Discover"
+ 25396  msgstr ""
+ 25397  
+ 25398: #: includes/wc-core-functions.php:1325
+ 25399  msgid "American Express"
+ 25400  msgstr ""
+ 25401  
+ 25402: #: includes/wc-core-functions.php:1326
+ 25403  msgid "Diners"
+ 25404  msgstr ""
+ 25405  
+ 25406: #: includes/wc-core-functions.php:1327
+ 25407  msgid "JCB"
+ 25408  msgstr ""
+ 25409  
+ 25410: #: includes/wc-core-functions.php:1683
+ 25411  #. translators: 1: class name 2: woocommerce_logging_class 3:
+ 25412  #. WC_Logger_Interface
+ .....
+ 25414  msgstr ""
+ 25415  
+ 25416: #: includes/wc-coupon-functions.php:21
+ 25417  msgid "Percentage discount"
+ 25418  msgstr ""
+ 25419  
+ 25420: #: includes/wc-coupon-functions.php:22
+ 25421  msgid "Fixed cart discount"
+ 25422  msgstr ""
+ 25423  
+ 25424: #: includes/wc-coupon-functions.php:23
+ 25425  msgid "Fixed product discount"
+ 25426  msgstr ""
+ 25427  
+ 25428: #: includes/wc-formatting-functions.php:1154
+ 25429  #. translators: %s: stock amount
+ 25430  msgid "Only %s left in stock"
+ 25431  msgstr ""
+ 25432  
+ 25433: #: includes/wc-formatting-functions.php:1159
+ 25434  #. translators: %s: stock amount
+ 25435  msgid "%s in stock"
+ 25436  msgstr ""
+ 25437  
+ 25438: #: includes/wc-formatting-functions.php:1164
+ 25439  msgid "(can be backordered)"
+ 25440  msgstr ""
+ 25441  
+ 25442: #: includes/wc-notice-functions.php:25 includes/wc-notice-functions.php:56
+ 25443: #: includes/wc-notice-functions.php:74 includes/wc-notice-functions.php:98
+ 25444: #: includes/wc-notice-functions.php:112 includes/wc-notice-functions.php:127
+ 25445: #: includes/wc-notice-functions.php:182
+ 25446  msgid "This function should not be called before woocommerce_init."
+ 25447  msgstr ""
+ 25448  
+ 25449: #: includes/wc-order-functions.php:507
+ 25450  msgid "Invalid refund amount."
+ 25451  msgstr ""
+ 25452  
+ 25453: #: includes/wc-order-functions.php:644
+ 25454  msgid "The payment gateway for this order does not exist."
+ 25455  msgstr ""
+ 25456  
+ 25457: #: includes/wc-order-functions.php:648
+ 25458  msgid "The payment gateway for this order does not support automatic refunds."
+ 25459  msgstr ""
+ 25460  
+ 25461: #: includes/wc-order-functions.php:703
+ 25462  #. translators: 1: product ID 2: old stock level 3: new stock level
+ 25463  msgid "Item #%1$s stock increased from %2$s to %3$s."
+ 25464  msgstr ""
+ 25465  
+ 25466: #: includes/wc-order-functions.php:765 includes/wc-update-functions.php:915
+ 25467  msgid "Order fully refunded"
+ 25468  msgstr ""
+ 25469  
+ 25470: #: includes/wc-order-functions.php:895
+ 25471  msgid "Unpaid order cancelled - time limit reached."
+ 25472  msgstr ""
+ 25473  
+ 25474: #: includes/wc-product-functions.php:58
+ 25475  #. translators: 1: wc_get_product 2: woocommerce_init
+ 25476  msgid "%1$s should not be called before the %2$s action."
+ 25477  msgstr ""
+ 25478  
+ 25479: #: includes/wc-product-functions.php:543
+ 25480  msgid "Simple product"
+ 25481  msgstr ""
+ 25482  
+ 25483: #: includes/wc-product-functions.php:544
+ 25484  msgid "Grouped product"
+ 25485  msgstr ""
+ 25486  
+ 25487: #: includes/wc-product-functions.php:545
+ 25488  msgid "External/Affiliate product"
+ 25489  msgstr ""
+ 25490  
+ 25491: #: includes/wc-product-functions.php:546
+ 25492  msgid "Variable product"
+ 25493  msgstr ""
+ 25494  
+ 25495: #: includes/wc-product-functions.php:780
+ 25496  msgid "Shop and search results"
+ 25497  msgstr ""
+ 25498  
+ 25499: #: includes/wc-product-functions.php:781
+ 25500  msgid "Shop only"
+ 25501  msgstr ""
+ 25502  
+ 25503: #: includes/wc-product-functions.php:782
+ 25504  msgid "Search results only"
+ 25505  msgstr ""
+ 25506  
+ 25507: #: includes/wc-product-functions.php:870
+ 25508  msgid "Do not allow"
+ 25509  msgstr ""
+ 25510  
+ 25511: #: includes/wc-product-functions.php:871
+ 25512  msgid "Allow, but notify customer"
+ 25513  msgstr ""
+ 25514  
+ 25515: #: includes/wc-product-functions.php:872
+ 25516  msgid "Allow"
+ 25517  msgstr ""
+ 25518  
+ 25519: #: includes/wc-rest-functions.php:73
+ 25520  #. translators: %s: image URL
+ 25521  msgid "Invalid URL %s."
+ 25522  msgstr ""
+ 25523  
+ 25524: #: includes/wc-rest-functions.php:94
+ 25525  #. translators: %s: image URL
+ 25526  msgid "Error getting remote image %s."
+ 25527  msgstr ""
+ 25528  
+ 25529: #: includes/wc-rest-functions.php:96
+ 25530  #. translators: %s: error message
+ 25531  msgid "Error: %s"
+ 25532  msgstr ""
+ 25533  
+ 25534: #: includes/wc-rest-functions.php:114
+ 25535  #. translators: %s: error message
+ 25536  msgid "Invalid image: %s"
+ 25537  msgstr ""
+ 25538  
+ 25539: #: includes/wc-rest-functions.php:184
+ 25540  #. translators: 1: param 2: type
+ 25541  msgid "%1$s is not of type %2$s"
+ 25542  msgstr ""
+ 25543  
+ 25544: #: includes/wc-rest-functions.php:191
+ 25545  msgid "The date you provided is invalid."
+ 25546  msgstr ""
+ 25547  
+ 25548: #: includes/wc-stock-functions.php:174
+ 25549  #. translators: %s item name.
+ 25550  msgid "Unable to reduce stock for item %s."
+ 25551  msgstr ""
+ 25552  
+ 25553: #: includes/wc-stock-functions.php:228
+ 25554  msgid "Stock levels reduced:"
+ 25555  msgstr ""
+ 25556  
+ 25557: #: includes/wc-stock-functions.php:271
+ 25558  #. translators: %s item name.
+ 25559  msgid "Unable to restore stock for item %s."
+ 25560  msgstr ""
+ 25561  
+ 25562: #: includes/wc-stock-functions.php:282
+ 25563  msgid "Stock levels increased:"
+ 25564  msgstr ""
+ 25565  
+ 25566: #: includes/wc-template-functions.php:28
+ 25567  msgid "Checkout is not available whilst your cart is empty."
+ 25568  msgstr ""
+ 25569  
+ 25570: #: includes/wc-template-functions.php:845
+ 25571  msgid "privacy policy"
+ 25572  msgstr ""
+ 25573  
+ 25574: #: includes/wc-template-functions.php:846
+ 25575  msgid "terms and conditions"
+ 25576  msgstr ""
+ 25577  
+ 25578: #: includes/wc-template-functions.php:986
+ 25579  #. translators: %s: search query
+ 25580  msgid "Search results: &ldquo;%s&rdquo;"
+ 25581  msgstr ""
+ 25582  
+ 25583: #: includes/wc-template-functions.php:990
+ 25584  #. translators: %s: page number
+ 25585  msgid "&nbsp;&ndash; Page %s"
+ 25586  msgstr ""
+ 25587  
+ 25588: #: includes/wc-template-functions.php:1295
+ 25589  msgid "Default sorting"
+ 25590  msgstr ""
+ 25591  
+ 25592: #: includes/wc-template-functions.php:1296
+ 25593  msgid "Sort by popularity"
+ 25594  msgstr ""
+ 25595  
+ 25596: #: includes/wc-template-functions.php:1297
+ 25597  msgid "Sort by average rating"
+ 25598  msgstr ""
+ 25599  
+ 25600: #: includes/wc-template-functions.php:1298
+ 25601  msgid "Sort by latest"
+ 25602  msgstr ""
+ 25603  
+ 25604: #: includes/wc-template-functions.php:1299
+ 25605  msgid "Sort by price: low to high"
+ 25606  msgstr ""
+ 25607  
+ 25608: #: includes/wc-template-functions.php:1300
+ 25609  msgid "Sort by price: high to low"
+ 25610  msgstr ""
+ 25611  
+ 25612: #: includes/wc-template-functions.php:1307
+ 25613  msgid "Relevance"
+ 25614  msgstr ""
+ 25615  
+ 25616: #: includes/wc-template-functions.php:1669
+ 25617  #: templates/checkout/form-shipping.php:63
+ 25618  #: templates/single-product/tabs/additional-information.php:25
+ .....
+ 25620  msgstr ""
+ 25621  
+ 25622: #: includes/wc-template-functions.php:1679
+ 25623  #. translators: %s: reviews count
+ 25624  msgid "Reviews (%d)"
+ 25625  msgstr ""
+ 25626  
+ 25627: #: includes/wc-template-functions.php:2116
+ 25628  msgid "Place order"
+ 25629  msgstr ""
+ 25630  
+ 25631: #: includes/wc-template-functions.php:2556
+ 25632  msgid "Update country"
+ 25633  msgstr ""
+ 25634  
+ 25635: #: includes/wc-template-functions.php:2623
+ 25636: #: includes/wc-template-functions.php:2785
+ 25637: #: includes/wc-template-functions.php:2801
+ 25638  msgid "Choose an option"
+ 25639  msgstr ""
+ 25640  
+ 25641: #: includes/wc-template-functions.php:3195
+ 25642  #. translators: 1: rating 2: rating count
+ 25643  msgid "Rated %1$s out of 5 based on %2$s customer rating"
+ .....
+ 25646  msgstr[1] ""
+ 25647  
+ 25648: #: includes/wc-template-functions.php:3241
+ 25649  msgid "Your cart is currently empty."
+ 25650  msgstr ""
+ 25651  
+ 25652: #: includes/wc-term-functions.php:188
+ 25653  #: includes/widgets/class-wc-widget-product-categories.php:260
+ 25654  msgid "Select a category"
+ 25655  msgstr ""
+ 25656  
+ 25657: #: includes/wc-user-functions.php:48
+ 25658  msgid "An account is already registered with your email address. Please log in."
+ 25659  msgstr ""
+ 25660  
+ 25661: #: includes/wc-user-functions.php:56
+ 25662  msgid "Please enter a valid account username."
+ 25663  msgstr ""
+ 25664  
+ 25665: #: includes/wc-user-functions.php:60
+ 25666  msgid "An account is already registered with that username. Please choose another."
+ 25667  msgstr ""
+ 25668  
+ 25669: #: includes/wc-user-functions.php:83
+ 25670  msgid "Please enter an account password."
+ 25671  msgstr ""
+ 25672  
+ 25673: #: includes/wc-user-functions.php:109
+ 25674  msgid ""
+ 25675  "Couldn&#8217;t register you&hellip; please contact us if you continue to "
+ .....
+ 25677  msgstr ""
+ 25678  
+ 25679: #: includes/wc-webhook-functions.php:120
+ 25680  msgid "Paused"
+ 25681  msgstr ""
+ .....
+ 26904  
+ 26905  #: includes/admin/class-wc-admin-permalink-settings.php:76
+ 26906: #: includes/wc-core-functions.php:1844 includes/wc-update-functions.php:57
+ 26907  msgctxt "slug"
+ 26908  msgid "product-category"
+ .....
+ 26910  
+ 26911  #: includes/admin/class-wc-admin-permalink-settings.php:85
+ 26912: #: includes/wc-core-functions.php:1845 includes/wc-update-functions.php:58
+ 26913  msgctxt "slug"
+ 26914  msgid "product-tag"
+ .....
+ 26917  #: includes/admin/class-wc-admin-permalink-settings.php:195
+ 26918  #: includes/admin/class-wc-admin-permalink-settings.php:198
+ 26919: #: includes/wc-core-functions.php:1843 includes/wc-update-functions.php:67
+ 26920  msgctxt "slug"
+ 26921  msgid "product"
+ 26922  msgstr ""
+ 26923  
+ 26924: #: includes/wc-product-functions.php:249
+ 26925  msgctxt "slug"
+ 26926  msgid "uncategorized"
+ .....
+ 27077  msgstr ""
+ 27078  
+ 27079: #: includes/class-wc-form-handler.php:553 includes/wc-cart-functions.php:110
+ 27080  #. translators: %s: product name
+ 27081  msgctxt "Item name in quotes"
+ .....
+ 27153  msgstr ""
+ 27154  
+ 27155: #: includes/class-wc-post-types.php:483 includes/wc-order-functions.php:95
+ 27156  msgctxt "Order status"
+ 27157  msgid "Pending payment"
+ 27158  msgstr ""
+ 27159  
+ 27160: #: includes/class-wc-post-types.php:492 includes/wc-order-functions.php:96
+ 27161  msgctxt "Order status"
+ 27162  msgid "Processing"
+ 27163  msgstr ""
+ 27164  
+ 27165: #: includes/class-wc-post-types.php:501 includes/wc-order-functions.php:97
+ 27166  msgctxt "Order status"
+ 27167  msgid "On hold"
+ 27168  msgstr ""
+ 27169  
+ 27170: #: includes/class-wc-post-types.php:510 includes/wc-order-functions.php:98
+ 27171  msgctxt "Order status"
+ 27172  msgid "Completed"
+ 27173  msgstr ""
+ 27174  
+ 27175: #: includes/class-wc-post-types.php:519 includes/wc-order-functions.php:99
+ 27176  msgctxt "Order status"
+ 27177  msgid "Cancelled"
+ 27178  msgstr ""
+ 27179  
+ 27180: #: includes/class-wc-post-types.php:528 includes/wc-order-functions.php:100
+ 27181  msgctxt "Order status"
+ 27182  msgid "Refunded"
+ 27183  msgstr ""
+ 27184  
+ 27185: #: includes/class-wc-post-types.php:537 includes/wc-order-functions.php:101
+ 27186  msgctxt "Order status"
+ 27187  msgid "Failed"
+ .....
+ 27210  msgstr ""
+ 27211  
+ 27212: #: includes/wc-account-functions.php:65
+ 27213  msgctxt "edit-address-slug"
+ 27214  msgid "billing"
+ 27215  msgstr ""
+ 27216  
+ 27217: #: includes/wc-account-functions.php:66
+ 27218  msgctxt "edit-address-slug"
+ 27219  msgid "shipping"
+ 27220  msgstr ""
+ 27221  
+ 27222: #: includes/wc-cart-functions.php:229
+ 27223  #. translators: %d: shipping package number
+ 27224  msgctxt "shipping packages"
+ .....
+ 27226  msgstr ""
+ 27227  
+ 27228: #: includes/wc-cart-functions.php:229
+ 27229  msgctxt "shipping packages"
+ 27230  msgid "Shipping"
+ 27231  msgstr ""
+ 27232  
+ 27233: #: includes/wc-formatting-functions.php:1204
+ 27234  #. translators: 1: price from 2: price to
+ 27235  msgctxt "Price range: from-to"
+ .....
+ 27237  msgstr ""
+ 27238  
+ 27239: #: includes/wc-template-functions.php:2064
+ 27240  msgctxt "breadcrumb"
+ 27241  msgid "Home"
+ 27242  msgstr ""
+ 27243  
+ 27244: #: includes/wc-template-functions.php:3213
+ 27245  msgctxt "min_price"
+ 27246  msgid "From:"
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/class-wc-background-updater.php:
+  101  		$logger = wc_get_logger();
+  102  
+  103: 		include_once dirname( __FILE__ ) . '/wc-update-functions.php';
+  104  
+  105  		$result = false;
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/class-wc-install.php:
+  410  	 */
+  411  	public static function create_pages() {
+  412: 		include_once dirname( __FILE__ ) . '/admin/wc-admin-functions.php';
+  413  
+  414  		$pages = apply_filters(
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/class-woocommerce.php:
+  299  		 * Core classes.
+  300  		 */
+  301: 		include_once WC_ABSPATH . 'includes/wc-core-functions.php';
+  302  		include_once WC_ABSPATH . 'includes/class-wc-datetime.php';
+  303  		include_once WC_ABSPATH . 'includes/class-wc-post-types.php';
+  ...
+  443  	 */
+  444  	public function frontend_includes() {
+  445: 		include_once WC_ABSPATH . 'includes/wc-cart-functions.php';
+  446: 		include_once WC_ABSPATH . 'includes/wc-notice-functions.php';
+  447  		include_once WC_ABSPATH . 'includes/wc-template-hooks.php';
+  448  		include_once WC_ABSPATH . 'includes/class-wc-template-loader.php';
+  ...
+  461  	 */
+  462  	public function include_template_functions() {
+  463: 		include_once WC_ABSPATH . 'includes/wc-template-functions.php';
+  464  	}
+  465  
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/wc-core-functions.php:
+   14  
+   15  // Include core functions (available in both admin and frontend).
+   16: require WC_ABSPATH . 'includes/wc-conditional-functions.php';
+   17: require WC_ABSPATH . 'includes/wc-coupon-functions.php';
+   18: require WC_ABSPATH . 'includes/wc-user-functions.php';
+   19: require WC_ABSPATH . 'includes/wc-deprecated-functions.php';
+   20: require WC_ABSPATH . 'includes/wc-formatting-functions.php';
+   21: require WC_ABSPATH . 'includes/wc-order-functions.php';
+   22: require WC_ABSPATH . 'includes/wc-order-item-functions.php';
+   23: require WC_ABSPATH . 'includes/wc-page-functions.php';
+   24: require WC_ABSPATH . 'includes/wc-product-functions.php';
+   25: require WC_ABSPATH . 'includes/wc-stock-functions.php';
+   26: require WC_ABSPATH . 'includes/wc-account-functions.php';
+   27: require WC_ABSPATH . 'includes/wc-term-functions.php';
+   28: require WC_ABSPATH . 'includes/wc-attribute-functions.php';
+   29: require WC_ABSPATH . 'includes/wc-rest-functions.php';
+   30: require WC_ABSPATH . 'includes/wc-widget-functions.php';
+   31: require WC_ABSPATH . 'includes/wc-webhook-functions.php';
+   32  
+   33  /**
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/admin/class-wc-admin.php:
+   46  	 */
+   47  	public function includes() {
+   48: 		include_once dirname( __FILE__ ) . '/wc-admin-functions.php';
+   49: 		include_once dirname( __FILE__ ) . '/wc-meta-box-functions.php';
+   50  		include_once dirname( __FILE__ ) . '/class-wc-admin-post-types.php';
+   51  		include_once dirname( __FILE__ ) . '/class-wc-admin-taxonomies.php';
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/cli/class-wc-cli-update-command.php:
+   34  
+   35  		include_once WC_ABSPATH . 'includes/class-wc-install.php';
+   36: 		include_once WC_ABSPATH . 'includes/wc-update-functions.php';
+   37  
+   38  		$current_db_version = get_option( 'woocommerce_db_version' );
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:
+  835  	/*
+  836  	|--------------------------------------------------------------------------
+  837: 	| wc-product-functions.php methods
+  838  	|--------------------------------------------------------------------------
+  839  	*/
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler.php:
+   96  		add_action( 'init', array( $admin_view, 'init' ), 0, 0 ); // run before $store::init()
+   97  
+   98: 		require_once( self::plugin_path('functions.php') );
+   99  
+  100  		if ( apply_filters( 'action_scheduler_load_deprecated_functions', true ) ) {
+  101: 			require_once( self::plugin_path('deprecated/functions.php') );
+  102  		}
+  103  
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/wp-mail-smtp/vendor/guzzlehttp/guzzle/src/functions_include.php:
+    3  // Don't redefine the functions if included multiple times.
+    4  if (!function_exists('GuzzleHttp\uri_template')) {
+    5:     require __DIR__ . '/functions.php';
+    6  }
+    7  
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/wp-mail-smtp/vendor/guzzlehttp/promises/src/functions_include.php:
+    3  // Don't redefine the functions if included multiple times.
+    4  if (!function_exists('GuzzleHttp\Promise\promise_for')) {
+    5:     require __DIR__ . '/functions.php';
+    6  }
+    7  
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/wp-mail-smtp/vendor/guzzlehttp/psr7/src/functions_include.php:
+    3  // Don't redefine the functions if included multiple times.
+    4  if (!function_exists('GuzzleHttp\Psr7\str')) {
+    5:     require __DIR__ . '/functions.php';
+    6  }
+    7  
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/wp-user-avatar/readme.txt:
+  290  
+  291  = There's a call for donations in the WP User Avatar settings. How can I remove it? =
+  292: I've spent countless hours developing this plugin for free. If you're able to give a donation I'd appreciate it, but it's by no means a requirement. You can remove the message by adding this to the <code>functions.php</code> file of your theme:
+  293  
+  294  `remove_action('wpua_donation_message', 'wpua_do_donation_message');`
+  ...
+  306  `do_action('edit_user_avatar', $current_user);`
+  307  
+  308: Then, to add WP User Avatar to that hook and remove it from the other hooks outside of the administration panel, you would add this code to the <code>functions.php</code> file of your theme:
+  309  
+  310  `function my_avatar_filter() {
+  ...
+  353  </div>`
+  354  
+  355: To strip out the div container and h3 heading, you would add the following filters to the <code>functions.php</code> file in your theme:
+  356  
+  357  `remove_action('wpua_before_avatar', 'wpua_do_before_avatar');
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/wp-user-avatar/wp-user-avatar.php:
+   76      global $wpua_tinymce;
+   77      require_once(WPUA_INC.'wpua-globals.php');
+   78:     require_once(WPUA_INC.'wpua-functions.php');
+   79      require_once(WPUA_INC.'class-wp-user-avatar-admin.php');
+   80      require_once(WPUA_INC.'class-wp-user-avatar.php');
+   81:     require_once(WPUA_INC.'class-wp-user-avatar-functions.php');
+   82      require_once(WPUA_INC.'class-wp-user-avatar-shortcode.php');
+   83      require_once(WPUA_INC.'class-wp-user-avatar-subscriber.php');
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/wp-user-avatar/lang/wp-user-avatar-en_US.po:
+   93  #: includes/class-wp-user-avatar-admin.php:324
+   94  #: includes/class-wp-user-avatar-admin.php:378
+   95: #: includes/class-wp-user-avatar-functions.php:340
+   96: #: includes/tinymce/window.php:123 includes/wpua-functions.php:79
+   97: #: includes/wpua-functions.php:88 includes/wpua-functions.php:93
+   98: #: includes/wpua-functions.php:152
+   99  msgid "Avatar"
+  100  msgstr ""
+  ...
+  312  msgstr ""
+  313  
+  314: #: includes/wpua-functions.php:90 includes/wpua-functions.php:96
+  315: #: includes/wpua-functions.php:155
+  316  msgid "Image"
+  317  msgstr ""
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/uploads/wc-logs/fatal-errors-2019-03-20-06820587e9f8b6cbb9ef3f7c7dd8516d.log:
+    1: 2019-03-20T12:37:02+00:00 CRITICAL Cannot redeclare bloomsbury_get_account_fields() (previously declared in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php:78) in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/bloomsbury-custom-account-fields/bloomsbury-custom-account-fields.php on line 43
+    2  
+    3: 2019-03-20T12:37:04+00:00 CRITICAL Cannot redeclare bloomsbury_get_account_fields() (previously declared in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php:78) in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/bloomsbury-custom-account-fields/bloomsbury-custom-account-fields.php on line 43
+    4  
+    5: 2019-03-20T12:37:04+00:00 CRITICAL Cannot redeclare bloomsbury_get_account_fields() (previously declared in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php:78) in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/bloomsbury-custom-account-fields/bloomsbury-custom-account-fields.php on line 43
+    6  
+    7  2019-03-20T12:49:07+00:00 CRITICAL Uncaught Error: Call to undefined function bloomsbury_is_field_visible() in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/bloomsbury-custom-account-fields/bloomsbury-custom-account-fields.php:60
+    .
+   11  #2 /Applications/MAMP/htdocs/bloomsbury/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+   12  #3 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/templates/myaccount/form-login.php(99): do_action('woocommerce_reg...')
+   13: #4 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+   14  #5 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(57): wc_get_template('myaccount/form-...')
+   15  #6 /Applications/MAMP/htdocs/bloom in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/bloomsbury-custom-account-fields/bloomsbury-custom-account-fields.php on line 60
+   ..
+   21  #2 /Applications/MAMP/htdocs/bloomsbury/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+   22  #3 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/templates/myaccount/form-login.php(99): do_action('woocommerce_reg...')
+   23: #4 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+   24  #5 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(57): wc_get_template('myaccount/form-...')
+   25  #6 /Applications/MAMP/htdocs/bloom in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/bloomsbury-custom-account-fields/bloomsbury-custom-account-fields.php on line 60
+   ..
+   31  #2 /Applications/MAMP/htdocs/bloomsbury/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+   32  #3 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/templates/myaccount/form-edit-account.php(65): do_action('woocommerce_edi...')
+   33: #4 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+   34  #5 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(156): wc_get_template('myaccount/form-...', Array)
+   35  #6 /Applications/MA in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/bloomsbury-custom-account-fields/bloomsbury-custom-account-fields.php on line 65
+   ..
+   41  #2 /Applications/MAMP/htdocs/bloomsbury/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+   42  #3 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/templates/myaccount/form-edit-account.php(65): do_action('woocommerce_edi...')
+   43: #4 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+   44  #5 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(156): wc_get_template('myaccount/form-...', Array)
+   45  #6 /Applications/MA in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/bloomsbury-custom-account-fields/bloomsbury-custom-account-fields.php on line 65
+   ..
+   81  #2 /Applications/MAMP/htdocs/bloomsbury/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+   82  #3 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/templates/myaccount/form-edit-account.php(65): do_action('woocommerce_edi...')
+   83: #4 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+   84  #5 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(156): wc_get_template('myaccount/form-...', Array)
+   85  #6 /Applications/M in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/bloomsbury-custom-account-fields/bloomsbury-custom-account-fields.php on line 121
+   ..
+  109  #2 /Applications/MAMP/htdocs/bloomsbury/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+  110  #3 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/templates/myaccount/form-edit-account.php(65): do_action('woocommerce_edi...')
+  111: #4 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+  112  #5 /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(156): wc_get_template('myaccount/form-...', Array)
+  113  #6 /Applications/M in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/bloomsbury-custom-account-fields/bloomsbury-custom-account-fields.php on line 131
+  ...
+  250    thrown in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/bloomsbury-custom-account-fields/bloomsbury-custom-account-fields.php on line 274
+  251  
+  252: 2019-03-20T21:24:06+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 133
+  253  
+  254: 2019-03-20T21:24:06+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 133
+  255  
+  256: 2019-03-20T21:24:07+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 133
+  257  
+  258: 2019-03-20T21:26:05+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 206
+  259  
+  260: 2019-03-20T21:27:04+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 194
+  261  
+  262: 2019-03-20T21:27:26+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 239
+  263  
+  264: 2019-03-20T21:27:35+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 238
+  265  
+  266: 2019-03-20T21:28:24+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 234
+  267  
+  268: 2019-03-20T21:28:43+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 234
+  269  
+  270: 2019-03-20T21:28:45+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 234
+  271  
+  272  
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/uploads/wc-logs/fatal-errors-2019-03-21-06820587e9f8b6cbb9ef3f7c7dd8516d.log:
+    5  2019-03-21T10:50:40+00:00 CRITICAL syntax error, unexpected ':' in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/templates/myaccount/form-login-single.php on line 33
+    6  
+    7: 2019-03-21T12:31:28+00:00 CRITICAL syntax error, unexpected 'wp_enqueue_script' (T_STRING) in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 91
+    8  
+    9: 2019-03-21T12:31:37+00:00 CRITICAL syntax error, unexpected 'wp_enqueue_script' (T_STRING) in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 91
+   10  
+   11: 2019-03-21T12:31:59+00:00 CRITICAL syntax error, unexpected 'wp_enqueue_script' (T_STRING) in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 91
+   12  
+   13  
+
+/Applications/MAMP/htdocs/bloomsbury/wp-content/uploads/wc-logs/fatal-errors-2019-03-22-06820587e9f8b6cbb9ef3f7c7dd8516d.log:
+    1: 2019-03-22T10:44:07+00:00 CRITICAL Cannot redeclare wc_custom_lost_password_form() (previously declared in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/wc-account-functions.php:81) in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 57
+    2  
+    3: 2019-03-22T10:44:09+00:00 CRITICAL Cannot redeclare wc_custom_lost_password_form() (previously declared in /Applications/MAMP/htdocs/bloomsbury/wp-content/plugins/woocommerce/includes/wc-account-functions.php:81) in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/functions.php on line 57
+    4  
+    5  2019-03-22T11:40:29+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /Applications/MAMP/htdocs/bloomsbury/wp-content/themes/bloomsbury-theme/page-my-account.php on line 95
+
+473 matches across 25 files

@@ -16,121 +16,126 @@ input[type="submit"] {
     font-size: 12px;
     line-height: 1;
     padding: .5rem;
-	  text-decoration: none;
-	  text-align: center;
+    text-decoration: none;
+    text-align: center;
 
     &:hover,
     &:active,
     &:focus {
         background: darken($color__seablue, 10%);
         color: white;
-	}
+    }
 }
 
-.black-cap-btn{
-	@extend .btn;
+.black-cap-btn {
+    @extend .btn;
     background: #4A4A4A;
-	border-radius: 10px;
 
-	&:hover,
+    border-radius: 10px;
+	  &:hover,
     &:active,
     &:focus {
         background: darken($color__seablue, 10%);
         color: white;
+    }
 }
-}
-.white-cap-btn{
-	@extend .btn;
+
+.white-cap-btn {
+    @extend .btn;
     background: #fff;
     border-radius: 10px;
-	color: black;
+    color: black;
 
-	&:hover,
+	  &:hover,
     &:active,
     &:focus {
         background: darken($color__seablue, 10%);
         color: white;
+    }
 }
-}
+
 .white-square-btn {
-	@extend .btn;
+    @extend .btn;
     background: #fff;
     border-radius: 2px;
-	color: black;
+    color: black;
 
-	&:hover,
+	  &:hover,
     &:active,
     &:focus {
         background: darken($color__seablue, 10%);
         color: white;
+    }
 }
-}
-.dark-blue-cap-btn{
-	@extend .btn;
+
+.dark-blue-cap-btn {
+    @extend .btn;
     border: 1px solid white;
     background: #214253;
     border-radius: 20px;
-	color: #fff;
+	  color: #fff;
 
-	&:hover,
+	  &:hover,
     &:active,
     &:focus {
         background: darken($color__seablue, 10%);
         color: white;
+    }
 }
-}
-.clear-cap-border-btn{
-	@extend .btn;
+
+.clear-cap-border-btn {
+    @extend .btn;
     border: 1px solid white;
     background: transparent;
     border-radius: 10px;
-	color: #fff;
+	  color: #fff;
 
-	&:hover,
+	  &:hover,
     &:active,
     &:focus {
         background: darken($color__seablue, 10%);
         color: white;
+    }
 }
-}
-.blue-cap-btn{
-	@extend .btn;
+
+.blue-cap-btn {
+    @extend .btn;
     background: #4AABB6;
     border-radius: 10px;
-	color: white;
+	  color: white;
 
-	&:hover,
+	  &:hover,
     &:active,
     &:focus {
         background: darken($color__seablue, 10%);
         color: white;
-}
+    }
 }
 
-.blue-square-btn{
-	@extend .btn;
+.blue-square-btn {
+    @extend .btn;
     background: #4AABB6;
-	color: white;
+	  color: white;
 
-	&:hover,
+	  &:hover,
     &:active,
     &:focus {
         background: darken($color__seablue, 10%);
         color: white;
-	}
+    }
 }
 
 .black-btn {
-	@extend .btn;
-	background: #000;
-	color: #fff;
+    @extend .btn;
+    background: #000;
+    color: #fff;
 
-	&:hover,
+    &:hover,
     &:active,
     &:focus {
         background: lighten(#000, 90%);
         color: #000;
-	}
+    }
 }
 
 /* Fields */
@@ -141,8 +146,9 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
     width: 100%;
-    border: 1px solid #CCC;
     background: #FFF;
     margin: 0 0 5px;
     padding: 10px;

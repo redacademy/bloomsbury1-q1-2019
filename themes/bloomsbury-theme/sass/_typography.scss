@@ -38,14 +38,10 @@ address {
 }
 
 pre {
-	background: $color__background-pre;
-	font-family: $font__pre;
-	@include font-size(0.9375);
-	line-height: $font__line-height-pre;
-	margin-bottom: 1.6rem;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6rem;
+	background: #fff;
+	font-family: $font__main;
+	max-width: 100vw;
+	overflow: inherit;
 }
 
 code, kbd, tt, var {
