@@ -36,28 +36,28 @@ get_header(); ?>
 				<!-- <h2>What We Offer</h2> -->
 				<ul class="info-list">
 					<li class="info-list-item">
-						<img src="https://via.placeholder.com/50">
+						<img src="<?php echo get_template_directory_uri() . '/assets/svgs/homepage-svg/business-plan-icon.svg'?>">
 						<div class="info-container">
 							<h2>Build Your Business Plan</h2>
-							<p> It's easier to get somewhere when you've got people along with you.</p>
+							<p> It's easier to get somewhere when you've got people along with you. </p>
 						</div>
 					</li>
 					<li class="info-list-item">
-						<img src="https://via.placeholder.com/50">
+						<img src="<?php echo get_template_directory_uri() . '/assets/svgs/homepage-svg/expert-icon.svg'?>">
 						<div class="info-container">
 							<h2>Get Expert Advice</h2>
 							<p>Through events, workshops, one-to-ones and our interactive members area, you will be guided by our range of subject experts.</p>
 						</div>
 					</li>
 					<li class="info-list-item">
-						<img src="https://via.placeholder.com/50">
+						<img src="<?php echo get_template_directory_uri() . '/assets/svgs/homepage-svg/network-icon.svg'?>">
 						<div class="info-container">
 							<h2>Grow Your Network</h2>
 							<p>Join the Bloomsbury Beginnings family! Our Supportive network of peers will be your network for life.</p>
 						</div>
 					</li>
 					<li class="info-list-item">
-						<img src="https://via.placeholder.com/50">
+						<img src="<?php echo get_template_directory_uri() . '/assets/svgs/homepage-svg/parental-support-icon.svg'?>">
 						<div class="info-container">
 							<h2>Get Parental Support</h2>
 							<p> With our on-site creche and child-friendly approach, the course is suitable for any parent.</p>
