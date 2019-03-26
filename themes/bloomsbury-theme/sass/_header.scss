@@ -3,237 +3,234 @@
     background-color: #00ADB5;
     border-bottom: 1px solid #e1e1e1;
     transition: top 500ms linear;
-    padding: .5rem 50px;
-    position: sticky;
+    position: fixed;
     width: 100%;
-    z-index: 3;
+    padding: .5rem 1rem;
+    z-index: 999;
     height: 50px;
     top: 0;
 
-    // test it once it is live whether the header is OK when not logged in.
-    body.logged-in {
-        margin-top: 0;
-    }
-}
-
-// The hamburger logo, BB logo and the Login button on the navbar
-.site-branding {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 20px;
-}
-
-// The "button" to make the menu to collapse to go back to the homepage
-.collapse-menu {
-    width: fit-content;
-
-    // the hamburger on the navigation bar
-    #menuToggle {
-        display: block;
-        position: relative;
-        z-index: 1;
-        -webkit-user-select: none;
-        user-select: none;
-
-        input {
-            display: block;
-            width: 40px;
-            height: 32px;
-            position: absolute;
-            top: -7px;
-            left: -5px;
-            cursor: pointer;
-            opacity: 0;
-            /* hide this */
-            z-index: 2;
-            /* and place it over the hamburger */
-            -webkit-touch-callout: none;
-        }
-
-        span {
-            display: block;
-            width: 33px;
-            height: 4px;
-            margin-bottom: 5px;
-            position: relative;
-            background: white;
-            border-radius: 3px;
-            z-index: 1;
-            transform-origin: 4px 0px;
-            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-                background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-                opacity 0.55s ease;
-        }
-    }
-}
 
 
-#menuToggle span:first-child {
-    transform-origin: 0% 0%;
-}
+    // The hamburger logo, BB logo and the Login button on the navbar
+    .site-branding {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-#menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-}
+        // The "button" to make the menu to collapse to go back to the homepage
+        .collapse-menu {
+            width: fit-content;
 
-/*
+            // the hamburger on the navigation bar
+            #menuToggle {
+                display: block;
+                position: relative;
+                z-index: 1;
+                -webkit-user-select: none;
+                user-select: none;
+                margin-top: 1px;
+
+                input {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    top: 1rem;
+                    left: 1rem;
+                    cursor: pointer;
+                    opacity: 0;
+                    /* hide this */
+                    z-index: 0;
+                    /* and place it over the hamburger */
+                    -webkit-touch-callout: none;
+                }
+
+                span {
+                    display: block;
+                    width: 35px;
+                    height: 5px;
+                    margin-bottom: 5px;
+                    position: relative;
+                    background: white;
+                    border-radius: 3px;
+                    z-index: 1;
+                    transform-origin: 4px 0px;
+                    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                        opacity 0.55s ease;
+                }
+            }
+
+
+            #menuToggle span:first-child {
+                transform-origin: 0% 0%;
+            }
+
+            #menuToggle span:nth-last-child() {
+                transform-origin: 0% 50%;
+            }
+
+            /*
+ * Slide it in from the left
+ */
+            #menuToggle input:checked~ul {
+                transform: none;
+            }
+
+            /*
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked~span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-}
+            #menuToggle input:checked~span {
+                opacity: 1;
+                transform: rotate(45deg) translate(7px);
 
-/*
+                &:nth-of-type(3) {
+                    transform: rotate(-45deg) translate(-1.5px, 4px);
+                }
+            }
+
+
+
+            /*
  *The middle one is hidden (one of the slices from the burger).
  */
-#menuToggle input:checked~span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
+            #menuToggle input:checked~span:nth-of-type(2) {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
+            }
 
-//  Profile container in the slide in navbar
-.profile-container {
-    border-radius: 5px;
-    height: 150px;
-    width: 300px;
-    font-family: Roboto, sans-serif;
-    display: flex;
-    margin-top: 1rem;
-    margin-left: 2.2rem;
-}
+            // menu options in the slide in navbar
+            #menu {
+                max-width: 100%;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: 0;
+                list-style: none;
+                background: #1f4354;
+                padding: 0 0 6rem;
+                text-decoration: none;
+                -webkit-font-smoothing: antialiased;
+                transform-origin: 0 0;
+                transform: translate(-100%);
+                transition: transform .5s cubic-bezier(.77, .2, .05, 1);
+                overflow: scroll;
 
-// The placeholder for the profile pic in the slide in menu
-.profile-pic {
-    border-radius: 50%;
-    background-color: white;
-    width: 2.5em;
-    height: 2.5em;
-    font-size: 40px;
-    box-shadow: 0px 0px 6px rgba(20, 20, 20, 0.6);
-}
+                @include tablet {
+                    width: 46%;
+                }
 
-// Name and job title underneath the placeholder
-.personal-info {
-  color: white;
-  margin-left: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0rem;
-  font-size: 14px;
-  margin-top: 0.5rem;
+                @include desktop {
+                    width: 26%;
+                }
 
-  p {
-    margin: 0
-  }
-}
+                .profile-container {
+                    color: white;
+                    @include flex-center;
+                    flex-direction: column;
+                    padding-top: 4rem;
 
-// menu options in the slide in navbar
-#menu {
-  max-width: 100%;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: 0;
-  padding: 100px;
-  list-style: none;
-  background: #1f4354;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0 0;
-  transform: translate(-100%);
-  transition: transform .5s cubic-bezier(.77, .2, .05, 1);
-  overflow: scroll;
+                    .profile-pic {
+                        width: 100px;
+                        height: 100px;
+                        margin: 0 auto;
+                        margin-bottom: 1rem;
 
-  @include tablet {
-      width: 46%;
+                        img {
+                            border-radius: 50%;
+                            height: 100px;
+                            width: 100px;
+                            border: 3px solid white;
+                        }
+                    }
+
+                    .personal-info {
+                        color: white;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+
+                    }
+                }
+
+                .slidebar-menu {
+                    margin-top: 2rem;
+                    width: -webkit-fill-available;
+                    padding: 0rem 2rem;
+                    width: 95%;
+
+
+                    li {
+                        padding: 5px 0;
+                        font-family: $font__main;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        i {
+                            max-width: 16px;
+                        }
+
+                        .menu-nav-text {
+                            margin-left: 1rem;
+                            width: 100%;
+                            border-bottom: 1px solid white;
+                            padding: .8rem 0;
+
+                            a {
+                                text-decoration: none !important;
+                                color: white;
+                                text-align: left;
+                                max-width: 300px;
+                            }
+                        }
+                    }
+                }
+
+
+                .member-area-subsection {
+                    margin-left: 3rem;
+                    padding: 0rem 2rem;
+
+                    li {
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            padding: 2px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        // BB logo in the header
+
+        .bb-logo {
+            max-width: 45px;
+
+        }
+
+        //  "Login" will be a button to click in the navbar
+        .login-button {
+            box-shadow: none;
+            border: none;
+            color: white;
+            text-shadow: none;
+            margin: 0;
+        }
     }
-    @include desktop {
-      width: 26%;
-    }
-
-
-  li {
-    padding: 5px 0;
-    font-size: 12px;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0 0;
-    transform: translate(-100%);
-    transition: transform .5s cubic-bezier(.77, .2, .05, 1);
-    overflow: scroll;
-
-    li {
-        padding: 5px 0;
-        font-size: 12px;
-        text-decoration: none;
-    }
-}
-
-.slidebar-menu {
-  margin-left: -4rem;
-  margin-top: 8rem;
-
-    a>li {
-        text-decoration: none;
-        color: white;
-    }
-
-    a {
-        text-decoration: none !important;
-    }
-}
-
-.member-area-subsection {
-    margin-left: 3rem;
-    padding-bottom: 1rem;
-    margin-top: -1rem;
-
-    a>li {
-        color: white;
-    }
-}
-
-/*
- * Slide it in from the left
- */
-#menuToggle input:checked~ul {
-    transform: none;
-}
-
-// BB logo in the header
-
-.bb-logo {
-    background-size: cover;
-    max-width: 35px;
-
-}
-
-//  "Login" will be a button to click in the navbar
-.login-button {
-    background-color: #00adb5;
-    box-shadow: none;
-    border: none;
-    color: white;
-    text-shadow: none;
-}
-
-// Underlines for each subject in the slidebar
-hr {
-
-  width: 18rem;
-
-  @include desktop;
-  width: 15rem;
 }
 
 // Search icon
 #search-text-input {
-  margin: 0.1rem -3rem 0 -2.5rem;
-  width: 5rem;
+    margin: 0.1rem -3rem 0 -2.5rem;
+    width: 5rem;
 }
