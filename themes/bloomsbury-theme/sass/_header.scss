@@ -77,7 +77,7 @@
     transform-origin: 0% 100%;
 }
 
-/* 
+/*
  * Transform all the slices of hamburger
  * into a crossmark.
  */
@@ -117,20 +117,20 @@
 
 // Name and job title underneath the placeholder
 .personal-info {
-    color: white;
-    margin-left: 3.5rem;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-    font-size: 14px;
-    margin-top: -2.5rem;
+  color: white;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0rem;
+  font-size: 14px;
+  margin-top: 0.5rem;
 
-    p {
-        margin: 0
-    }
+  p {
+    margin: 0
+  }
 }
 
-// menu options in the slide in navbar 
+// menu options in the slide in navbar
 #menu {
     max-width: 100%;
     position: fixed;
@@ -158,8 +158,8 @@
 }
 
 .slidebar-menu {
-    margin-left: -5rem;
-    margin-top: -1rem;
+  margin-left: -5rem;
+  margin-top: 2rem;
 
     a>li {
         text-decoration: none;
@@ -207,5 +207,11 @@
 
 // Underlines for each subject in the slidebar
 hr {
-    width: 15rem;
+  width: 15rem;
+}
+
+// Search icon
+#search-text-input {
+  margin: 0.1rem -3rem 0 -2.5rem;
+  width: 5rem;
 }
