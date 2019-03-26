@@ -19,10 +19,24 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
+// Setting Desktop Font Size change to title-desktop from variables.scss
+h1, h2 {
+
+	@include desktop {
+		font-size: $font__title-desktop;
+	}
+}
 /* Copy */
 
+
+// Setting Desktop Font Size change to text-desktop from variables.scss
 p {
 	margin-bottom: $base__space-unit;
+	font-size: 1rem;
+
+	@include desktop {
+		font-size: $font__text-desktop;
+	}
 }
 
 dfn, cite, em, i {
