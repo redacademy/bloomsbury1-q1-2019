@@ -997,7 +997,7 @@ object {
           transform: rotate(45deg) translate(-2px, -1px); }
 
 /*
- * But let's hide the middle one.
+ *The middle one is hidden (one of the slices from the burger).
  */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
@@ -1006,7 +1006,6 @@ object {
 
 .profile-container {
   border-radius: 5px;
-  height: 150px;
   width: 300px;
   font-family: Roboto, sans-serif;
   display: -webkit-box;
@@ -1063,14 +1062,17 @@ object {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   overflow: scroll; }
+  @media (min-width: 1024px) {
+    #menu {
+      width: 26%; } }
   #menu li {
     padding: 5px 0;
     font-size: 12px;
     text-decoration: none; }
 
 .slidebar-menu {
-  margin-left: -5rem;
-  margin-top: -1rem; }
+  margin-left: -4rem;
+  margin-top: 8rem; }
   .slidebar-menu a > li {
     text-decoration: none;
     color: white; }
@@ -1104,6 +1106,7 @@ object {
   text-shadow: none; }
 
 hr {
+  width: 18rem;
   width: 15rem; }
 
 #search-text-input {

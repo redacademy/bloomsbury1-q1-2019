@@ -41,9 +41,10 @@
 <!-- If user is logged in show the profile pic and profile info -->
 
 <?php if ( is_user_logged_in() ) { ?>
+
 		<div class="profile-container"></div>
 		<div class="profile-pic"></div> 
-
+	
 		<div class="personal-info">
 			<p><?php echo $current_user->display_name?></p>
 			<p><?php echo $current_user->company?></p>
