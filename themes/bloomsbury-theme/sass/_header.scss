@@ -153,6 +153,11 @@
     width: 26%;
   }
 
+  @include tablet {
+      width: 46%;
+    }
+  
+
   li {
     padding: 5px 0;
     font-size: 12px;

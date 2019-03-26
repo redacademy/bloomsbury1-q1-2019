@@ -1065,6 +1065,9 @@ object {
   @media (min-width: 1024px) {
     #menu {
       width: 26%; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #menu {
+      width: 46%; } }
   #menu li {
     padding: 5px 0;
     font-size: 12px;
