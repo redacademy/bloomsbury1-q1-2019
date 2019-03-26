@@ -4,7 +4,6 @@
  *
  * @package Bloomsbury_Theme
  */
-
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -42,12 +41,13 @@
 <!-- If user is logged in show the profile pic and profile info -->
 
 <?php if ( is_user_logged_in() ) { ?>
+
 		<div class="profile-container"></div>
 		<div class="profile-pic"></div>
 
 		<div class="personal-info">
-			<p>Fullname</p>
-			<p>Job Title</p>
+			<p><?php echo $current_user->display_name?></p>
+			<p><?php echo $current_user->company?></p>
 		</div>
 
 <!-- Menu for the slidebar and sub-section for the Member's area -->
@@ -84,6 +84,25 @@
 					<hr>
 				</div>
 		</div>
+	</div>
+<?php } else { ?>
+	<div class="slidebar-menu">
+				<a href="#"><li><i class="fas fa-home"></i>&nbsp; Home</li></a>
+				<hr>
+				<a href="#"><li><i class="fas fa-book-open"></i>&nbsp; About</li></a>
+				<hr>
+				<a href="#"><li><i class="fas fa-graduation-cap"></i>&nbsp; Courses</li></a>
+				<hr>
+				<a href="#"><li><i class="far fa-calendar-check"></i>&nbsp; Events</li></a>
+				<hr>
+				<a href="#"><li><i class="fas fa-blog"></i>&nbsp; Blog</li></a>
+				<hr>
+				<a href="#"><li><i class="far fa-handshake"></i></i>&nbsp; Support Us</li></a>
+				<hr>
+				<a href="#"><li><i class="fas fa-phone-volume"></i>&nbsp; Contact Us</li></a>
+				<hr>
+				<a href="#"><li><i class="fas fa-paste"></i></i>&nbsp; Terms and Conditions Privacy</li></a>
+				<hr>
 	</div>
 <?php } else { ?>
 	<div class="slidebar-menu">

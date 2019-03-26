@@ -87,7 +87,7 @@
 }
 
 /*
- * But let's hide the middle one.
+ *The middle one is hidden (one of the slices from the burger).
  */
 #menuToggle input:checked~span:nth-last-child(3) {
     opacity: 0;
@@ -132,17 +132,35 @@
 
 // menu options in the slide in navbar
 #menu {
-    max-width: 100%;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: 0;
-    padding: 100px;
-    list-style: none;
-    background: #1f4354;
+  max-width: 100%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 100px;
+  list-style: none;
+  background: #1f4354;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0 0;
+  transform: translate(-100%);
+  transition: transform .5s cubic-bezier(.77, .2, .05, 1);
+  overflow: scroll;
+
+  @include tablet {
+      width: 46%;
+    }
+    @include desktop {
+      width: 26%;
+    }
+
+
+  li {
+    padding: 5px 0;
+    font-size: 12px;
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0 0;
@@ -158,8 +176,8 @@
 }
 
 .slidebar-menu {
-  margin-left: -5rem;
-  margin-top: 2rem;
+  margin-left: -4rem;
+  margin-top: 8rem;
 
     a>li {
         text-decoration: none;
@@ -207,6 +225,10 @@
 
 // Underlines for each subject in the slidebar
 hr {
+
+  width: 18rem;
+
+  @include desktop;
   width: 15rem;
 }
 
