@@ -1,43 +1,86 @@
-
 // the start of the footer
 .site-info {
     background-color: #252525;
-    height: 250px;
-}
-
-// Bloomsbury Beginnings p tag
-.footer-title {
+    height: auto;
     display: flex;
     justify-content: center;
-    margin: 20px;
-    color: white;
-    font-size: 10px;
-}
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0 8rem;
 
-
-// footer information about the social information
-.social-info {
-    color: white;
-}
-
-// Social titles
-.social-links{
-    display: flex;
-    justify-content: space-around;
-    font-size: 15px;
-}
-// the logos for the social media
-.social-logos {
-    display: flex;
-    justify-content: space-around;
-    font-size: 15px;
-
-    a 
-    {
-        color: white;
+    @include desktop {
+        padding: 2rem 0 5rem;
     }
-   
+
+    .footer-logo {
+        margin: 20px;
+        color: white;
+        font-size: 10px;
+    }
+
+    .footer-pages {
+        display: inline-flex;
+        width: 80%;
+        justify-content: space-between;
+
+        @include tablet {
+            justify-content: space-evenly;
+        }
+
+        @include desktop {
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+
+            .footer-title {
+                color: white;
+                font-size: 1rem;
+
+                @include tablet {
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                }
+
+                @include desktop {
+                    font-size: 1.75rem;
+                    font-weight: 400;
+                    padding: 0 3rem;
+                }
+            }
+        }
+    }
+
+    // the logos for the social media
+    .social-logos {
+        display: inline-flex;
+        width: 80%;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+
+        @include tablet {
+            justify-content: space-evenly;
+        }
+
+        @include desktop {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            color: white;
+
+            @include desktop {
+                padding: 0 1.5rem;
+            }
+
+            i {
+                font-size: 2rem;
+            }
+        }
+
+    }
 }
-
-
-
