@@ -47,7 +47,11 @@
 								<div class="personal-info">
 									<?php 
 									echo $current_user->display_name; 
-									?> 
+									?>
+									<p>
+									<?php 
+										echo $current_user->user_job_title;
+									?></p>
 								</div>
 
 <!-- Menu for the slidebar and sub-section for the Member's area -->

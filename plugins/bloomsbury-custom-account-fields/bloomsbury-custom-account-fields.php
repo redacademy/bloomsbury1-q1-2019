@@ -85,6 +85,18 @@ function bloomsbury_get_account_fields() {
             'hide_in_checkout'      => true,
             'hide_in_registration'  => true,
         ),
+
+        'job_title'          => array(
+            'type'                  => 'text',
+            'label'                 => __( 'Job Title', 'bloomsbury'),
+            'placeholder'           => __( 'Example - CEO/Founder', 'bloomsbury'),
+            'required'              => false,
+            'hide_in_account'       => false,
+            'hide_in_admin'         => true,
+            'hide_in_checkout'      => true,
+            'hide_in_registration'  => true,
+        ),
+
         'description'          => array(
             'type'                  => 'text',
             'label'                 => __( 'Description', 'bloomsbury'),
@@ -247,6 +259,7 @@ function bloomsbury_is_userdata( $key ) {
         'user_url',
         'user_email',
         'display_name',
+        'user_job_title',
         'nickname',
         'first_name',
         'last_name',
