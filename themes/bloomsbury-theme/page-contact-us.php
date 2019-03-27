@@ -9,30 +9,47 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-        <!-- Start of page -->
-        <section class="header">
-            <!-- background linear-gradient(#01ADB5, #4a90e2) -->
-            <div class="page-cover">
-                <h1 class="header-text">Contact Us</h1>
-                <p class="under-text">How To Reach Us</p>
-            </div>
-        </section>
-        <section class="bottom">
-            <div class="dashboard-canvas">
-                <p class="address-info">C/O Calthorpe Project <br> 258-274 Grays Inn Road WC1X 8LH <br>TEL:     +44 (0) 7968 912298<br>Email:  ann@bloomsburybeginnings.org</p>
-            </div>
-        </section>
-        <!-- Google Maps -->
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="411" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=WC1X%208LH&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Werbung: <a href="https://www.pureblack.de">pureblack.de</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:330px;}</style></div></div> 
-            <!-- end of page -->
-			<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
             
-            <?php get_template_part( 'template-parts/content', 'page' ); ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <!-- About Header Text -->
+                <section class="about-header">
+                    <h1 class="header-text">Contact Us</h1>
+                </section>
+                <!-- Request Info Pop Out Button -->
+                <a class="request-info-btn">
+                    <h2>Request Information →</h2>
+                </a>
+                <!-- About Address -->
+                <div class="address-container">
+                    <p class="address-info">Calthorpe Community Gardens</p>
+                    <p class="address-info">258-274 Grays Inn, WC1X 8LH</p>
+                    <p class="address-info">+44 (0) 7968 912298</p>
+                    <p class="address-info"> ann@bloomsburybeginnings.org</p>
+                </div>
+                <!-- End of Address -->
+                <!-- Start of Entry Content - Google Map -->
+                <div class="entry-content">
+                    <?php the_content(); ?>
+                    <?php
+                        wp_link_pages( array(
+                            'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+                            'after'  => '</div>',
+                        ) );
+                    ?>
+                </div>
+                <!-- End of Entry Content -->
+            </article>
+            <!-- End of Post -->
+            <!-- PHP Include for Request Form -->
+            <section class="request">
+                <?php include('form/request-info.php') ?>
+            </section>
+            <!-- End of PHP Include -->
+
+		<?php endwhile; // End of the loop. ?>
             
-			<?php endwhile; // End of the loop. ?>
-            
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
     
-    <?php get_sidebar(); ?>
-    <?php get_footer(); ?>
+<?php get_footer(); ?>

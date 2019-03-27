@@ -1,41 +1,70 @@
-.page-id-15{
-    background: #E9F0F1;
-.page-cover {
-    height: 200px;
-    width: 100%;
-    background-image: linear-gradient(#01ADB5, #4a90e2);
-    border-bottom: 1px solid lightgrey;
-    .header-text{
-        position: relative;
-        margin: 1rem 1rem 1rem 4rem;
-        text-align: left;
-        font-size: 40px;
-        color: #fff;
+// CHANGE THIS ID ON STAGING
+.page-id-343 {
+    background: #fff;
+
+    .about-header {
+        text-align: center;
+        margin-top: 2rem;
+
+        .header-text {
+            font-size: 2.5rem;
+            color: $color__seablue;
+
+            @include tablet {
+                font-size: 3rem;
+            }
+
+            @include desktop {
+                margin: 4rem 0 2rem;
+                font-size: 3.5rem;
+            }
+        }
+
     }
-    .under-text{
-        position: relative;
-        margin: -1.2rem 1rem 1rem 5rem;
-        text-align: left;
-        font-size: 18px;
-        color: #fff;
+
+    .address-container {
+        margin: 2rem auto;
+        text-align: center;
+        .address-info {
+            font-size: .9rem;
+            margin: .5rem 0;
+
+            @include desktop {
+                font-size: 1.2rem;
+            }
+        }
     }
-}
-.google-map {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 411px;
-}
-p.address-info{
-    font-size: 18px;
-    font-weight: 600;
-    text-align: left;
-    padding: 0.5rem;
-    line-height: 2.4;
-    margin: 2rem 1rem 1rem 3rem;
-    font-weight: 500;
-}
-.mapouter{
-    margin: 1rem 1rem 1rem 3.5rem;
-}
+
+        .request-info-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $color__seablue;
+        color: white;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+
+        @include desktop {
+            display: none;
+        }
+
+        h2 {
+            font-weight: 400;
+        }
+    }
+
+    .entry-content {
+        margin-top: 1rem;
+        iframe {
+            width: 100vw !important;
+
+            @include desktop {
+                margin-top: 2rem;
+                height: 800px !important;
+            }
+        }
+    }
 }
