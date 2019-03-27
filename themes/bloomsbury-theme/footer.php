@@ -15,7 +15,7 @@
 		
 		<!-- Footer Brand Logo - ADD SVG!!  -->
 		<div class="footer-logo">
-			<p>Bloomsbury Beginnings Logo</p>
+			<img src="<?php echo get_template_directory_uri() . '/bb-logo-black.png' ?>">
 		</div>
 
 		<!-- Footer Page Links -->
