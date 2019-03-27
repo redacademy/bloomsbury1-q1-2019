@@ -1,16 +1,16 @@
 <?php
 /**
- * The page displaying the chat send/receive.
+ * The main template file.
  *
  * @package Bloomsbury_Theme
  */
 
-get_header();?>
+get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-<?php if (is_user_logged_in()) {?>
+<?php if ( is_user_logged_in() ) { ?>
 
 			<!-- <ul id="listMessages">
             </ul> -->
@@ -25,12 +25,12 @@ get_header();?>
                 Send
             </button>
 </div>
-			<br>
+			<br> 
 
-<?php } else {?>
+<?php } else { ?>
 	<p>You need to be <a href="<?php echo site_url(); ?>/wp-login.php">logged in</a> to use Bloomsbury's messaging</p>
-<?php }?>
+<?php } ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<?php get_footer();?>
+<?php get_footer(); ?>

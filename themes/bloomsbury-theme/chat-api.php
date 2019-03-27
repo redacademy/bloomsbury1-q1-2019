@@ -5,7 +5,12 @@ function post_message ( $data ) {
     $channelId = $data['channelId'];
     $content = $data['content'];
     $message_author_id = get_current_user_id();
-  
+
+    // $current_user -> company
+    // $current_user -> display_name
+    // $current_user -> description
+
+
     // if 
     // && (isset($data))
     // && (is_numeric($data['channelId']))

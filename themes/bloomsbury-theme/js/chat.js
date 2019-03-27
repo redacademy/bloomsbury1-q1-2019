@@ -1,3 +1,5 @@
+//This ajax post request sends messages by getting the users input and saving in the database.
+
 (function ($) {
     $(document).ready(function () {
         $("#submit-message").click(function () {
@@ -12,7 +14,7 @@
                     content: message,
                 }),
                 beforeSend: function (xhr) {
-                    xhr.setRequestHeader('X-WP-Nonce', bb_vars.wpapi_nonce); // insert security stuff before sending request
+                    xhr.setRequestHeader('X-WP-Nonce', bb_vars.wpapi_nonce); // the nonce authenticates the logged in user and is added before sending request.
                 }
             })
                 .done(function (data) {
@@ -21,12 +23,15 @@
                 .fail(function (response) {
                     console.error(response.responseText);
                 })
+                //Clear the form for next message
+                $('input[name=message-input]').val('');
+
         });
     });
 
+//channel another page to get list of users (get list of users from the database), get channels (sql query to get a list of users), 
+
 })(jQuery);
-
-
 
 
 (function ($) {
@@ -34,7 +39,7 @@
     
         let lastMessageId = null;
         let didLastMessageHaveAvatar = false;
-        setInterval(get_messages, 3000);
+        setInterval(get_messages, 1000);
         
         function get_messages() {
             // console.log('The current message ID is: ' + lastMessageId);
