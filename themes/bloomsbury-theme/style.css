@@ -1356,3 +1356,44 @@ object {
     margin-right: auto;
     margin-left: auto;
     max-width: 100px; }
+
+.page-id-59 .header-container {
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw; }
+  .page-id-59 .header-container .title-location .event-title {
+    margin-bottom: 0;
+    color: #1a4144;
+    margin-left: 1rem; }
+  .page-id-59 .header-container .title-location .event-location {
+    margin-top: 1rem;
+    font-size: .8rem;
+    margin-left: 1.5rem; }
+  .page-id-59 .header-container .event-date {
+    font-size: 1rem;
+    color: #4AAAB3; }
+
+.page-id-59 img.wp-image-62 {
+  margin-bottom: 2rem; }
+
+.page-id-59 p {
+  margin: -1rem 3rem 1rem 3rem; }
+
+.page-id-59 .blue-square-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100px;
+  padding: 1rem 0rem 1rem 0rem; }

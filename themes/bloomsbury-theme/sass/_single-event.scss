@@ -1,0 +1,41 @@
+.page-id-59{
+
+    .header-container{
+        line-height: 1;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 100vw;
+
+        .title-location {
+            .event-title{
+                margin-bottom: 0;
+                color: #1a4144;
+                margin-left: 1rem;
+            }
+            .event-location {
+                margin-top: 1rem;  
+                font-size: .8rem;
+                margin-left: 1.5rem; 
+            }
+        }
+        .event-date {
+            font-size: 1rem;
+            color: #4AAAB3;
+        }
+    }
+    img.wp-image-62 {
+        margin-bottom: 2rem;
+    }
+    p{
+        margin: -1rem 3rem 1rem 3rem;
+    }
+    .blue-square-btn{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100px;
+        padding: 1rem 0rem 1rem 0rem;
+    }
+}
