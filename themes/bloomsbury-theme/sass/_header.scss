@@ -1,7 +1,6 @@
 // The fixed navigation bar on the very top
 .site-header {
     background-color: #00ADB5;
-    border-bottom: 1px solid #e1e1e1;
     transition: top 500ms linear;
     position: fixed;
     width: 100%;
@@ -10,6 +9,9 @@
     height: 50px;
     top: 0;
 
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
 
 
     // The hamburger logo, BB logo and the Login button on the navbar
@@ -157,9 +159,12 @@
                     }
                 }
 
-                .slidebar-menu {
+                .menu-visitor {
+                    margin-top: 4rem !important;
+                }
+
+                .slidebar-menu, .menu-visitor {
                     margin-top: 2rem;
-                    width: -webkit-stretch;
                     padding: 0rem 2rem;
                     width: 95%;
 
@@ -176,19 +181,20 @@
 
                         i {
                             max-width: 16px;
+                            color: white;
                         }
 
-                        .menu-nav-text {
-                            margin-left: 1rem;
+                        a {
+                            text-decoration: none !important;
+                            color: white;
+                            text-align: left;
                             width: 100%;
-                            border-bottom: 1px solid white;
-                            padding: .8rem 0;
 
-                            a {
-                                text-decoration: none !important;
-                                color: white;
-                                text-align: left;
-                                max-width: 300px;
+                            .menu-nav-text {
+                                margin-left: 1rem;
+                                 max-width: 300px;
+                                border-bottom: 1px solid white;
+                                padding: .8rem 0;
                             }
                         }
                     }

@@ -58,56 +58,60 @@
 								<div class="slidebar-menu">
 									<li class="menu-nav-item">
 										<i class="fas fa-home"></i>
-										<div class="menu-nav-text">
-											<a href="#">
+										<a href="<?php echo get_permalink( get_page_by_path( 'front-page' ) );?>">
+											<div class="menu-nav-text">
 												Home
-											</a>
-										</div>
+											</div>
+										</a>
 									</li>
 									<li class="menu-nav-item">
 										<i class="fas fa-book-open"></i>
-										<div class="menu-nav-text">
-											<a href="#">
+										<a href="<?php echo get_permalink( get_page_by_path( 'about' ) );?>">
+											<div class="menu-nav-text">
 												About
-											</a>
-										</div>
+											</div>
+										</a>
 									</li>
+
+									<!-- CUSTOM POST TYPES MAY NEED TO CHANGE -->
 									<li class="menu-nav-item">
 										<i class="fas fa-graduation-cap"></i>
-										<div class="menu-nav-text">
-											<a href="#">
+										<a href="<?php echo get_permalink( get_page_by_path( 'courses' ) );?>">
+											<div class="menu-nav-text">
 												Courses
-											</a>
-										</div>
+											</div>
+										</a>
 									</li>
 									<li class="menu-nav-item">
 										<i class="far fa-calendar-check"></i>
-										<div class="menu-nav-text">
-											<a href="#">
+										<a href="<?php echo get_post_type_archive_link( 'events' ); ?>">
+											<div class="menu-nav-text">
 												Events
-											</a>
-										</div>
+											</div>
+										</a>
 									</li>
 									<li class="menu-nav-item">
 										<i class="fas fa-blog"></i>
-										<div class="menu-nav-text">
-											<a href="#">
+										<a href="<?php echo get_permalink( get_page_by_path( 'blog' ) );?>">
+											<div class="menu-nav-text">
 												Blog
-											</a>
-										</div>
+											</div>
+										</a>
 									</li>
+
+									<!-- ADD DROP DOWN ARROW TO SHOW MEMBERS AREA SUBSECTION -->
 									<li class="menu-nav-item">
 										<i class="fas fa-key"></i>
-										<div class="menu-nav-text">
-											<a href="#">
+										<a href="#">
+											<div class="menu-nav-text">
 												Members' Area
-											</a>
-										</div>
+											</div>
+										</a>
 									</li>
 
 									<div class="member-area-subsection">
 										<li>
-											<a href="#">Dashboard</a>	
+											<a href="<?php echo get_permalink( get_page_by_path( 'my-account' ) );?>">Dashboard</a>	
 										</li>
 										<li>
 											<a href="#">Profile</a>
@@ -128,91 +132,134 @@
 
 									<li>
 										<i class="far fa-handshake"></i>
-										<div class="menu-nav-text">
-											<a href="#">&nbsp; Support Us
-											</a>
-										</div>
+										<a href="<?php echo get_permalink( get_page_by_path( 'support-us' ) );?>">
+											<div class="menu-nav-text">
+												Support Us
+											</div>
+										</a>
 									</li>
 									<li>
 										<i class="fas fa-phone-volume"></i>
-										<div class="menu-nav-text">
-											<a href="#">
-												&nbsp; Contact Us
-											</a>
-										</div>
+										<a href="<?php echo get_permalink( get_page_by_path( 'contact-us' ) );?>">
+											<div class="menu-nav-text">
+												Contact Us
+											</div>
+										</a>
 									</li>
 									<li>
 										<i class="fas fa-paste"></i>
-										<div class="menu-nav-text">
-											<a href="#">
-												&nbsp; Terms and Conditions Privacy
-											</a>
-										</div>
+										<a href="<?php echo get_permalink( get_page_by_path( 'terms-and-conditions' ) );?>">
+											<div class="menu-nav-text">
+												Terms and Conditions Privacy
+											</div>
+										</a>
 									</li>
 									<li>
 										<i class="fas fa-sign-out-alt"></i>
-										<div class="menu-nav-text">
-											<a href="#">
-												&nbsp; Log Out
-											</a>
-										</div>
+										<a href="#">
+											<div class="menu-nav-text">
+												Log Out
+											</div>
+										</a>
 									</li>
 								</div>
-							</div>
-						</ul>
+							</ul>
+						</div>
 					</div>
-				</div>
+
+					<!-- Bloomsbury Beginnings logo -->
+					<img class="bb-logo" src="<?php echo get_stylesheet_directory_uri() . "/bb-logo.png"; ?>">
+
+					<!-- Login button in the navbar -->
+					<div class="nav-end-text">
+						<a class="login-button" href="<?php echo get_permalink( get_page_by_path( 'log-in' ) );?>">Log Out</a>
+					</div>
+
+					<!-- Displaying Logged Out Version of Navbar -->
 					<?php } else { ?>
-					<div class="slidebar-menu">
 
-						<a href="#">
-							<li>
-								<i class="fas fa-home"></i>&nbsp; Home</li></a>
-						<hr>
-						<a href="#">
-							<li>
-								<i class="fas fa-book-open"></i>&nbsp; About</li></a>
-						<hr>
-						<a href="#">
-							<li>
-								<i class="fas fa-graduation-cap"></i>&nbsp; Courses</li></a>
-						<hr>
-						<a href="#">
-							<li>
-								<i class="far fa-calendar-check"></i>&nbsp; Events</li></a>
-						<hr>
-						<a href="#">
-							<li>
-								<i class="fas fa-blog"></i>&nbsp; Blog</li></a>
-						<hr>
-						<a href="#">
-							<li>
-								<i class="far fa-handshake"></i></i>&nbsp; Support Us</li></a>
-						<hr>
-						<a href="#">
-							<li>
-								<i class="fas fa-phone-volume"></i>&nbsp; Contact Us</li></a>
-						<hr>
-						<a href="#">
-							<li>
-								<i class="fas fa-paste"></i></i>&nbsp; Terms and Conditions Privacy</li></a>
-						<hr>
-					</div>
+					<div class="menu-visitor">
+						<li class="menu-nav-item">
+							<i class="fas fa-home"></i>
+							<a href="<?php echo get_permalink( get_page_by_path( 'front-page' ) );?>">
+								<div class="menu-nav-text">
+									Home
+								</div>
+							</a>
+						</li>
+						<li class="menu-nav-item">
+							<i class="fas fa-book-open"></i>
+							<a href="<?php echo get_permalink( get_page_by_path( 'about' ) );?>">
+								<div class="menu-nav-text">
+									About
+								</div>
+							</a>
+						</li>
 
-					<div class="login-member-area">
-						<button class="login-button">Login</button>
+						<!-- CUSTOM POST TYPES MAY NEED TO CHANGE -->
+						<li class="menu-nav-item">
+							<i class="fas fa-graduation-cap"></i>
+							 <a href="<?php echo get_post_type_archive_link( 'courses' ); ?>">
+								<div class="menu-nav-text">
+									Courses
+								</div>
+							</a>
+						</li>
+						<li class="menu-nav-item">
+							<i class="far fa-calendar-check"></i>
+							 <a href="<?php echo get_post_type_archive_link( 'events' ); ?>">
+								<div class="menu-nav-text">
+									Events
+								</div>
+							</a>
+						</li>
+						<li class="menu-nav-item">
+							<i class="fas fa-blog"></i>
+							<a href="<?php echo get_permalink( get_page_by_path( 'blog' ) );?>">
+								<div class="menu-nav-text">
+									Blog
+								</div>
+							</a>
+						</li>
+						<li>
+							<i class="far fa-handshake"></i>
+							<a href="<?php echo get_permalink( get_page_by_path( 'support-us' ) );?>">
+								<div class="menu-nav-text">
+									Support Us
+								</div>
+							</a>
+						</li>
+						<li>
+							<i class="fas fa-phone-volume"></i>
+							<a href="<?php echo get_permalink( get_page_by_path( 'contact-us' ) );?>">
+								<div class="menu-nav-text">
+									Contact Us
+								</div>
+							</a>
+						</li>
+						<li>
+							<i class="fas fa-paste"></i>
+							<a href="<?php echo get_permalink( get_page_by_path( 'terms-and-conditions' ) );?>">
+								<div class="menu-nav-text">
+									Terms and Conditions Privacy
+								</div>
+							</a>
+						</li>
 					</div>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Bloomsbury Beginnings logo -->
+		<img class="bb-logo" src="<?php echo get_stylesheet_directory_uri() . "/bb-logo.png"; ?>">
+
+		<!-- Login button in the navbar -->
+		<div class="nav-end-text">
+			<a class="login-button" href="<?php echo get_permalink( get_page_by_path( 'log-in' ) );?>">Log In</a>
+		</div>
 				<?php } ?>
 			
 
-
-				<!-- Bloomsbury Beginnings logo -->
-					<img class="bb-logo" src="<?php echo get_stylesheet_directory_uri() . "/bb-logo.png"; ?>">
-
-				<!-- Login button in the navbar -->
-				<div class="nav-end-text">
-					<p class="login-button">Log In</p>
-				</div>
 
 				
 		</header><!-- #masthead -->

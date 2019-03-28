@@ -19,9 +19,9 @@ get_header(); ?>
 
 				<section class="dashboard-section">
 					<!-- Start of Dashboard Cover Image -->
-						<div class="edit-camera">
+	<!-- 					<div class="edit-camera">
 							<i class="fas fa-camera"> Edit</i>
-						</div>
+						</div> -->
 				</section>
 				
 					<!-- Start of Dashboard Container -->
@@ -32,7 +32,6 @@ get_header(); ?>
 						</a>
 						<h3 class="entry-title"><?php echo $current_user->display_name ?></h3>
 						<p class="entry-meta"><?php echo $current_user->user_company ?></p>
-						<p class="entry-desc"><?php echo $current_user->user_description ?></p>
 					</div>
 					<div class="icon-container">
 						<div class="titles-images">

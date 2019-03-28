@@ -9,9 +9,17 @@
         display: flex;
         justify-content: flex-end;
 
+        @include tablet {
+            height: 20vh;
+        }
+
+        @include desktop {
+            height: 300px;
+        }
+
         .edit-camera {
             width: auto;
-            margin-top: 10rem;
+            margin-top: 12rem;
             margin-right: 1rem;
 
             i {
@@ -25,23 +33,33 @@
 
 
     .dashboard-container {
-        width: 60%;
-        height: 175px;
+        width: 65%;
+        height: 150px;
         background: white;
         border-radius: 10px;
-        box-shadow: 1px 1px 3px 0px grey;
+        box-shadow: 0px 2px 3px 0 grey;
         margin-top: -5rem;
         margin-left: auto;
         margin-right: auto;
 
+        @include tablet {
+            height: 250px;
+        }
+
+        @include desktop {
+            max-width: 650px;
+        }
+
         .dashboard-info {
+            height: 80px;
 
             .edit-account-info {
+                height: 30px;
+                width: auto;
                 text-align: right;
                 float: right;
-                height: 50px;
-                width: auto;
                 cursor: pointer;
+
 
                 .fa-pen {
                     font-size: .7rem;
@@ -54,19 +72,30 @@
             .entry-desc {
                 text-align: center;
                 margin: 0;
+                @include flex-center;
+                flex-direction: column;
             }
 
             .entry-title {
-                margin-top: 1rem;
+                font-size: 1.2rem;
+                padding-top: .5rem;
+                font-weight: 500;
+                color: $color__darkgrey;
+
+                @include tablet {
+                    font-size: 1.75rem;
+                    padding-top: 2.5rem;
+                }
             }
 
             .entry-meta {
-                font-size: .5rem;
-            }
+                font-size: .7rem;
+                font-weight: 400;
+                color: $color__darkgrey + 20%;
 
-            .entry-desc {
-                font-size: .5rem;
-                margin-bottom: .5rem;
+                @include tablet {
+                    font-size: 1rem;
+                }
             }
         }
 
@@ -74,6 +103,10 @@
             display: flex;
             flex-direction: row;
             margin-top: 1rem;
+
+            @include tablet {
+                margin-top: 6rem;
+            }
 
             .titles-images {
                 display: flex;
@@ -83,8 +116,21 @@
                 margin: 0 auto;
                 width: 225px;
 
+                .dash-icon {
+
+                    @include tablet {
+                        height: 20px;
+                    }
+                }
+
                 .dash-text {
                     font-size: .5rem;
+                    color: $color__darkgrey + 50%;
+
+                    @include tablet {
+                        font-size: 1rem;
+                        margin: .1rem !important;
+                    }
                 }
             }
         }
@@ -95,15 +141,26 @@
         height: 100px;
         background: lightgray;
         border-radius: 50%;
-        box-shadow: 1px 1px 2px 0px grey;
         margin-left: auto;
-        margin-top: -15rem;
-        margin-bottom: 15rem;
+        margin-top: -13rem;
+        margin-bottom: 14rem;
         margin-right: auto;
         border: 5px solid white;
 
+        @include tablet {
+            margin-top: -20rem;
+            margin-bottom: 18rem;
+            width: 130px;
+            height: 130px;
+        }
+
         img {
             border-radius: 50%;
+
+            @include tablet {
+                width: 130px;
+                height: 130px;
+            }
         }
     }
 
@@ -127,6 +184,10 @@
         margin-left: auto;
         margin-right: auto;
 
+        @include tablet {
+            height: 250px;
+        }
+
         .lean-circle {
             border-right: 1px dashed grey;
             width: 40%;
@@ -145,6 +206,11 @@
         height: 250px;
         margin: 2rem auto;
 
+        @include tablet {
+            height: 400px;
+            grid-gap: 40px 40px;
+        }
+
         .grid-item {
             background: #fff;
             border-radius: 20px;
@@ -158,11 +224,23 @@
 
             .grid-icon {
                 max-width: 50px;
+
+                @include tablet {
+                    max-width: 80px;
+                    width: 80px;
+                    max-height: 80px;
+                    height: 80px;
+                }
             }
 
             .grid-text {
                 margin: .5rem 0 0;
                 font-size: .7rem;
+                font-weight: 400;
+
+                @include tablet {
+                    font-size: 1rem;
+                }
             }
         }
     }
