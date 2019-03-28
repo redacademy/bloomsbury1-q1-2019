@@ -1,0 +1,42 @@
+// ABOUT PAGE - CHANGE ID WHEN ON STAGING
+.page-id-212 {
+
+    .about-hero {
+        width: 100vw;
+        margin: 0 auto;
+
+        @include desktop {
+        	height: 750px;
+        }
+
+        img {
+        	height: inherit;
+        }
+    }
+
+
+    .entry-content {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+
+        @include tablet {
+            width: 80%;
+            margin-bottom: 3.5rem;
+        }
+
+        @include desktop {
+        	margin-bottom: 5rem;
+        	width: 60%
+        }
+
+        h2 {
+            text-align: center;
+            color: $color__seablue;
+
+            @include tablet {
+                font-size: 2rem;
+            }
+        }
+    }
+}
