@@ -38,13 +38,15 @@ get_header(); ?>
 							<img class="dash-icon" src="<?php echo get_template_directory_uri() . '/images/bookmark.svg'?>" alt="hello">
 							<p class="dash-text">My Files</p>
 						</div>
-							<div class="titles-images">
+						<div class="titles-images">
 							<img class="dash-icon" src="<?php echo get_template_directory_uri() . '/images/message-icon.svg'?>" alt="hello">
 							<p class="dash-text">Messages</p>
 						</div>
-							<div class="titles-images">
-							<img class="dash-icon" src="<?php echo get_template_directory_uri() . '/images/event-icon.svg'?>" alt="hello">
-							<p class="dash-text">Events</p>
+						<div class="titles-images">
+							<a href="<?php echo get_post_type_archive_link( 'events' ); ?>">
+								<img class="dash-icon" src="<?php echo get_template_directory_uri() . '/images/event-icon.svg'?>" alt="hello">
+								<p class="dash-text">Events</p>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -54,7 +56,7 @@ get_header(); ?>
 					<?php echo get_avatar( get_the_author_meta('user_email'), $size = 'full'); ?>
 				</div>
 				<!-- End of Avatar -->
-
+			<section class="dashboard-main-body">
 				<!-- Start of Lean Canvas --> 
 				<div class="dashboard-lean-canvas">
 					<!-- Start of Lean Circle -->
@@ -86,9 +88,10 @@ get_header(); ?>
 						<h5 class="grid-text">Calendar</h5>
 					</div>						
 				</div>
+			</section>
 				<!-- End of Grid -->
 			<?php } else { ?>
-
+				<!-- Conditional Else if the user is not logged in, this will prevent them from seeing the static SCSS properties and styling that the page has -->
 				<section class="dashboard-revert">
 					<div class="revert-container">
 						<h1>Sorry, You must be signed in to view this page</h1>
