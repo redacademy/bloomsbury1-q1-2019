@@ -76,7 +76,7 @@
 									<!-- CUSTOM POST TYPES MAY NEED TO CHANGE -->
 									<li class="menu-nav-item">
 										<i class="fas fa-graduation-cap"></i>
-										<a href="<?php echo get_permalink( get_page_by_path( 'courses' ) );?>">
+										<a href="<?php echo get_post_type_archive_link( 'courses' ); ?>">
 											<div class="menu-nav-text">
 												Courses
 											</div>

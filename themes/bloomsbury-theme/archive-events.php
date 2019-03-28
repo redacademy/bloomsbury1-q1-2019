@@ -26,7 +26,7 @@ get_header(); ?>
         foreach ($posts_array as $post) { ?>
 
         <div class="event-grid-item">
-            <a href="<?php echo the_permalink() ?>">
+            <a href="<?php echo the_permalink() ?>"
                 <div class="event-info">
                     <h5 class="event-header"><?php echo the_title();?></h5>
                     <p class="event-location"><i class="fas fa-map-marker-alt"></i> <?php echo CFS()->get('location'); ?></p>
