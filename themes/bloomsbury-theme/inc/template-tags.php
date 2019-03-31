@@ -32,7 +32,7 @@
   */
  function bloomsbury_posted_by() {
  	$byline = sprintf(
- 		esc_html( 'by %s' ),
+ 		esc_html( 'By: %s' ),
  		'<span class="author vcard">' . esc_html( get_the_author() ) . '</span>'
  	);
 

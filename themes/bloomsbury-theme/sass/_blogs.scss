@@ -1,0 +1,201 @@
+/* ------------------------------------------------
+
+	This SCSS is for Blog Home and Blog Single
+
+------------------------------------------------ */
+
+
+
+
+
+// Styling for Single Blog Post
+
+.single-post {
+
+	#wpadminbar {
+		display: none;
+	}
+    .blog-hero {
+        max-height: 80vh;
+        overflow: hidden;
+
+        @include tablet {
+        	@include flex-center;
+        }
+
+        @include desktop {
+        	@include flex-center;
+        }
+
+        img {
+        	@include desktop {
+        		width: 1000px;
+        	}
+        }
+    }
+
+    article {
+        margin: 2rem;
+
+        @include tablet {
+        	width: 550px;
+        	margin: 2rem auto;
+        }
+
+        @include desktop {
+        	width: 800px;
+        	margin: 2rem auto;
+        }
+
+        .blog-meta {
+            display: flex;
+            flex-direction: column;
+            color: $color__darkgrey + 40%;
+
+            .entry-date {
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+
+        .entry-header {
+            border-bottom: 1px solid #D8D8D8;
+            padding: 1rem 0;
+
+            .entry-title {
+                color: $color__seablue;
+                text-align: left;
+                width: 100%;
+                font-size: 1.5rem;
+            }
+        }
+
+        .entry-meta {
+        	display: flex;
+        	flex-direction: row;
+        	align-items: center;
+
+        	.blog-comments,
+        	.blog-likes,
+        	.blog-share {
+        		color: $color__darkgrey + 50%;
+        		padding: 0 .5rem;
+        	}
+
+        	.blog-share {
+        		text-transform: uppercase;
+        	}
+        }
+
+        .entry-content {
+            color: $color__darkgrey + 40%;
+            border-bottom: 1px solid #D8D8D8;
+            font-weight: 300;
+
+            ul,
+            li {
+                padding: 0;
+                color: $color__darkgrey;
+            }
+
+            ul {
+                margin: 0;
+            }
+
+            li {
+                margin: .5rem;
+            }
+        }
+    }
+    .popular-posts {
+    	margin-bottom: 4rem;
+
+    	@include tablet {
+    		width: 550px;
+    		margin: 0 auto 4rem;
+    	}
+    	.popular-header {
+    		@include flex-center;
+    		flex-direction: column;
+    		margin-top: 3rem;
+    		color: $color__deepblue;
+    		font-weight: 400;
+    		.fa-thumbs-up {
+    			font-size: 3rem;
+    		}
+
+    		h2 {
+    			font-size: 1.5rem;
+    		}
+    	}
+    	.popular-posts-grid {
+    		display: grid;
+    		grid-template-columns: repeat(1,1fr);
+    		margin: 0;
+    		padding: 0;
+
+    		@include desktop {
+    			grid-template-columns: repeat(2,1fr);
+    			width: 1000px;
+    			margin: 0 auto;
+    		}
+
+    		.grid-item {
+    			display: flex;
+    			align-items: center;
+    			flex-flow: row no-wrap;
+    			height: 200px;
+    			margin: 1rem;
+    			border-top: 1px solid #D8D8D8;
+    			border-bottom: 1px solid #D8D8D8;
+
+    			.grid-picture {
+    				width: 40%;
+    				@include flex-center;
+
+    				img {
+    					width: 150px;
+    					margin: 0 auto;
+    				}
+    			}
+
+    			.grid-meta {
+    				width: 60%;
+    				padding-left: 1rem;
+    				display: flex;
+    				flex-direction: column;
+    				justify-content: space-around;
+
+    				.entry-title {
+    					color: $color__seablue;
+    					font-weight: 600;
+    					font-size: 1.1rem;
+    					margin: 0;
+    				}
+
+    				.entry-date,
+    				.entry-author {
+    					color: $color__darkgrey + 40%;
+    					font-size: 1rem;
+    					font-weight: 600;
+    				}
+    				.entry-date {
+    					text-transform: uppercase;
+    					margin-top: 0;
+    				}
+    				.entry-author {
+    					margin-bottom: 0;
+    				}
+    			}
+    		}
+    	}
+
+    	.back-blog {
+    		@include flex-center;
+    		font-size: 1.5rem;
+    		margin-top: 2rem;
+    		color: $color__seablue;
+    		font-weight: 400;
+    	}
+    }
+}

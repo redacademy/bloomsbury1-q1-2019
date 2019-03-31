@@ -18,7 +18,7 @@ get_header(); ?>
         <?php $posts_array = get_posts (
             array(
                 'post_type' => 'events',
-                'post_per_page' => -1,
+                'post_per_page' => 4,
                 'post_status' => 'publish'
             )
         );
@@ -26,20 +26,20 @@ get_header(); ?>
         foreach ($posts_array as $post) { ?>
 
         <div class="event-grid-item">
-            <a href="<?php echo the_permalink() ?>"
+            <a href="<?php echo the_permalink(); ?>">
                 <div class="event-info">
                     <h5 class="event-header"><?php echo the_title();?></h5>
                     <p class="event-location"><i class="fas fa-map-marker-alt"></i> <?php echo CFS()->get('location'); ?></p>
                     <p class="event-text"><?php echo the_content();?> </p>
                 </div>
-                </a>
+            </a>
                 <div class="event-right">
                     <p class="event-date"><strong><?php echo CFS()->get('date');?> </strong></p>
                 </div>
         </div>
         <?php } ?>
-    </section>
-    <?php endif; // End of the loop. ?>
+        </section>
+        <?php endif; // End of the loop. ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 

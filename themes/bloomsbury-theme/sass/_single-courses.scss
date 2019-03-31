@@ -2,22 +2,24 @@
     background-color: #E9F0F1;
 
     #wpadminbar {
-      display: none;
+        display: none;
     }
 
     .entry-title {
         font-size: 2rem;
         margin: 4rem 1rem;
+        color: $color__deepblue;
 
         @include tablet {
-          margin: 4rem 2rem;
+            margin: 4rem 2rem;
         }
 
         @include desktop {
-          text-align: center;
-          font-size: $font__title-desktop;
+            text-align: center;
+            font-size: $font__title-desktop;
         }
     }
+
     .courses-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -31,8 +33,10 @@
         }
 
         @include desktop {
-          grid-template-columns: repeat(3,1fr);
-          grid-gap: 0px 20px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0px 20px;
+            max-width: 900px;
+            margin: 4rem auto;
         }
     }
 
@@ -86,20 +90,249 @@
 
 // This displays the Single Course layout
 .single-courses {
+    .single-hero {
+        width: 100vw;
+        overflow: hidden;
+        max-height: 60vh;
 
-    article {
-        padding: 0rem 2rem;
+        @include tablet {
+            max-height: 40vh;
+        }
+        img {
+            width: 100vw;
+
+            @include tablet {
+                margin-top: -10rem;
+            }
+
+            @include desktop {
+                margin-top: -15rem;
+            }
+        }
     }
 
-    .entry-title {}
+    .course-content {
+        width: 80%;
+        margin: 0 auto;
 
-    li {
-        list-style-position: inside;
-        padding-left: 0.10rem;
+        @include tablet {
+            width: 65%;
+        }
+
+        @include desktop {
+            max-width: 900px;
+        }
+
+        .course-title {
+            text-align: left !important;
+            font-size: 2rem !important;
+
+            @include desktop {
+                font-size: $font__title-desktop !important;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: $color__deepblue;
+            margin: 1.5rem 0;
+
+            @include desktop {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            color: $color__darkgrey;
+            font-weight: lighter;
+            line-height: 1.8;
+        }
+
+        ul,
+        li {
+            padding: 0;
+            color: $color__darkgrey;
+            font-weight: lighter;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        li {
+            margin: .5rem;
+        }
+
+        .cfs {
+            text-align: center;
+        }
     }
 
-    h1,
-    h2 {
-        color: #1f4354;
+    .course-request {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10;
+        width: 100%;
+        height: auto;
+        background: #f9f9f9;
+
+        .request-container {
+            margin: 0 auto;
+            overflow-y: scroll;
+            position: center;
+            bottom: 0;
+            position: relative;
+            border: 0;
+
+            .close {
+                position: absolute;
+                top: 0;
+                right: 14px;
+                font-size: 2rem;
+                transform: rotate(45deg);
+                color: $color__deepblue;
+                cursor: pointer;
+            }
+
+            #contact {
+                background: #F9f9f9;
+                padding: 0rem 2rem 2rem;
+
+                h3 {
+                    color: $color__deepblue;
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 30px;
+                    font-weight: 400;
+                    text-align: center;
+                    padding: 0;
+                }
+
+                fieldset {
+                    border: medium none !important;
+                    padding: 0;
+                    width: 100%;
+
+                    .radio-box {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .radio-text {
+                            width: 90%;
+                            margin: 0 0 5px;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+
+            #contact input[type="text"],
+            #contact input[type="email"],
+            #contact input[type="tel"],
+            #contact input[type="url"],
+            #contact textarea,
+            #contact button[type="submit"] {
+                font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+            }
+
+            #contact input[type="text"],
+            #contact input[type="email"],
+            #contact input[type="tel"],
+            #contact input[type="url"],
+            #contact textarea {
+                width: 100%;
+                border: 1px solid #CCC;
+                background: #FFF;
+                margin: 0 0 5px;
+                padding: 10px;
+            }
+
+            #contact input[type="text"]:hover,
+            #contact input[type="email"]:hover,
+            #contact input[type="tel"]:hover,
+            #contact input[type="url"]:hover,
+            #contact textarea:hover {
+                -webkit-transition: border-color 0.3s ease-in-out;
+                -moz-transition: border-color 0.3s ease-in-out;
+                transition: border-color 0.3s ease-in-out;
+                border: 1px solid #AAA;
+            }
+
+            #contact input[type="radio"] {
+                width: 10%;
+            }
+
+            #contact textarea {
+                height: 100px;
+                max-width: 100%;
+                resize: none;
+            }
+
+            #contact button[type="submit"] {
+                cursor: pointer;
+                width: 100%;
+                border: none;
+                margin: 0 0 5px;
+                padding: 10px;
+                font-size: 15px;
+            }
+
+            #contact button[type="submit"]:hover {
+                background: #09C;
+                -webkit-transition: background 0.3s ease-in-out;
+                -moz-transition: background 0.3s ease-in-out;
+                transition: background-color 0.3s ease-in-out;
+            }
+
+            #contact button[type="submit"]:active {
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+            }
+
+            #contact input:focus,
+            #contact textarea:focus {
+                outline: 0;
+                border: 1px solid #999;
+            }
+
+            fieldset {
+                margin: .5rem;
+            }
+
+            ::-webkit-input-placeholder {
+                color: #888;
+            }
+
+            :-moz-placeholder {
+                color: #888;
+            }
+
+            ::-moz-placeholder {
+                color: #888;
+            }
+
+            :-ms-input-placeholder {
+                color: #888;
+            }
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: #ff9966;
+            text-align: center;
+            font-weight: bold;
+            font-size: .9rem;
+        }
     }
+
 }

@@ -12,25 +12,15 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php $image = get_field('page_banner_background_image'); 
-
-		if( !empty($image)): ?>
-			<img src="<?php echo $image['url']; ?>" />
-			<?php endif; 
-			?>
-
-		<h1><?php the_field('page_banner_subtitle') ?></h1>
-
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<header class="entry-header">
+			<section class="single-hero">
 				<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'large' ); ?>
 				<?php endif; ?>
+			</section><!-- .entry-header -->
 
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			</header><!-- .entry-header -->
-
-			<div class="entry-content">
+			<div class="course-content">
+				<?php the_title( '<h1 class="course-title">', '</h1>' ); ?>
 				<?php the_content(); ?>
 				<?php
 					wp_link_pages( array(
@@ -38,17 +28,22 @@ get_header(); ?>
 						'after'  => '</div>',
 					) );
 				?>
-			</div><!-- .entry-content -->
+				<h2>Next avaliable course</h2>
+				<p class="cfs"><?php echo CFS()->get('date');?></p> 
 
+				<h2>Price</h2>
+				<p class="cfs"><?php echo CFS()->get('price');?></p>
+			</div><!-- .entry-content -->
 		
 		</article><!-- #post-## -->
 
 			<!-- <?php the_post_navigation(); ?> -->
 
 		<?php endwhile; // End of the loop. ?>
+		<section class="course-request">
+			<?php include('form/request-info.php') ?>
+		</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

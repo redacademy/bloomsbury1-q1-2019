@@ -5,6 +5,7 @@
 	<!-- Form -->
 	<form id="contact" action="<?php echo get_template_directory_uri() . '/form/form_process.php'?>" method="post">
 		<div class="close">+</div>
+
 		<h3>Connect with us!</h3>
 		<fieldset>
 			<input placeholder ="Name" type="text" tabindex="1"  name="name" value="<?php $name?>" required autofocus>
@@ -28,7 +29,7 @@
 		<fieldset>
 			<div class="radio-box">
 				<input type="radio" name="connect" tabindex="5">
-				<p class="radio-text">I'm interested in supporting or partnering with Boomsbury Beginnings</p>
+				<p class="radio-text">I'm interested in supporting or partnering with Bloomsbury Beginnings</p>
 			</div>
 		</fieldset>
 		<fieldset>
