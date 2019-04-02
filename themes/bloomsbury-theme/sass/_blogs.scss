@@ -7,7 +7,6 @@
 // Blog Home Styling
 
 .blog {
-
     #wpadminbar {
         display: none;
     }
@@ -19,57 +18,302 @@
             #969696 url(../../assets/images/blog.jpg);
         background-size: cover;
         background-position: center;
-        height: 40vh;
+        height: 50vh;
         width: 100vw;
         @include flex-center;
         margin-bottom: 3rem;
 
         .blog-title {
-            font-size: 2.5rem;
+            font-size: 3rem;
             color: white;
             text-transform: uppercase;
+
+            @include tablet {
+                font-size: 4rem;
+            }
         }
     }
 
-    article {
-        margin: 1.5rem;
-        border-bottom: 1px solid $color__darkgrey;
+    .site-main {
+        @include desktop {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1000px;
+            margin: 0 auto;
+        }
 
-        .entry-header {
+        article {
+            margin: 1.5rem;
+            border-bottom: 1px solid $color__darkgrey;
 
+            @include tablet {
+                width: 650px;
+                margin: 1.5rem auto;
+            }
 
-            .entry-meta {
-                margin-top: .5rem;
+            @include desktop {
+                width: 70%;
+            }
+
+            // THIS WILL NEED TO CHANGE FROM NTH OF TYPE TO LAST CHILD
+            &:nth-of-type(2) {
+                border-bottom: 1px solid white;
+            }
+
+            .entry-header {
+                .entry-image {
+                    height: 250px;
+
+                    @include tablet {
+                        height: 350px;
+                    }
+                }
+
+                .entry-meta {
+                    margin-top: .5rem;
+                    display: flex;
+                    flex-direction: column;
+                    color: $color__darkgrey + 50%;
+
+                    .entry-date {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+
+                    .byline {
+                        font-weight: lighter;
+                    }
+                }
+
+                .entry-title {
+
+                    a {
+                        color: $color__seablue;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .entry-content {
+                color: $color__darkgrey + 50%;
+                font-weight: lighter;
+            }
+
+            .comment-meta {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 color: $color__darkgrey + 50%;
 
-                .entry-date {
-                    text-transform: uppercase;
-                }
-            }
-
-            .entry-title {
-
-                a {
-                    color: $color__seablue;
-                    text-decoration: none;
+                p {
+                    padding: .5rem;
                 }
             }
         }
-    }
 
-    .entry-content {
-        color: $color__darkgrey + 50%;
-    }
+        // Full Sidebar CSS is in Widgets.
+        .sidebar {
+                display: none;
+            @include desktop {
+                display: block;
+                width: 25%;
+                margin-top: -50rem;
+                border-left: 1px solid $color__lightgrey;
+            }
+        }
 
-    .comment-meta {
-        display: flex;
-        flex-direction: row;
-        color: $color__darkgrey + 50%;
+        .load-more {
+            width: 100%;
+            @include flex-center;
+            margin: 2rem 0;
 
-        p {
-            padding: .5rem;
+            @include desktop {
+                width: 70%;
+            }
+
+            a {
+                font-size: 1rem;
+                font-weight: lighter;
+                padding: .8rem 1rem;
+
+
+                i {
+                    padding-left: .2rem;
+                }
+            }
+        }
+
+        .popular-posts {
+            margin: 1.5rem;
+            margin-bottom: 4rem;
+            border-top: 1px solid $color__darkgrey + 50%;
+
+            @include tablet {
+                width: 650px;
+                margin: 0 auto 4rem;
+            }
+
+            @include desktop {
+                width: 73%;
+            }
+
+            .popular-header {
+                @include flex-center;
+                flex-direction: column;
+                margin-top: 3rem;
+                color: $color__deepblue;
+                font-weight: 400;
+
+                .fa-thumbs-up {
+                    font-size: 3rem;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .popular-posts-grid {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                margin: 0;
+                padding: 0;
+
+                @include desktop {
+                    grid-template-columns: repeat(2, 1fr);
+                    margin: 0 auto;
+                    width: 70%;
+                }
+
+                .grid-item {
+                    display: flex;
+                    align-items: center;
+                    flex-flow: row no-wrap;
+                    height: 200px;
+                    margin: 1rem;
+
+                    .grid-picture {
+                        width: 40%;
+                        @include flex-center;
+
+                        img {
+                            width: 150px;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .grid-meta {
+                        width: 60%;
+                        padding-left: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+
+                        .entry-title {
+                            color: $color__seablue;
+                            font-weight: 600;
+                            font-size: 1.1rem;
+                            margin: 0;
+                        }
+
+                        .entry-date,
+                        .entry-author {
+                            color: $color__darkgrey + 40%;
+                            font-size: 1rem;
+                            font-weight: 600;
+                        }
+
+                        .entry-date {
+                            text-transform: uppercase;
+                            margin-top: 0;
+                        }
+
+                        .entry-author {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .blog-archive {
+            @include flex-center;
+            flex-direction: column;
+            height: auto;
+            border-top: 1px solid $color__darkgrey + 50%;
+            margin: 1.5rem;
+            padding-top: 3rem;
+
+            @include tablet {
+                width: 650px;
+                margin: 1.5rem auto;
+            }
+
+            @include desktop {
+                width: 70%;
+            }
+
+            i {
+                color: $color__deepblue;
+                font-size: 3rem;
+            }
+
+            h2 {
+                color: $color__deepblue;
+            }
+
+            .archive-dropdown {
+                position: relative;
+                display: inline-block;
+                margin-bottom: 4rem;
+
+                &:hover {
+                    .archive-content {
+                        display: block;
+                    }
+                }
+
+                .archive-btn {
+                    background: transparent;
+                    border: 1px solid $color__deepblue;
+                    padding: .5rem 3rem;
+                    color: $color__deepblue;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    width: 250px;
+                    font-weight: lighter;
+
+                    i {
+                        font-size: 1rem;
+                        float: right;
+                    }
+                }
+
+                .archive-content {
+                    display: none;
+                    position: absolute;
+                    color: $color__deepblue;
+                    z-index: 1;
+                    min-width: 250px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    font-weight: lighter;
+
+                    li>a {
+                        color: $color__deepblue;
+                        text-align: center;
+                        padding: .5rem 16px;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        display: block;
+
+                        &:hover {
+                            background-color: #f1f1f1;
+                        }
+                    }
+                }
+            }
         }
     }
 }

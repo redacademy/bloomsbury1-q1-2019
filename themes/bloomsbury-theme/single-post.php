@@ -53,16 +53,24 @@ get_header(); ?>
 				<div class="popular-header">
 					<i class="far fa-thumbs-up"></i>
 					<h2> Popular Posts</h2>
+					</div>
 					<?php $the_query = new WP_Query( array(
 					    'meta_key' => 'post_views_count',
 					    'orderby' => 'meta_value_num',
-					    'posts_per_page' => 5
+					    'posts_per_page' => 5,
 					) ); 
 					if ( $the_query->have_posts() ) {
-						echo '<ul>';
+						echo '<ul class="popular-post-grid">';
 						while ( $the_query->have_posts() ) {
 							$the_query->the_post();
-							echo '<li>' . get_the_title() . '</li>';
+							echo '<li class="grid-item">';
+							echo '<div class="grid-picture">' . the_post_thumbnail() . '</div>';
+							echo '<div class="grid-meta">';
+							echo '<p class="entry-date">' . bloomsbury_posted_on() . '</p>';
+							echo '<h2 class="entry-title">' . the_title() . '</h2>';
+							echo '<p class="entry-author">' . bloomsbury_posted_by() . '</p>';
+							echo '</div>';
+							echo '</li>';
 						}
 						echo '</ul>';
 					} else {
@@ -70,20 +78,6 @@ get_header(); ?>
 					}
 					wp_reset_postdata();
 					?>
-				</div>
-
-				<ul class="popular-posts-grid">
-					<li class="grid-item">
-						<div class="grid-picture">
-							<?php echo the_post_thumbnail(); ?>
-						</div>
-						<div class="grid-meta">
-							<p class="entry-date">February 8, 2019</p>
-							<h2 class="entry-title"><?php echo the_title(); ?></h2>
-							<p class="entry-author">By Anny Nkune</p>
-						</div>
-					</li>
-				</ul>
 
 				<a class="back-blog" href="<?php echo get_permalink( get_page_by_path( 'blog' ) );?>">Back to Blog</a>
 			</section>

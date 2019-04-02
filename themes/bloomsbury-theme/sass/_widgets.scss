@@ -15,3 +15,64 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+.widget-area {
+
+	@include desktop {
+		display: block;
+		margin-left: 3rem;
+
+		.widget_text {
+
+			.textwidget {
+				text-align: center;
+				img {
+					border-radius: 50%;
+				}
+			}
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 1.5rem;
+			text-align: center;
+			color: $color__deepblue;
+		}
+
+		p {
+			font-size: 1rem;
+			color: $color__darkgrey + 50%;
+		}
+
+		ul {
+			margin: 0;
+			color: $color__deepblue;
+
+			li {
+				a {
+					text-decoration: none;
+					color: $color__seablue;
+				}
+			}
+		}
+
+		.search-form {
+			fieldset {
+				border: none;
+
+				.search-field {
+					padding: .5rem;
+					padding-left: 1rem;
+					border: 1px solid $color__deepblue;
+					color: $color__deepblue;
+
+					&:focus,
+					&:active {
+
+					}
+				}
+			}
+		}
+	}
+
+
+}
